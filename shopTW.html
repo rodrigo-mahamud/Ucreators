@@ -253,16 +253,16 @@
 					<div id="pix-tabs" class="marketing-tabs wow pixFadeUp" data-wow-delay="0.5s">
 						<ul id="pix-tabs-nav">
 							<li class="active">
-								<a href="#marketing_tab1"><i class="ei ei-icon_easel"></i>JUST CHATTING</a>
+								<a href="#marketing_tab1"><i class="bi bi-twitch"></i>JUST CHATTING</a>
 							</li>
 							<li class="active">
-								<a href="#marketing_tab1"><i class="ei ei-icon_easel"></i>LOL</a>
+								<a href="#marketing_tab1"><i class="bi bi-twitch"></i>LOL</a>
 							</li>
 							<li class="active">
-								<a href="#marketing_tab1"><i class="ei ei-icon_easel"></i>IRL </a>
+								<a href="#marketing_tab1"><i class="bi bi-twitch"></i>IRL </a>
 							</li>
 							<li class="active">
-								<a href="#marketing_tab1"><i class="ei ei-icon_easel"></i>VLOG</a>
+								<a href="#marketing_tab1"><i class="bi bi-twitch"></i>VLOG</a>
 							</li>
 						</ul>
 					</div>
@@ -280,7 +280,7 @@
 			<script>
 				window.addEventListener("popstate", function (event) {
 					var url = window.location.href;
-					if ((event = true & (url == "http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447"))) {
+					if ((event = true & (url == "http://172.27.209.178:5500/shopTW.html#!/Creadores-Twitch/c/72298447"))) {
 						document.getElementById("delete").style.display = "block";
 					} else {
 						document.getElementById("delete").style.display = "none";
@@ -288,7 +288,11 @@
 					console.log(url);
 				});
 			</script>
-
+			<script>
+				window.onload = function myFunction() {
+					location.replace("http://172.27.209.178:5500/shopTW.html#!/Creadores-Twitch/c/72298447");
+				};
+			</script>
 			<!-- Dependency Scripts -->
 			<script src="dependencies/jquery/jquery.min.js"></script>
 			<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
