@@ -14431,7 +14431,7 @@ Download Two
   margin-right: 5px;
   font-size: 24px;
   display: inline-block;
-  vertical-align: -3px;
+  vertical-align: 3px;
 }
 
 .job-bord-tabs #pix-tabs-nav li a:hover {
@@ -14953,12 +14953,12 @@ Download Two
 }
 
 .marketing-tabs #pix-tabs-nav li a i {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .marketing-tabs #pix-tabs-nav li.active a {
-  background: #f98e47;
-  border-color: #f98e47;
+  background: #a060ff;
+  border-color: #a060ff;
   color: #fff;
 }
 

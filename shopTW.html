@@ -16,6 +16,7 @@
 		<meta name="theme-color" content="#fa7070" />
 
 		<!-- Dependency Styles -->
+		<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
@@ -120,12 +121,9 @@
 									<li onmousedown="mDown(this)"><a href="javascript:delay('contactTW.html')" onmousedown="beep.play()" onmouseover="hov.play()">Contact</a></li>
 								</ul>
 
-								<div class="nav-right">
-									<a href="signup.html" class="nav-btn style-two">Try For Free</a>
-								</div>
-								<div class="ec-cart-widget"></div>
+								<div data-layout="MEDIUM_ICON_COUNTER" data-show-empty-cart="FALSE" data-icon="BAG" data-fixed-shape="RECT" class="ec-cart-widget"></div>
 								<div>
-									<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?44144198&data_platform=code&data_date=2020-12-31" charset="utf-8"></script>
+									<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?44144198&data_platform=code&data_date=2021-01-04" charset="utf-8"></script>
 									<script type="text/javascript">
 										Ecwid.init();
 									</script>
@@ -259,7 +257,7 @@
 								<a href="#marketing_tab1"><i class="bi bi-twitch"></i>LOL</a>
 							</li>
 							<li class="active">
-								<a href="#marketing_tab1"><i class="bi bi-twitch"></i>IRL </a>
+								<a href="#marketing_tab1"><i class="bi bi-twitch"></i>IRL</a>
 							</li>
 							<li class="active">
 								<a href="#marketing_tab1"><i class="bi bi-twitch"></i>VLOG</a>
@@ -277,6 +275,14 @@
 					</script>
 				</div>
 			</div>
+
+			TODO:
+			<!-- MENÚ DE LA PARTE SUPERIOR (HABLARLO CON JAVI )
+			ESTILIZAR LA PARTE DE DENTRO DEL PRODUCTO 
+			BUSCAR COMO HACE LA LÓGICA DE LOS ENLACES PARA QUE NO SALGA LO DE LA CATEGORIA (ERA CON ALGO TIPO #PATH O ASI)
+			INVESTIGAR PORQUE LO DE COMPRAR AHORA NO COMPRA DIRECTAMENTE
+			TEMA IMÁGENES DEL PRINCIPIO -->
+
 			<script>
 				window.addEventListener("popstate", function (event) {
 					var url = window.location.href;
