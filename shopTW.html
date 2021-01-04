@@ -120,8 +120,15 @@
 									<li onmousedown="mDown(this)"><a href="javascript:delay('aboutdk.html')" onmousedown="beep.play()" onmouseover="hov.play()">About</a></li>
 									<li onmousedown="mDown(this)"><a href="javascript:delay('contactTW.html')" onmousedown="beep.play()" onmouseover="hov.play()">Contact</a></li>
 								</ul>
+								<div class="nav-right">
+									<a href="signin.html" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Login</a>
+									<a href="#" class="nav-btn">
+										Try For Free
+										<i class="bi bi-shop"></i>
+									</a>
+								</div>
 
-								<div data-layout="MEDIUM_ICON_COUNTER" data-show-empty-cart="FALSE" data-icon="BAG" data-fixed-shape="RECT" class="ec-cart-widget"></div>
+								<div data-layout="MEDIUM_ICON_COUNTER" data-show-empty-cart="FALSE" data-icon="CART" data-fixed-shape="RECT" class="ec-cart-widget"></div>
 								<div>
 									<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?44144198&data_platform=code&data_date=2021-01-04" charset="utf-8"></script>
 									<script type="text/javascript">
@@ -277,7 +284,7 @@
 			</div>
 
 			TODO:
-			<!-- MENÚ DE LA PARTE SUPERIOR (HABLARLO CON JAVI )
+			<!-- MENÚ DE LA PARTE SUPERIOR MENÚ DE LA PAG 6 
 			ESTILIZAR LA PARTE DE DENTRO DEL PRODUCTO 
 			BUSCAR COMO HACE LA LÓGICA DE LOS ENLACES PARA QUE NO SALGA LO DE LA CATEGORIA (ERA CON ALGO TIPO #PATH O ASI)
 			INVESTIGAR PORQUE LO DE COMPRAR AHORA NO COMPRA DIRECTAMENTE
@@ -286,7 +293,7 @@
 			<script>
 				window.addEventListener("popstate", function (event) {
 					var url = window.location.href;
-					if ((event = true & (url == "http://172.27.209.178:5500/shopTW.html#!/Creadores-Twitch/c/72298447"))) {
+					if ((event = true & (url == "http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447"))) {
 						document.getElementById("delete").style.display = "block";
 					} else {
 						document.getElementById("delete").style.display = "none";
@@ -296,7 +303,7 @@
 			</script>
 			<script>
 				window.onload = function myFunction() {
-					location.replace("http://172.27.209.178:5500/shopTW.html#!/Creadores-Twitch/c/72298447");
+					location.replace("http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447");
 				};
 			</script>
 			<!-- Dependency Scripts -->
