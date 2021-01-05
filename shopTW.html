@@ -66,26 +66,26 @@
 
 		<div id="main_content">
 			<!--=========================-->
-			<!--=        Navbar         =-->
+			<!--=        Navbar 2        =-->
 			<!--=========================-->
-			<header class="site-header header-two toggle-light header_trans-fixed" data-top="992">
+			<header class="site-header header-eight header_trans-fixed" data-top="992">
 				<div class="container-shop">
 					<div class="header-inner">
-						<div class="site-mobile-logo">
-							<a href="index.html" class="logo">
-								<img src="assets/img/main-logo.png" alt="site logo" class="main-logo" />
-								<img src="assets/img/logo-twodk.png" alt="site logo" class="sticky-logo" />
-							</a>
-						</div>
-						<!-- /.site-mobile-logo -->
-
 						<div class="toggle-menu">
 							<span class="bar"></span>
 							<span class="bar"></span>
 							<span class="bar"></span>
 						</div>
 						<!-- /.toggle-menu -->
-						<nav class="site-nav nav-two">
+
+						<div class="site-mobile-logo">
+							<a href="index.html" class="logo">
+								<img src="assets/img/main-logo.png" alt="site logo" class="main-logo" />
+								<img src="assets/img/logo-twodk.png" alt="site logo" class="sticky-logo" />
+							</a>
+						</div>
+
+						<nav class="site-nav">
 							<div class="close-menu">
 								<span>Close</span>
 								<i class="ei ei-icon_close"></i>
@@ -113,30 +113,29 @@
 									obj.style.transform = "scale(0.95)";
 								}
 							</script>
-
 							<div class="menu-wrapper" data-top="992">
 								<ul class="site-main-menu">
 									<li onmousedown="mDown(this)"><a href="javascript:delay('indexdk.html')" onmousedown="beep.play()" onmouseover="hov.play()">Home</a></li>
 									<li onmousedown="mDown(this)"><a href="javascript:delay('aboutdk.html')" onmousedown="beep.play()" onmouseover="hov.play()">About</a></li>
 									<li onmousedown="mDown(this)"><a href="javascript:delay('contactTW.html')" onmousedown="beep.play()" onmouseover="hov.play()">Contact</a></li>
 								</ul>
-								<div class="nav-right">
-									<a href="signin.html" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Login</a>
-									<a href="#" class="nav-btn">
-										Try For Free
-										<i class="bi bi-shop"></i>
-									</a>
-								</div>
+							</div>
+							<!-- /.menu-wrapper -->
+							<div class="nav-right" style="display: -webkit-inline-box">
+								<a href="https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447" class="nav-btn">
+									<p style="margin: 0%; font-size: 16px; line-height: 31px; font-weight: 600; color: #fff">TIENDA</p>
+								</a>
+								<a href="https://ucreators.es/shopTW.html#!/~/accountSettings" class="nav-btn" style="padding: 6px 7px; margin-left: 20px; background: transparent; box-shadow: unset">
+									<i class="bi bi-person" style="font-size: 33px"></i>
+								</a>
 
-								<div data-layout="MEDIUM_ICON_COUNTER" data-show-empty-cart="FALSE" data-icon="CART" data-fixed-shape="RECT" class="ec-cart-widget"></div>
-								<div>
+								<div data-layout="MEDIUM_ICON_COUNTER" data-show-empty-cart="FALSE" data-icon="CART" data-fixed-shape="RECT" class="ec-cart-widget">
 									<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?44144198&data_platform=code&data_date=2021-01-04" charset="utf-8"></script>
 									<script type="text/javascript">
 										Ecwid.init();
 									</script>
 								</div>
 							</div>
-							<!-- /.menu-wrapper -->
 						</nav>
 						<!-- /.site-nav -->
 					</div>
@@ -168,7 +167,6 @@
 				</svg>
 
 				<ul class="animate-ball">
-					<li class="ball" style="background: #a060ff"></li>
 					<li class="ball" style="background: #a060ff"></li>
 					<li class="ball" style="background: #a060ff"></li>
 					<li class="ball" style="background: #a060ff"></li>
@@ -284,7 +282,7 @@
 			</div>
 
 			TODO:
-			<!-- MENÚ DE LA PARTE SUPERIOR MENÚ DE LA PAG 6 
+			<!-- MENÚ DE LA PARTE SUPERIOR MENÚ DE LA PAG 8 
 			ESTILIZAR LA PARTE DE DENTRO DEL PRODUCTO 
 			BUSCAR COMO HACE LA LÓGICA DE LOS ENLACES PARA QUE NO SALGA LO DE LA CATEGORIA (ERA CON ALGO TIPO #PATH O ASI)
 			INVESTIGAR PORQUE LO DE COMPRAR AHORA NO COMPRA DIRECTAMENTE
@@ -293,7 +291,7 @@
 			<script>
 				window.addEventListener("popstate", function (event) {
 					var url = window.location.href;
-					if ((event = true & (url == "http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447"))) {
+					if ((event = true & (url == "https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447"))) {
 						document.getElementById("delete").style.display = "block";
 					} else {
 						document.getElementById("delete").style.display = "none";
@@ -303,7 +301,7 @@
 			</script>
 			<script>
 				window.onload = function myFunction() {
-					location.replace("http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447");
+					location.replace("https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447");
 				};
 			</script>
 			<!-- Dependency Scripts -->
