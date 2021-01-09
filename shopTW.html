@@ -291,7 +291,7 @@
 			<script>
 				window.addEventListener("popstate", function (event) {
 					var url = window.location.href;
-					if ((event = true & (url == "https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447"))) {
+					if ((event = true & (url == "http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447"))) {
 						document.getElementById("delete").style.display = "block";
 					} else {
 						document.getElementById("delete").style.display = "none";
@@ -301,8 +301,19 @@
 			</script>
 			<script>
 				window.onload = function myFunction() {
-					location.replace("https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447");
+					if (window.location.hash.length == 0) {
+						location.replace("http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447");
+					} else {
+					}
 				};
+				window.addEventListener("popstate", function (event) {
+					var url = window.location.href;
+					if ((event = true & (window.location.hash.length <= 2))) {
+						console.log("PUTO0000 NO TOQUES EL LINK CRACK MAKINA TITAN Nº1");
+						location.replace("http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447");
+					} else {
+					}
+				});
 			</script>
 			<!-- Dependency Scripts -->
 			<script src="dependencies/jquery/jquery.min.js"></script>
