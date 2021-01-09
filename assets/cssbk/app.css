@@ -372,6 +372,7 @@ section {
 /*--------------------------------------------------------------
 	##  Buttons
 	--------------------------------------------------------------*/
+
 .pix-btn {
 	padding: 8px 30px;
 	background: #a060ff;
@@ -2751,16 +2752,31 @@ select {
 }
 
 .site-header.header-eight .header-inner .site-nav .nav-right .nav-btn {
-	background: #a060ff;
-	border: 2px solid #a060ff;
+	background-color: rgb(160, 96, 255);
+    border: 2px solid rgb(160, 96, 255);
 	color: #fff;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	display: table;
 	padding: 8.5px 37px;
 	border-radius: 12px;
-	-webkit-box-shadow: 0px 0px 20px 6px rgb(160 96 255 / 0.18);
-	box-shadow: 0px 0px 20px 6px rgb(160 96 255 / 0.18);
+	-webkit-box-shadow:rgba(160, 96, 255, 0.18) 0px 0px 20px;
+	box-shadow: rgba(160, 96, 255, 0.18) 0px 0px 20px;
+}
+.site-header.header-eight .header-inner .site-nav .nav-right .nav-btn-scroll-false {
+	
+	background-color: transparent;
+	border: 2px solid rgb(255, 255, 255);
+	color: #fff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display: table;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 8.5px 37px;
+	border-radius: 12px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
 }
 
 .site-header.header-eight .header-inner .site-nav .nav-right .nav-btn:hover {
