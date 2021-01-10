@@ -2753,18 +2753,17 @@ select {
 
 .site-header.header-eight .header-inner .site-nav .nav-right .nav-btn {
 	background-color: rgb(160, 96, 255);
-    border: 2px solid rgb(160, 96, 255);
+	border: 2px solid rgb(160, 96, 255);
 	color: #fff;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	display: table;
 	padding: 8.5px 37px;
 	border-radius: 12px;
-	-webkit-box-shadow:rgba(160, 96, 255, 0.18) 0px 0px 20px;
+	-webkit-box-shadow: rgba(160, 96, 255, 0.18) 0px 0px 20px;
 	box-shadow: rgba(160, 96, 255, 0.18) 0px 0px 20px;
 }
 .site-header.header-eight .header-inner .site-nav .nav-right .nav-btn-scroll-false {
-	
 	background-color: transparent;
 	border: 2px solid rgb(255, 255, 255);
 	color: #fff;
@@ -2778,10 +2777,16 @@ select {
 	-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
 	box-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
 }
+.site-header.header-eight .header-inner .site-nav .nav-right .nav-btn-scroll-false:hover {
+	background: #fff;
+	color: #a060ff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
 
 .site-header.header-eight .header-inner .site-nav .nav-right .nav-btn:hover {
 	background: transparent;
-	color: #a060ff;
+	color: #fff;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
@@ -14583,7 +14588,7 @@ Download Two
 }
 
 .marketing {
-	padding-bottom: 120px;
+	padding-bottom: 50px;
 }
 
 @media (max-width: 991px) {
@@ -14594,7 +14599,7 @@ Download Two
 
 .marketing-tabs #pix-tabs-nav {
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 	padding-bottom: 25px;
 }
 

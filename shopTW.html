@@ -122,10 +122,10 @@
 							</div>
 							<!-- /.menu-wrapper -->
 							<div class="nav-right" style="display: -webkit-inline-box">
-								<a href="https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447" class="nav-btn">
-									<p style="margin: 0%; font-size: 16px; line-height: 31px; font-weight: 600; color: #fff">TIENDA</p>
+								<a href="http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447" class="nav-btn">
+									<p style="margin: 0%; font-size: 16px; line-height: 31px; font-weight: 600; ">TIENDA</p>
 								</a>
-								<a href="https://ucreators.es/shopTW.html#!/~/accountSettings" class="nav-btn" style="padding: 6px 7px; margin-left: 20px; background: transparent; box-shadow: unset">
+								<a href="http://127.0.0.1:5501/shopTW.html#!/~/accountSettings" class="nav-btn" style="padding: 6px 7px; margin-left: 20px; background: transparent; box-shadow: unset">
 									<i class="bi bi-person" style="font-size: 33px"></i>
 								</a>
 
@@ -177,7 +177,7 @@
 			<!--========================-->
 			<!--=         Team         =-->
 			<!--========================-->
-			<section class="teams-six marketing job-bord-tabs" id="delete" style="padding-bottom: 0px">
+			<section class="teams-six marketing job-bord-tabs" id="delete">
 				<div class="container-shop" style="background: #303034; border-top-left-radius: 20px; border-top-right-radius: 20px">
 					<div class="section-title style-six text-center" style="margin-bottom: 0px; padding-top: 3%">
 						<h2 class="title wow fadeInUp" data-wow-delay="0.2s" style="margin-bottom: 0px">CREADORES DESTACADOS</h2>
@@ -289,9 +289,19 @@
 			TEMA IMÁGENES DEL PRINCIPIO -->
 
 			<script>
+				window.onload = function deleteID() {
+					if (window.location.href == "http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447") {
+						document.getElementById("delete").style.display = "block";
+					} else {
+						document.getElementById("delete").style.display = "none";
+					}
+					if (window.location.hash.length == 0) {
+						location.replace("http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447");
+					} else {
+					}
+				};
 				window.addEventListener("popstate", function (event) {
-					var url = window.location.href;
-					if ((event = true && url == "https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447")) {
+					if ((event = true && window.location.href == "http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447")) {
 						document.getElementById("delete").style.display = "block";
 					} else {
 						document.getElementById("delete").style.display = "none";
@@ -300,17 +310,11 @@
 				});
 			</script>
 			<script>
-				window.onload = function myFunction() {
-					if (window.location.hash.length == 0) {
-						location.replace("https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447");
-					} else {
-					}
-				};
 				window.addEventListener("popstate", function (event) {
 					var url = window.location.href;
-					if ((event = true & (window.location.hash.length <= 2))) {
+					if ((event = true && window.location.hash.length <= 5)) {
 						console.log("PUTO0000 NO TOQUES EL LINK CRACK MAKINA TITAN Nº1");
-						location.replace("https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447");
+						location.replace("http://127.0.0.1:5501/shopTW.html#!/Creadores-Twitch/c/72298447");
 					} else {
 					}
 				});
