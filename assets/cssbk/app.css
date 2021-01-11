@@ -368,6 +368,159 @@ section {
 		order: 1;
 	}
 }
+/*--------------------------------------------------------------
+	##  Discors
+	--------------------------------------------------------------*/
+.d-img-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	max-width: 70%;
+}
+
+.img-main {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	top: 48%;
+}
+.img-logo {
+	z-index: 2;
+	position: absolute;
+	top: -55%;
+}
+
+.img-nube {
+	z-index: 3;
+	position: absolute;
+	top: -55%;
+	left: -85px;
+	max-width: 105%;
+}
+.img-nube-detras {
+	z-index: 1;
+	position: absolute;
+	top: -52%;
+	left: -140px;
+	max-width: 105%;
+}
+.img-luz {
+	max-width: 70%;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	left: 47%;
+	top: 147%;
+	mix-blend-mode: hard-light;
+	-webkit-animation: flicker-1 2s linear infinite both;
+	animation: flicker-1 2s linear infinite both;
+}
+.img-TXT {
+	z-index: 5;
+	position: absolute;
+	top: 46%;
+	left: 61.2%;
+	width: 9%;
+}
+
+@-webkit-keyframes flicker-1 {
+	0%,
+	100% {
+		opacity: 0.4;
+	}
+	41.99% {
+		opacity: 0.4;
+	}
+	42% {
+		opacity: 0;
+	}
+	43% {
+		opacity: 0;
+	}
+	43.01% {
+		opacity: 0.4;
+	}
+	47.99% {
+		opacity: 0.4;
+	}
+	48% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	49.01% {
+		opacity: 0.4;
+	}
+}
+@keyframes flicker-1 {
+	0%,
+	100% {
+		opacity: 0.4;
+	}
+	41.99% {
+		opacity: 0.4;
+	}
+	42% {
+		opacity: 0;
+	}
+	43% {
+		opacity: 0;
+	}
+	43.01% {
+		opacity: 0.4;
+	}
+	47.99% {
+		opacity: 0.4;
+	}
+	48% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	49.01% {
+		opacity: 0.4;
+	}
+}
+
+.img-1 {
+	z-index: 5;
+	position: absolute;
+	top: 80%;
+	left: 85%;
+	width: 14%;
+}
+
+.img-2 {
+	z-index: 6;
+	position: absolute;
+	top: 157%;
+	left: 100%;
+	width: 14%;
+}
+
+.img-3 {
+	z-index: 7;
+	position: absolute;
+	top: 80%;
+	left: 0%;
+	width: 14%;
+}
+.img-4 {
+	z-index: 7;
+	position: absolute;
+	top: 157%;
+	left: -15%;
+	width: 14%;
+}
+.img-5 {
+	z-index: 8;
+	top: 4%;
+	opacity: 0;
+}
 
 /*--------------------------------------------------------------
 	##  Buttons
@@ -1111,8 +1264,8 @@ select {
 		transform: scale(0.9);
 	}
 	100% {
-		-webkit-transform: scale(1.5);
-		transform: scale(1.5);
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
 	}
 }
 
@@ -1122,8 +1275,8 @@ select {
 		transform: scale(0.9);
 	}
 	100% {
-		-webkit-transform: scale(1.5);
-		transform: scale(1.5);
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
 	}
 }
 
@@ -1167,8 +1320,8 @@ select {
 		transform: translateY(0);
 	}
 	100% {
-		-webkit-transform: translateY(40px);
-		transform: translateY(40px);
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
 	}
 }
 
@@ -1178,8 +1331,8 @@ select {
 		transform: translateY(0);
 	}
 	100% {
-		-webkit-transform: translateY(40px);
-		transform: translateY(40px);
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
 	}
 }
 
