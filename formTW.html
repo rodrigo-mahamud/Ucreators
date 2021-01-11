@@ -35,8 +35,6 @@
 	</head>
 
 	<body id="home-version-1" class="home-version-1" data-style="default" style="background-color: #1e1e1e">
-
-
 		<div class="page-loader">
 			<div class="loader">
 				<!-- Loader -->
@@ -63,27 +61,27 @@
 		<!-- /.page-loader -->
 
 		<div id="main_content">
+<!--=========================-->
+			<!--=        Navbar 2       =-->
 			<!--=========================-->
-			<!--=        Navbar         =-->
-			<!--=========================-->
-			<header class="site-header header-two toggle-light header_trans-fixed" data-top="992">
+			<header class="site-header header-eight header_trans-fixed" data-top="992">
 				<div class="container">
 					<div class="header-inner">
-						<div class="site-mobile-logo">
-							<a href="index.html" class="logo">
-								<img src="assets/img/main-logo.png" alt="site logo" class="main-logo" />
-								<img src="assets/img/logo-twodk.png" alt="site logo" class="sticky-logo" />
-							</a>
-						</div>
-						<!-- /.site-mobile-logo -->
-
 						<div class="toggle-menu">
 							<span class="bar"></span>
 							<span class="bar"></span>
 							<span class="bar"></span>
 						</div>
 						<!-- /.toggle-menu -->
-						<nav class="site-nav nav-two">
+
+						<div class="site-mobile-logo">
+							<a href="index.html" class="logo">
+								<img src="assets/img/main-logo.png" alt="site logo" class="main-logo" />
+								<img src="assets/img/logo-twodk.png" alt="site logo" class="sticky-logo" />
+							</a>
+						</div>
+
+						<nav class="site-nav">
 							<div class="close-menu">
 								<span>Close</span>
 								<i class="ei ei-icon_close"></i>
@@ -111,19 +109,36 @@
 									obj.style.transform = "scale(0.95)";
 								}
 							</script>
-
 							<div class="menu-wrapper" data-top="992">
 								<ul class="site-main-menu">
 									<li onmousedown="mDown(this)"><a href="javascript:delay('indexdk.html')" onmousedown="beep.play()" onmouseover="hov.play()">Home</a></li>
 									<li onmousedown="mDown(this)"><a href="javascript:delay('aboutdk.html')" onmousedown="beep.play()" onmouseover="hov.play()">About</a></li>
 									<li onmousedown="mDown(this)"><a href="javascript:delay('contactTW.html')" onmousedown="beep.play()" onmouseover="hov.play()">Contact</a></li>
 								</ul>
-
-								<div class="nav-right">
-									<a href="signup.html" class="nav-btn style-two">Try For Free</a>
-								</div>
 							</div>
 							<!-- /.menu-wrapper -->
+
+							<div class="nav-right" style="display: -webkit-inline-box; margin-left: 25px">
+								<a href="https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447" class="nav-btn-scroll-false" id="shop_btn">
+									<p style="margin: 0%; font-size: 16px; line-height: 31px; font-weight: 600; color: unset">TIENDA</p>
+								</a>
+							</div>
+
+							<script>
+								window.onscroll = function () {
+									myFunction();
+								};
+								var btn = document.getElementById("shop_btn");
+								function myFunction() {
+									if (window.pageYOffset > 48) {
+										btn.classList.remove("nav-btn-scroll-false");
+										btn.classList.add("nav-btn");
+									} else {
+										btn.classList.remove("nav-btn");
+										btn.classList.add("nav-btn-scroll-false");
+									}
+								}
+							</script>
 						</nav>
 						<!-- /.site-nav -->
 					</div>
@@ -132,6 +147,8 @@
 				<!-- /.container -->
 			</header>
 			<!-- /.site-header -->
+
+			
 
 			<!--==========================-->
 			<!--=         Banner         =-->
@@ -205,7 +222,7 @@
 									<option class="menu" value="cat5">Twfghdfghitchdfghfh TV</option>
 									<option class="menu" value="cat6">YdfhouTuhfghdfghbe</option>
 								</select>
-								<input type="text" name="price" placeholder="Precio" required style="width: 48%" class="colormenu"/>
+								<input type="text" name="price" placeholder="Precio" required style="width: 48%" class="colormenu" />
 								<input type="text" name="amount" placeholder="Cantidad" required style="width: 48%; margin-left: 3.1499%" />
 
 								<label for="" style="color: white; margin-right: 40%">Datos perdonales </label>
@@ -338,7 +355,6 @@
 		<script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
 		<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
 		<script src="dependencies/gmap3/js/gmap3.min.js"></script>
-		
 
 		<!-- Site Scripts -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

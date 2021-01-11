@@ -316,13 +316,13 @@ section {
 	--------------------------------------------------------------*/
 .pix-btn {
 	padding: 8px 30px;
-    background: #ff0000;
-    border-radius: 10px;
-    display: inline-block;
-    font-size: 14px;
-    color: #fff;
-    font-weight: 600;
-    -webkit-box-shadow: 0px 20px 30px 0px rgba(176, 70, 70, 0.3);
+	background: #ff0000;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 600;
+	-webkit-box-shadow: 0px 20px 30px 0px rgba(176, 70, 70, 0.3);
 	box-shadow: 0px 0px 30px 0px rgb(255 0 0 / 30%);
 }
 
@@ -384,7 +384,7 @@ section {
 	-webkit-box-shadow: 0px 10px 30px 0px rgb(249 44 44 / 35%);
 	box-shadow: 0px 10px 30px 0px rgb(249 44 44 / 35%);
 	transform: scale(1.1);
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 .pix-btn.btn-large {
@@ -469,8 +469,8 @@ section {
 
 .pix-btn.btn-outline-two:hover {
 	background: #ff0000;
-    color: #fff;
-    -webkit-box-shadow: 0px 13px 20px 0px rgb(255 11 11 / 25%);
+	color: #fff;
+	-webkit-box-shadow: 0px 13px 20px 0px rgb(255 11 11 / 25%);
 	box-shadow: 0px 13px 20px 0px rgb(255 11 11 / 25%);
 	transform: scale(1.1);
 	border-radius: 10px;
@@ -930,10 +930,10 @@ input,
 textarea,
 select {
 	background: #ffffff;
-    padding: 15px 30px;
-    border: 2px solid #ff0000;
-    margin-bottom: 30px;
-    border-radius: 20px;
+	padding: 15px 30px;
+	border: 2px solid #ff0000;
+	margin-bottom: 30px;
+	border-radius: 20px;
 }
 
 input:focus,
@@ -2359,9 +2359,8 @@ select {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.site-header .site-main-menu li:hover{
+.site-header .site-main-menu li:hover {
 	transform: scale(1.2);
-
 }
 
 .site-header .site-main-menu li:last-child {
@@ -2380,7 +2379,6 @@ select {
 	font-weight: 500;
 	position: relative;
 }
-
 
 .site-header .site-main-menu li.menu-item-has-children:after {
 	position: absolute;
@@ -2474,7 +2472,6 @@ select {
 	opacity: 1;
 	visibility: visible;
 	top: 100%;
-
 }
 
 .site-header .nav-dark .site-main-menu li a {
@@ -5544,26 +5541,26 @@ select {
 }
 
 .saaspik-icon-box-wrapper.style-five {
-    -webkit-box-shadow: 0px 30px 60px 0px rgba(52, 27, 159, 0.1);
-    box-shadow: 0px 6px 40px 0px rgb(0 0 0 / 19%);
-    padding: 45px 40px;
-    background: #fff;
-    border-radius: 15px;
+	-webkit-box-shadow: 0px 30px 60px 0px rgba(52, 27, 159, 0.1);
+	box-shadow: 0px 6px 40px 0px rgb(0 0 0 / 19%);
+	padding: 45px 40px;
+	background: #fff;
+	border-radius: 15px;
 }
 
 .saaspik-icon-box-wrapper.style-five .saaspik-icon-box-icon {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-    text-align: center;
-    border: 2px solid #ff0000;
-    color: #ff0000;
-    font-size: 22px;
-    border-radius: 50%;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 42px;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	border: 2px solid #ff0000;
+	color: #ff0000;
+	font-size: 22px;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 42px;
 }
 
 .saaspik-icon-box-wrapper.style-five .pixsass-icon-box-content .pixsass-icon-box-title {
@@ -5601,10 +5598,10 @@ select {
 }
 
 .saaspik-icon-box-wrapper.style-five:hover .saaspik-icon-box-icon {
-    -webkit-box-shadow: 0px 20px 30px 0px rgb(222 42 42 / 20%);
-    box-shadow: 0px 15px 30px 0px rgb(255 0 0 / 30%);
-    background: #ff0000;
-    color: #fff;
+	-webkit-box-shadow: 0px 20px 30px 0px rgb(222 42 42 / 20%);
+	box-shadow: 0px 15px 30px 0px rgb(255 0 0 / 30%);
+	background: #ff0000;
+	color: #fff;
 }
 
 .saaspik-icon-box-wrapper.style-six {
@@ -9250,13 +9247,13 @@ select {
 }
 
 .faq-tabs li a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #ff0000;
-    background: rgb(255 62 62 / 10%);
-    padding: 1px 25px;
-    border-radius: 4px;
-    display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	color: #ff0000;
+	background: rgb(255 62 62 / 10%);
+	padding: 1px 25px;
+	border-radius: 4px;
+	display: inline-block;
 }
 
 .faq-tabs li a:hover,
@@ -9266,8 +9263,8 @@ select {
 }
 
 .faq-tabs li:nth-child(2) a {
-    color: #ff0000;
-    background: rgb(255 62 62 / 10%);
+	color: #ff0000;
+	background: rgb(255 62 62 / 10%);
 }
 
 .faq-tabs li:nth-child(2) a:hover,
@@ -9277,8 +9274,8 @@ select {
 }
 
 .faq-tabs li:nth-child(3) a {
-    color: #ff0000;
-    background: rgb(255 62 62 / 10%);
+	color: #ff0000;
+	background: rgb(255 62 62 / 10%);
 }
 
 .faq-tabs li:nth-child(3) a:hover,
@@ -9834,7 +9831,7 @@ select {
 	color: #d91616;
 	border-color: #fff;
 	border-radius: 12px;
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .team-member-four .member-avater:hover {
@@ -9914,7 +9911,6 @@ select {
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	
 }
 
 .team-slider-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -10007,13 +10003,12 @@ select {
 }
 
 .faq .card {
-    border: 0;
-    background: transparent;
-    margin-bottom: 20px;
+	border: 0;
+	background: transparent;
+	margin-bottom: 20px;
 	border: 2px solid #ff0000;
-    border-radius: 10px;
+	border-radius: 10px;
 }
-
 
 .faq .card .card-header {
 	padding: 0;
@@ -10026,7 +10021,7 @@ select {
 
 .faq .card .card-header .btn-link {
 	font-family: "Product Sans Medium";
-	color: #1F1F23;
+	color: #1f1f23;
 	font-size: 20px;
 	font-weight: 500;
 	text-decoration: none;
@@ -10037,21 +10032,21 @@ select {
 }
 
 .faq .card .card-header .btn-link:before {
-    content: "\32";
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 40px;
-    z-index: 9;
-    font-family: eleganticons;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-size: 26px;
-    color: #ff0000;
+	content: "\32";
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 40px;
+	z-index: 9;
+	font-family: eleganticons;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 26px;
+	color: #ff0000;
 }
 
 .faq .card .card-header .btn-link.collapsed:before {
@@ -13236,24 +13231,24 @@ Download Two
 }
 
 .callback .particale-element li:nth-child(7) {
-    right: 12%;
-    top: -19%;
-    background: #ff0000;
-    height: 600px;
-    width: 600px;
-    border-radius: 50%;
-    -webkit-animation: wave 8s infinite linear;
-    animation: wave 8s infinite linear;
+	right: 12%;
+	top: -19%;
+	background: #ff0000;
+	height: 600px;
+	width: 600px;
+	border-radius: 50%;
+	-webkit-animation: wave 8s infinite linear;
+	animation: wave 8s infinite linear;
 }
 
 .callback .particale-element li:nth-child(8) {
 	right: 8%;
-    top: -16%;
-    background: rgb(255 0 0 / 48%);
-    height: 360px;
-    width: 360px;
-    border-radius: 50%;
-    animation: 6s linear 0s infinite normal none running wave;
+	top: -16%;
+	background: rgb(255 0 0 / 48%);
+	height: 360px;
+	width: 360px;
+	border-radius: 50%;
+	animation: 6s linear 0s infinite normal none running wave;
 }
 
 .call-back-content {
@@ -13265,21 +13260,20 @@ Download Two
 }
 
 .call-back-forms {
-    border-radius: 10px;
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 60px 0px rgb(0 0 0 / 26%);
+	border-radius: 10px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 60px 0px rgb(0 0 0 / 26%);
 	box-shadow: 0px 0px 60px 0px rgb(0 0 0 / 26%);
-    padding: 60px 50px;
-    max-width: 570px;
-    border-top: 5px solid #ff0000;
-    -webkit-transform: translateY(-60px);
-    -ms-transform: translateY(-60px);
-    transform: translateY(-60px);
-    z-index: 2;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-	
+	padding: 60px 50px;
+	max-width: 570px;
+	border-top: 5px solid #ff0000;
+	-webkit-transform: translateY(-60px);
+	-ms-transform: translateY(-60px);
+	transform: translateY(-60px);
+	z-index: 2;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .call-back-forms .title {
@@ -13299,26 +13293,26 @@ Download Two
 
 .call-back-forms input,
 .call-back-forms select {
-    background: transparent;
-    border: 2px solid #ff0000;
-    height: 54px;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+	background: transparent;
+	border: 2px solid #ff0000;
+	height: 54px;
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 20px;
 }
 
-::placeholder{
-	color:#f00
+::placeholder {
+	color: #f00;
 }
 
 .call-back-forms input:focus,
 .call-back-forms select:focus {
-    background: rgb(255 255 255);
-    border-color: #ff0000;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    transform: scale(1.02);
-    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+	background: rgb(255 255 255);
+	border-color: #ff0000;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	transform: scale(1.02);
+	box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
 }
 
 .call-back-forms button {

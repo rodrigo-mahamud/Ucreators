@@ -19,6 +19,7 @@
 		<meta name="theme-color" content="#fa7070" />
 
 		<!-- Dependency Styles -->
+		<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
@@ -69,26 +70,26 @@
 
 		<div id="main_content">
 			<!--=========================-->
-			<!--=        Navbar         =-->
+			<!--=        Navbar 2       =-->
 			<!--=========================-->
-			<header class="site-header header-two toggle-light header_trans-fixed" data-top="992">
+			<header class="site-header header-eight header_trans-fixed" data-top="992">
 				<div class="container">
 					<div class="header-inner">
-						<div class="site-mobile-logo">
-							<a href="index.html" class="logo">
-								<img src="assets/img/main-logo.png" alt="site logo" class="main-logo" />
-								<img src="assets/img/logo-twodk.png" alt="site logo" class="sticky-logo" />
-							</a>
-						</div>
-						<!-- /.site-mobile-logo -->
-
 						<div class="toggle-menu">
 							<span class="bar"></span>
 							<span class="bar"></span>
 							<span class="bar"></span>
 						</div>
 						<!-- /.toggle-menu -->
-						<nav class="site-nav nav-two">
+
+						<div class="site-mobile-logo">
+							<a href="index.html" class="logo">
+								<img src="assets/img/main-logo.png" alt="site logo" class="main-logo" />
+								<img src="assets/img/logo-twodk.png" alt="site logo" class="sticky-logo" />
+							</a>
+						</div>
+
+						<nav class="site-nav">
 							<div class="close-menu">
 								<span>Close</span>
 								<i class="ei ei-icon_close"></i>
@@ -107,7 +108,7 @@
 								var hov = new Audio();
 								hov.src = "sound/hover.mp3";
 
-								function delay(index) {
+								function delay(index, o) {
 									setTimeout(function () {
 										window.location = index;
 									}, 350);
@@ -116,19 +117,36 @@
 									obj.style.transform = "scale(0.95)";
 								}
 							</script>
-
 							<div class="menu-wrapper" data-top="992">
 								<ul class="site-main-menu">
 									<li onmousedown="mDown(this)"><a href="javascript:delay('indexdk.html')" onmousedown="beep.play()" onmouseover="hov.play()">Home</a></li>
 									<li onmousedown="mDown(this)"><a href="javascript:delay('aboutdk.html')" onmousedown="beep.play()" onmouseover="hov.play()">About</a></li>
 									<li onmousedown="mDown(this)"><a href="javascript:delay('contactTW.html')" onmousedown="beep.play()" onmouseover="hov.play()">Contact</a></li>
 								</ul>
-
-								<div class="nav-right">
-									<a href="shop.html" class="nav-btn style-two">Try For Free</a>
-								</div>
 							</div>
 							<!-- /.menu-wrapper -->
+
+							<div class="nav-right" style="display: -webkit-inline-box; margin-left: 25px">
+								<a href="https://ucreators.es/shopTW.html#!/Creadores-Twitch/c/72298447" class="nav-btn-scroll-false" id="shop_btn">
+									<p style="margin: 0%; font-size: 16px; line-height: 31px; font-weight: 600; color: unset">TIENDA</p>
+								</a>
+							</div>
+
+							<script>
+								window.onscroll = function () {
+									myFunction();
+								};
+								var btn = document.getElementById("shop_btn");
+								function myFunction() {
+									if (window.pageYOffset > 48) {
+										btn.classList.remove("nav-btn-scroll-false");
+										btn.classList.add("nav-btn");
+									} else {
+										btn.classList.remove("nav-btn");
+										btn.classList.add("nav-btn-scroll-false");
+									}
+								}
+							</script>
 						</nav>
 						<!-- /.site-nav -->
 					</div>
@@ -225,12 +243,12 @@
 						<div id="app" class="container-btnyt">
 							<a href="index.html">
 								<card data-image="media/yt.jpg">
-									<h1 slot="content" style="font-family: roboto; color: #ffffff">YT</h1>
+									<h1 slot="content" style="color: #ffffff">YT</h1>
 								</card>
 							</a>
-							<a href="indexdark.html">
-								<card data-image="media/tw.jpg">
-									<h1 slot="content" style="font-family: roboto; color: #ffffff">TW</h1>
+							<a href="indexdk.html">
+								<card data-image="#">
+									<h1 slot="content" style="color: #ffffff">TW</h1>
 								</card>
 							</a>
 						</div>
@@ -268,7 +286,7 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="saaspik-icon-box-wrapper style-eight" style="padding: 36px 35px">
 								<div class="saaspik-icon-box-icon">
-									<img src="media/feature/52TW.png" alt="" style="max-width: 50%;"/>
+									<img src="media/feature/52TW.png" alt="" style="max-width: 58.5%" />
 								</div>
 								<div class="pixsass-icon-box-content">
 									<h3 class="pixsass-icon-box-title">AL ALCANCE DE TODOS</h3>
@@ -284,12 +302,15 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="saaspik-icon-box-wrapper style-eight">
 								<div class="saaspik-icon-box-icon">
-									<img src="media/feature/53TW.png" alt="" style="max-width: 47%;"/>
+									<img src="media/feature/53TW.png" alt="" style="max-width: 55%" />
 								</div>
 								<div class="pixsass-icon-box-content">
-									<h3 class="pixsass-icon-box-title"> CON LA MISMA DEDICACIÓN</h3>
+									<h3 class="pixsass-icon-box-title">DAMOS VOZ A TU PROYECTO</h3>
 
-									<p style="color: #ffffff">Entendemos la ilusión que pones en tus proyectos y por tanto, queremos acompañarte para que todo salga como tengas planeado.</p>
+									<p style="color: #ffffff">
+										Sabemos lo difícil que es empezar un proyecto o darte a conocer. <br />
+										Por medio de nuestros creadores, te ayudaremos a llegar al gran público.
+									</p>
 
 									<a href="#" class="pix-btn btn-two btn-outline">Learn More</a>
 								</div>
@@ -301,14 +322,11 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="saaspik-icon-box-wrapper style-eight" style="padding: 42px 35px">
 								<div class="saaspik-icon-box-icon">
-									<img src="media/feature/54TW.png" alt="" style="max-width: 46%;"/>
+									<img src="media/feature/54TW.png" alt="" style="max-width: 53.2%" />
 								</div>
 								<div class="pixsass-icon-box-content">
-									<h3 class="pixsass-icon-box-title">DAMOS VOZ A TU PROYECTO</h3>
-									<p style="color: #ffffff">
-										Sabemos lo difícil que es empezar un proyecto o darte a conocer. <br />
-										Por medio de nuestros creadores, te ayudaremos a llegar al gran público.
-									</p>
+									<h3 class="pixsass-icon-box-title">CON LA MISMA DEDICACIÓN</h3>
+									<p style="color: #ffffff">Entendemos la ilusión que pones en tus proyectos y por tanto, queremos acompañarte para que todo salga como tengas planeado.</p>
 
 									<a href="#" class="pix-btn btn-two btn-outline">Learn More</a>
 								</div>
@@ -326,7 +344,7 @@
 			<!--========================-->
 			<!--=         Team         =-->
 			<!--========================-->
-			<section class="teams-six" style="padding: 90px 0 120px;">
+			<section class="teams-six" style="padding: 90px 0 120px">
 				<div class="container">
 					<div class="section-title style-six text-center">
 						<h2 class="title wow fadeInUp" data-wow-delay="0.2s">The Team Behind</h2>
@@ -567,29 +585,44 @@
 					<!-- /.row -->
 
 					<div class="border-wrap">
-						<img src="linw.png" alt="">
-
+						<img src="linw.png" alt="" />
 					</div>
 				</div>
 				<!-- /.container -->
 			</section>
 			<!-- /.interface -->
 
+			<!--=========================-->
+			<!--=        DDISCORD       =-->
+			<!--=========================-->
 			<section class="oppi_download_app_three_wrap" style="background: #9147ff">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-12">
 							<div class="oppi_download_app_content">
-								<h2 class="text-center sec_title wow fadeInUp" data-wow-delay="0.2s">
-									Available for <br />
-									all of your devices.
-								</h2>
-								<p class="download_para text-center wow fadeInUp" data-wow-delay="0.3s">All the power of niche in your pocket. Schedule, publish and monitir your accounts with ease.</p>
-								<div class="button-container text-center wow pixFadeUp">
-									<a href="signup.html" class="pix-btn btn-large btn-light color-two" style="margin-bottom: 4%">Signup for free</a>
+								<div class="download_mockup_device wow fadeInUp d-img-container" data-wow-delay="0.4s">
+									<img src="media/discord/mainImg.png" alt="download_device" class="img-main" data-parallax='{"x": 0, "y": 150}' />
+									<img src="media/discord/TXT.png" alt="download_device" class="img-TXT" data-parallax='{"x": 0, "y": 120}' />
+									<img src="media/discord/logoTXT.png" alt="download_device" class="img-logo" data-parallax='{"x": 0, "y": 80}' />
+									<img src="media/discord/Nubes.png" alt="download_device" class="img-nube" data-parallax='{"x":80, "y": 80}' />
+									<img src="media/discord/NubesDetras.png" alt="download_device" class="img-nube-detras" data-parallax='{"x":160, "y": 80}' />
+									<img src="media/discord/LUZ.png" alt="download_device" class="img-luz" data-parallax='{"x":0, "y": 150}' />
+									<img src="media/discord/1E.png" alt="download_device" class="img-1" data-parallax='{"x":0, "y": 100}' />
+									<img src="media/discord/2E.png" alt="download_device" class="img-2" data-parallax='{"x":0, "y": 120}' />
+									<img src="media/discord/3E.png" alt="download_device" class="img-3" data-parallax='{"x":0, "y": 100}' />
+									<img src="media/discord/4E.png" alt="download_device" class="img-4" data-parallax='{"x":0, "y": 120}' />
+
+									<img src="media/discord/4E.png" alt="download_device" class="img-5" data-parallax='{"x":0, "y": 50}' />
 								</div>
-								<div class="download_mockup_device wow fadeInUp" data-wow-delay="0.4s">
-									<img src="media/images/home_education/download_device.png" alt="download_device" class="img-fluid" data-parallax='{"x": 0, "y": 100}' />
+								<div style="margin-top: 45%">
+									<h2 class="text-center sec_title wow fadeInUp" data-wow-delay="0.2s">
+										Available for <br />
+										all of your devices.
+									</h2>
+									<p class="download_para text-center wow fadeInUp" data-wow-delay="0.3s">All the power of niche in your pocket. Schedule, publish and monitir your accounts with ease.</p>
+									<div class="button-container text-center wow pixFadeUp">
+										<a href="signup.html" class="pix-btn btn-large btn-light color-two" style="margin-bottom: 4%">Signup for free</a>
+									</div>
 								</div>
 							</div>
 						</div>
