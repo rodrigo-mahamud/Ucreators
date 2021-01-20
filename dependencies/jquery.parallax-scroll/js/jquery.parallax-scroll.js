@@ -177,7 +177,7 @@ var ParallaxScroll = {
         }, this));
         if(window.requestAnimationFrame) {
             window.requestAnimationFrame($.proxy(this._onScroll, this, false));
-        }
+        } 
         else {
             this._requestAnimationFrame($.proxy(this._onScroll, this, false));
         }
