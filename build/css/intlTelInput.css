@@ -29,7 +29,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 75%;
+    height: 72%;
     padding-left:10px ;
     padding: 0 6px 0 15px;
     -webkit-transition: all 0.4s cubic-bezier(0, 0.74, 0.58, 1);
@@ -111,7 +111,7 @@
     .iti--allow-dropdown input[readonly] + .iti__flag-container:hover .iti__selected-flag {
       background-color: transparent; }
   .iti--separate-dial-code .iti__selected-flag {
-    background-color: rgba(0, 0, 0, 0.05); }
+    background-color: rgba(0, 0, 0, 0.17); }
   .iti--separate-dial-code .iti__selected-dial-code {
     margin-left: 6px;
     color: white; }

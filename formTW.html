@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<base target="_top" />
+		<script>
+			function LoadFile(event) {
+				var file = event.target.files[0];
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					console.log(e.target.result);
+					var fileData = e.target.result.substr(e.target.result.indexOf(",") + 1);
+					var mimeTypeStart = e.target.result.indexOf("data:") + 5;
+					var mimeTypeEnd = e.target.result.indexOf(";");
+					var mimeType = e.target.result.substr(mimeTypeStart, mimeTypeEnd - mimeTypeStart);
+					var fileName = file.name;
+					document.getElementById("fileData").value = fileData;
+					document.getElementById("mimeType").value = mimeType;
+					document.getElementById("fileName").value = fileName;
+				};
+				reader.readAsDataURL(file);
+			}
+		</script>
 		<!-- Meta Data -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,6 +35,7 @@
 		<meta name="theme-color" content="#fa7070" />
 
 		<!-- Dependency Styles -->
+		<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
@@ -61,7 +81,7 @@
 		<!-- /.page-loader -->
 
 		<div id="main_content">
-<!--=========================-->
+			<!--=========================-->
 			<!--=        Navbar 2       =-->
 			<!--=========================-->
 			<header class="site-header header-eight header_trans-fixed" data-top="992">
@@ -148,8 +168,6 @@
 			</header>
 			<!-- /.site-header -->
 
-			
-
 			<!--==========================-->
 			<!--=         Banner         =-->
 			<!--==========================-->
@@ -208,7 +226,7 @@
 								</li>
 							</ul>
 
-							<form action="php/mailertw.php" class="contact-form" data-pixsaas="call-back-forms">
+							<form action="https://script.google.com/macros/s/AKfycbx-uF45KpXJ-vC1TDj0lkNKlfAGvzJ39-pFmArO8r_FXshjUBZt/exec" class="contact-form" data-pixsaas="call-back-forms">
 								<label for="" style="color: white; margin-right: 40%">Fuel Type</label>
 								<input type="text" name="namec" placeholder="Nombre del Canal" required />
 								<input type="text" name="linkc" placeholder="Enlace del canal" required />
@@ -229,15 +247,32 @@
 								<input type="text" name="namer" placeholder="Nombre Real" required style="width: 48%" />
 								<input type="text" name="surnamer" placeholder="Apellidos" required style="width: 48%; margin-left: 3.1499%" />
 								<input type="email" name="email" placeholder="Correo electónico" required />
-								<input id="phone" name="phone" type="tel" />
-								<textarea name="content" placeholder="Your Comment" required></textarea>
-								<button type="submit" class="pix-btn submit-btn">
-									<span class="btn-text">Send Your Massage</span>
+								<input id="phone" name="phone" type="tel" style="transform: scale(1)" />
+								<textarea name="content" placeholder="Describe tu canal" required></textarea>
+								<div class="file-input">
+									<input type="file" id="file" class="file" name="file" onchange="LoadFile(event)"/>
+									<label for="file" class="file-name">
+										<i class="bi bi-cloud-arrow-up"></i>
+									  Subir imagen de cabecera
+
+									
+									</label>
+								  
+									<input type="hidden" id="fileData" name="fileData" />
+									<input type="hidden" id="mimeType" name="mimeType" />
+									<input type="hidden" id="fileName" name="fileName" />
+								</div>
+								</td>
+								<button type="submit" id='submit' value="Load File" class="pix-btn submit-btn">
+									<span class="btn-text">Enviar Solicitud</span>
 									<i class="fas fa-spinner fa-spin"></i>
 								</button>
+								<td colspan="2">
+									<span><?= message ?></span>
+								</td>
 
 								<div class="form-result alert">
-									<div class="content"></div>
+									<div class="content">Tu solicitud ha sido enviada correctamente</div>
 								</div>
 							</form>
 							<!-- /.call-back-forms -->
@@ -249,6 +284,32 @@
 				<!-- /.container -->
 			</section>
 			<!-- /.contactus -->
+			<script>const file = document.querySelector('#file');
+				file.addEventListener('change', (e) => {
+				  // Get the selected file
+				  const [file] = e.target.files;
+				  // Get the file name and size
+				  const { name: fileName, size } = file;
+				  // Convert size in bytes to kilo bytes
+				  const fileSize = (size / 1000).toFixed(2);
+				  // Set the text content
+				  if (fileSize> 2000){ 
+				  document.querySelector('.file-name').textContent = "Por favor introduce un archivo menor a 2MB";
+				  var change = document.getElementById('submit')
+				  change.style.background = "#6d6d6d"
+				  change.style.pointerEvents = "none"
+				  change.style.boxShadow = "unset"
+
+				  }else{
+				  const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+				  document.querySelector('.file-name').textContent = fileNameAndSize;
+				  var restore = document.getElementById('submit')
+				  restore.style.background = "#a060ff"
+				  restore.style.pointerEvents = "unset"
+				  restore.style.boxShadow ="0px 0px 30px 0px rgb(160 96 255 / 0.3)"
+				  }
+				  
+				});</script>
 
 			<!--=========================-->
 			<!--=        Footer         =-->
@@ -332,7 +393,7 @@
 
 						<div class="site-info">
 							<div class="copyright text-center">
-								<p> Design by <a href="http://www.pixelsigns.art" target="_blank">Rodrigo Mahamud</a></p>
+								<p>Design by <a href="http://www.pixelsigns.art" target="_blank">Rodrigo Mahamud</a></p>
 							</div>
 						</div>
 					</div>

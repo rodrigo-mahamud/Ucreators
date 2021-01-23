@@ -468,11 +468,11 @@ section {
 	position: absolute;
 }
 .animation-formas {
-    max-width: 55%;
-    left: 12%;
-    top: 12%;
-    list-style-type: none;
-    position: relative;
+	max-width: 55%;
+	left: 12%;
+	top: 12%;
+	list-style-type: none;
+	position: relative;
 	z-index: 2;
 	-webkit-animation: formas 3s linear infinite both;
 	animation: formas 3s ease-in-out infinite both;
@@ -500,7 +500,6 @@ section {
 	}
 }
 
-
 .img-3tw {
 	height: auto;
 	position: absolute;
@@ -508,7 +507,7 @@ section {
 .animation-3tw {
 	max-width: 62%;
 	left: 95%;
-    top: 87%;
+	top: 87%;
 	list-style-type: none;
 	position: relative;
 	z-index: 3;
@@ -536,7 +535,7 @@ section {
 	100% {
 		-webkit-transform: scale(1.05) rotate(-17deg) translate(3px, -3px);
 		transform: scale(1.05) rotate(-17deg) translate(3px, -3px);
-	} 
+	}
 }
 .img-2tw {
 	height: auto;
@@ -691,11 +690,11 @@ section {
 }
 .animation-stars1 {
 	list-style-type: none;
-    position: relative;
-    left: 36%;
-    top: 55%;
-    max-width: 100%;
-    z-index: -1;
+	position: relative;
+	left: 36%;
+	top: 55%;
+	max-width: 100%;
+	z-index: -1;
 	-webkit-animation: stars-cohete 2.5s linear infinite both;
 	animation: stars-cohete 2.5s ease-in-out infinite both;
 	animation-direction: alternate-reverse;
@@ -725,13 +724,13 @@ section {
 	height: auto;
 	position: absolute;
 }
-.animation-stars2{
-    list-style-type: none;
-    position: relative;
-    left: 26%;
-    top: 38%;
-    max-width: 100%;
-    z-index: -1;
+.animation-stars2 {
+	list-style-type: none;
+	position: relative;
+	left: 26%;
+	top: 38%;
+	max-width: 100%;
+	z-index: -1;
 	-webkit-animation: stars-cohete 2.5s linear infinite both;
 	animation: stars-cohete 2.5s ease-in-out infinite both;
 	animation-direction: alternate-reverse;
@@ -757,8 +756,6 @@ section {
 		transform: scale(1.05);
 	}
 }
-
-
 
 /*
 .img-cohete {
@@ -1879,7 +1876,7 @@ select:focus {
 	background: #0000003d;
 	-webkit-box-shadow: 0px 20px 40px 0px rgba(79, 35, 35, 0.1);
 	box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 47%);
-	transform: scale(1.05);
+	transform: perspective(10px) scale(1.015);
 }
 
 textarea {
@@ -11244,6 +11241,49 @@ Logo List
 /*--------------------------------------------------------------
 	##  Call To Action
 	--------------------------------------------------------------*/
+.file {
+	opacity: 0;
+	width: 0.1px;
+	height: 0.1px;
+	position: absolute;
+}
+
+.file-input label {
+	width: auto;
+	margin-bottom: 30px;
+	height: 50px;
+	border-radius: 10px;
+	background: #a060ff;
+	display: flex;
+	position: static;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+}
+
+.file-name {
+	position: absolute;
+	bottom: -35px;
+	left: 10px;
+	font-size: 0.85rem;
+	color: #555;
+}
+
+input:hover + label,
+input:focus + label {
+	transform: perspective(10px) scale(1.01);
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 0.17), 0px 0px 0px 2px rgb(255 255 255);
+}
+
+
+/* Adding an outline to the label on focus */
+input:focus + label {
+	outline: 0px solid #000;
+	outline: -webkit-focus-ring-color auto 0px;
+}
 .call-to-action {
 	background-image: -o-linear-gradient(350deg, #fa7070 0%, #fa9770 100%);
 	background-image: linear-gradient(100deg, #fa7070 0%, #fa9770 100%);
@@ -14563,7 +14603,7 @@ Download Two
 }
 
 .call-back-forms button {
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 @media (max-width: 768px) {
@@ -16671,7 +16711,7 @@ Download Two
 	background: #0000003d;
 	-webkit-box-shadow: 0px 20px 40px 0px rgba(79, 35, 35, 0.1);
 	box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 47%);
-	transform: scale(1.05);
+	transform: scale(1.02);
 }
 
 .comment-form .comment-form-comment {
