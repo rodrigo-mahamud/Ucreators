@@ -244,19 +244,19 @@
 }
 
 .swal2-popup {
-  display: none;
-  position: relative;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: center;
-  width: 32em;
-  max-width: 100%;
-  padding: 1.25em;
-  border: none;
-  border-radius: 5px;
-  background: #fff;
-  font-family: inherit;
-  font-size: 1rem;
+	display: none;
+	position: relative;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: center;
+	width: 32em;
+	max-width: 100%;
+	padding: 1.25em;
+	border: none;
+	border-radius: 10px;
+	background: #303034;
+	font-family: inherit;
+	font-size: 1rem;
 }
 .swal2-popup:focus {
   outline: none;

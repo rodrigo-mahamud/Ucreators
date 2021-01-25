@@ -1865,9 +1865,10 @@ textarea,
 select {
 	background: #45385b;
 	padding: 15px 30px;
-	border: 2px solid #a060ff;
-	margin-bottom: 30px;
+	border: 2px solid #303034;
+	margin-bottom: 16px;
 	border-radius: 10px;
+	color: white;
 }
 
 input:focus,
@@ -1877,6 +1878,7 @@ select:focus {
 	-webkit-box-shadow: 0px 20px 40px 0px rgba(79, 35, 35, 0.1);
 	box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 47%);
 	transform: perspective(10px) scale(1.015);
+	border: 2px solid #ffffff;
 }
 
 textarea {
@@ -11250,6 +11252,7 @@ Logo List
 
 .file-input label {
 	width: auto;
+	font-size: 14px;
 	margin-bottom: 30px;
 	height: 50px;
 	border-radius: 10px;
@@ -14569,13 +14572,13 @@ Download Two
 
 .call-back-forms input,
 .call-back-forms select {
-	background: #a060ff33;
-	border: 2px solid #a060ff;
-	height: 54px;
-	width: 100%;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	color: white;
+    background: #a060ff33;
+    border: 2px solid #303034;
+    padding: 12px 25px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    color: #ffffff;
 }
 
 .call-back-forms input:focus,
@@ -14587,12 +14590,19 @@ Download Two
 	border-radius: 10px;
 	box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 30%);
 }
-::placeholder {
-	color: #ab73ff;
+::-webkit-input-placeholder {
+    color: #a060ff;
 }
+:focus::-webkit-input-placeholder {
+    color: white;
+}
+
 .call-back-forms input:focus,
 .call-back-forms select:focus {
 	color: white;
+    border-color: white;
+    border: 2px solid #ffffff;
+	
 }
 .menu {
 	background-color: #a060ff;
@@ -14603,7 +14613,7 @@ Download Two
 }
 
 .call-back-forms button {
-	margin-top: 0px;
+	margin-top: 30px;
 }
 
 @media (max-width: 768px) {
@@ -16712,6 +16722,10 @@ Download Two
 	-webkit-box-shadow: 0px 20px 40px 0px rgba(79, 35, 35, 0.1);
 	box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 47%);
 	transform: scale(1.02);
+	
+}
+:focus{
+	outline: none;
 }
 
 .comment-form .comment-form-comment {

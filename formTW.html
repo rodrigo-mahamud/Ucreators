@@ -35,6 +35,7 @@
 		<meta name="theme-color" content="#fa7070" />
 
 		<!-- Dependency Styles -->
+		<link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css" />
 		<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
@@ -43,9 +44,10 @@
 		<link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+		<link rel="stylesheet" href="assets/cssbk/styleSwitch.css" />
 		<link rel="stylesheet" href="assets/cssbk/styleoppi.css" />
 		<link rel="stylesheet" href="build/css/intlTelInput.css" />
-		<link rel="stylesheet" href="build/css/demo.css" />
+		
 
 		<!-- Site Stylesheet -->
 		<link rel="stylesheet" href="assets/cssbk/app.css" type="text/css" />
@@ -227,12 +229,12 @@
 							</ul>
 
 							<form action="https://script.google.com/macros/s/AKfycbx-uF45KpXJ-vC1TDj0lkNKlfAGvzJ39-pFmArO8r_FXshjUBZt/exec" class="contact-form" data-pixsaas="call-back-forms">
-								<label for="" style="color: white; margin-right: 40%">Fuel Type</label>
+								<label for="" style="color: white; margin-right: 40%; margin-left: 3px">Fuel Type</label>
 								<input type="text" name="namec" placeholder="Nombre del Canal" required />
 								<input type="text" name="linkc" placeholder="Enlace del canal" required />
 								<input type="text" name="linkrs" placeholder="Otra red social" required />
-								<select name="tag" id="" class="pix-select" style="color: white">
-									<option class="menu" value="" disabled selected hidden>Seleciona categoria</option>
+								<select name="tag" id="" class="pix-select">
+									<option value="" disabled selected hidden>Escoje la categoría de tu canal.</option>
 									<option class="menu" value="cat1">Twfghdfghitchdfghfh TV</option>
 									<option class="menu" value="cat2">YdfhouTuhfghdfghbe</option>
 									<option class="menu" value="cat3">Twfghdfghitchdfghfh TV</option>
@@ -243,27 +245,49 @@
 								<input type="text" name="price" placeholder="Precio" required style="width: 48%" class="colormenu" />
 								<input type="text" name="amount" placeholder="Cantidad" required style="width: 48%; margin-left: 3.1499%" />
 
-								<label for="" style="color: white; margin-right: 40%">Datos perdonales </label>
+								<label for="" style="color: white; margin-right: 40%; margin-left: 3px; margin-top: 50px; transform: unset; box-shadow: unset">Datos personales </label>
 								<input type="text" name="namer" placeholder="Nombre Real" required style="width: 48%" />
 								<input type="text" name="surnamer" placeholder="Apellidos" required style="width: 48%; margin-left: 3.1499%" />
 								<input type="email" name="email" placeholder="Correo electónico" required />
-								<input id="phone" name="phone" type="tel" style="transform: scale(1)" />
+								<input id="phone" name="phone" type="tel" placeholder="Teléfono de contacto (opcional)." style="transform: scale(1); padding-left: 100px" />
 								<textarea name="content" placeholder="Describe tu canal" required></textarea>
-								<div class="file-input">
-									<input type="file" id="file" class="file" name="file" onchange="LoadFile(event)"/>
+								<div class="file-input" style="display: none;">
+									<input type="file" id="file" class="file" name="file" onchange="LoadFile(event)" />
 									<label for="file" class="file-name">
 										<i class="bi bi-cloud-arrow-up"></i>
-									  Subir imagen de cabecera
-
-									
+										Subir imagen de cabecera
 									</label>
-								  
+
 									<input type="hidden" id="fileData" name="fileData" />
 									<input type="hidden" id="mimeType" name="mimeType" />
 									<input type="hidden" id="fileName" name="fileName" />
 								</div>
-								</td>
-								<button type="submit" id='submit' value="Load File" class="pix-btn submit-btn">
+								<div style="display: flex">
+									<div id="btn">
+										<div id="checkbox" class="h_cb">
+											<div class="tick">
+												<div id="rect1" class="h_rects"></div>
+												<div id="rect2" class="h_rects"></div>
+											</div>
+										</div>
+										<input id="terms" type="hidden" name="terminos" value="no" />
+									</div>
+									<h4 style="margin-left: 12px; margin-bottom: 20px; font-weight: 400; color: white; font-size: 18px; line-height: 1">He leido y acepto <a href="" style="color: #a060ff">términos y condiciones</a></h4>
+								</div>
+
+								<div style="display: flex">
+									<div id="btn2">
+										<div id="checkbox2" class="">
+											<div class="tick">
+												<div id="rect12"></div>
+												<div id="rect22"></div>
+											</div>
+										</div>
+										<input id="ads" type="hidden" name="publicidad" value="si" />
+									</div>
+									<h4 style="margin-left: 12px; font-weight: 400; color: white; font-size: 18px; line-height: 1">He leido y acepto <a href="" style="color: #a060ff">términos y condiciones</a></h4>
+								</div>
+								<button type="submit" id="submit" value="Load File" class="pix-btn submit-btn">
 									<span class="btn-text">Enviar Solicitud</span>
 									<i class="fas fa-spinner fa-spin"></i>
 								</button>
@@ -284,33 +308,34 @@
 				<!-- /.container -->
 			</section>
 			<!-- /.contactus -->
-			<script>const file = document.querySelector('#file');
-				file.addEventListener('change', (e) => {
-				  // Get the selected file
-				  const [file] = e.target.files;
-				  // Get the file name and size
-				  const { name: fileName, size } = file;
-				  // Convert size in bytes to kilo bytes
-				  const fileSize = (size / 1000).toFixed(2);
-				  // Set the text content
-				  if (fileSize> 2000){ 
-				  document.querySelector('.file-name').textContent = "Por favor introduce un archivo menor a 2MB";
-				  var change = document.getElementById('submit')
-				  change.style.background = "#6d6d6d"
-				  change.style.pointerEvents = "none"
-				  change.style.boxShadow = "unset"
 
-				  }else{
-				  const fileNameAndSize = `${fileName} - ${fileSize}KB`;
-				  document.querySelector('.file-name').textContent = fileNameAndSize;
-				  var restore = document.getElementById('submit')
-				  restore.style.background = "#a060ff"
-				  restore.style.pointerEvents = "unset"
-				  restore.style.boxShadow ="0px 0px 30px 0px rgb(160 96 255 / 0.3)"
-				  }
-				  
-				});</script>
+			<!--<script>
+				const file = document.querySelector("#file");
+				file.addEventListener("change", e => {
+					// Get the selected file
+					const [file] = e.target.files;
+					// Get the file name and size
+					const { name: fileName, size } = file;
+					// Convert size in bytes to kilo bytes
+					const fileSize = (size / 1000).toFixed(2);
+					// Set the text content
+					if (fileSize > 2000) {
+						var classFileBAD = document.querySelector(".file-name")
+						classFileBAD.textContent = "Por favor introduce un archivo MENOR a 2MB";
+						classFileBAD.style.background = "#ff0000"
+						classFileBAD.style.fontWeight = "700"
+						classFileBAD.style.fontSize = "16px"
+					} else {
+						const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+						var classFileOK =document.querySelector(".file-name")
+						classFileOK.textContent = fileNameAndSize
+						classFileOK.style.background = "#a060ff";
+						classFileOK.style.fontWeight = "500"
+						classFileOK.style.fontSize = "14px"
 
+					}
+				});
+			</script>-->
 			<!--=========================-->
 			<!--=        Footer         =-->
 			<!--=========================-->
@@ -415,8 +440,9 @@
 		<script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
 		<script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
 		<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+		<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
 		<script src="dependencies/gmap3/js/gmap3.min.js"></script>
-
+		<script src="assets/js/scriptSwitch.js"></script>
 		<!-- Site Scripts -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="assets/js/header.js"></script>
