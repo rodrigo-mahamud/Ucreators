@@ -99,12 +99,12 @@ if (empty($surnamer)) {
 	$body  .= '<br>';
 }
 // Check NameC
-if (!is_numeric($phone) ) {
-	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce tu telefono';
-	$msg   .= '<br>';
+if (empty($phone)) {
+	$error = false;
+	$body  .= '<strong>Telefono: No proporcionado</strong>';
+	$body  .= '<br>';
 } else {
-	$body  .= '<strong>Apellido:</strong> ' . $phone;
+	$body  .= '<strong>Telefono:</strong> ' . $phone;
 	$body  .= '<br>';
 }
 // Check Email
