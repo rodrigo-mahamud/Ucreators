@@ -1,9 +1,8 @@
 <?php
-
 /*-----------------------------------------------
 	# Variables
 	---------------------------------------------*/
-include('conexion.php');
+
 $namec      = $_POST['namec'];
 $linkc      = $_POST['linkc'];
 $linkrs     = $_POST['linkrs'];
@@ -14,13 +13,15 @@ $namer      = $_POST['namer'];
 $surnamer   = $_POST['surnamer'];
 $email      = $_POST['email'];
 $phone      = $_POST['fphone'];
+$terms     = $_POST['terms'];
+$ads      = $_POST['ads'];
 $subject    = isset($_POST['subject']) && !empty($_POST['subject']) ? $_POST['subject'] : 'New message from your site contact form';
 $content    = $_POST['content'];
 $toMail     = 'Ucreators <formulario@ucreators.es>'; // Your name & mail address here example 'Your Name <contact@domain.com>'.
 
 /*-----------------------------------------------
 	# Error Reporting need first
----------------------------------------------*/
+	---------------------------------------------*/
 $error      = false;
 $msg        = '';
 $body       = '';
@@ -132,6 +133,24 @@ if (empty($content)) {
 	$body  .= '<strong>Message:</strong> ' . $content;
 	$body  .= '<br><br>';
 }
+if (empty($terms)) {
+	$error = true;
+	$msg   .= '<strong>Required:</strong> Please enter your valid email address.';
+	$msg   .= '<br>';
+} else {
+	$body  .= '<strong>Email:</strong> ' . $terms;
+	$body  .= '<br><br>';
+}
+
+if (empty($ads)) {
+	$error = true;
+	$msg   .= '<strong>Required:</strong> Please enter your valid email address.';
+	$msg   .= '<br>';
+} else {
+	$body  .= '<strong>Email:</strong> ' . $ads;
+	$body  .= '<br><br>';
+}
+
 
 /*-----------------------------------------------
 	# Prepare send mail
@@ -147,8 +166,8 @@ if ($error == true) {
 	$headers   = array();
 	$headers[] = "MIME-Version: 1.0";
 	$headers[] = "Content-type: text/html; charset=iso-8859-1";
-	$headers[] = "From: {$name} <{$email}>";
-	$headers[] = "Reply-To: {$name} <{$email}>";
+	$headers[] = "From: {$namer} <{$email}>";
+	$headers[] = "Reply-To: {$namer} <{$email}>";
 	$headers[] = "Subject: {$subject}";
 	$headers[] = "X-Mailer: PHP/".phpversion();
 
