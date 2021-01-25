@@ -47,6 +47,7 @@
 		<link rel="stylesheet" href="assets/cssbk/styleSwitch.css" />
 		<link rel="stylesheet" href="assets/cssbk/styleoppi.css" />
 		<link rel="stylesheet" href="build/css/intlTelInput.css" />
+		<link rel="stylesheet" href="build/css/demo.css" />
 
 		<!-- Site Stylesheet -->
 		<link rel="stylesheet" href="assets/cssbk/app.css" type="text/css" />
@@ -227,7 +228,7 @@
 								</li>
 							</ul>
 
-							<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetYQjQztKgyfF2upvCoOrMmyLdcHcoInjcfqSK2n2lsSkJsw/formResponse" method="POST" class="contact-form" data-pixsaas="call-back-forms">
+							<form action="php/mailertw.php" class="contact-form" data-pixsaas="call-back-forms">
 								<label for="" style="color: white; margin-right: 40%; margin-left: 3px">Fuel Type</label>
 								<input type="text" name="namec" placeholder="Nombre del Canal" required />
 								<input type="text" name="linkc" placeholder="Enlace del canal" required />
@@ -250,7 +251,7 @@
 								<input type="email" name="email" placeholder="Correo electónico" required />
 								<input id="phone" name="phone" type="tel" placeholder="Teléfono de contacto (opcional)." style="transform: scale(1); padding-left: 100px" />
 								<textarea name="content" placeholder="Describe tu canal" required></textarea>
-								<div class="file-input" style="display: none">
+								<!--<div class="file-input">
 									<input type="file" id="file" class="file" name="file" onchange="LoadFile(event)" />
 									<label for="file" class="file-name">
 										<i class="bi bi-cloud-arrow-up"></i>
@@ -260,7 +261,7 @@
 									<input type="hidden" id="fileData" name="fileData" />
 									<input type="hidden" id="mimeType" name="mimeType" />
 									<input type="hidden" id="fileName" name="fileName" />
-								</div>
+								</div>-->
 								<div style="display: flex">
 									<div id="btn">
 										<div id="checkbox" class="h_cb">
@@ -308,7 +309,7 @@
 			</section>
 			<!-- /.contactus -->
 
-			<!--<script>
+			<script>
 				const file = document.querySelector("#file");
 				file.addEventListener("change", e => {
 					// Get the selected file
@@ -334,7 +335,7 @@
 
 					}
 				});
-			</script>-->
+			</script>
 			<!--=========================-->
 			<!--=        Footer         =-->
 			<!--=========================-->
