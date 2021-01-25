@@ -539,7 +539,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
                             if (data.error == true) {
                                 $('.form-result', $this).addClass('alert-warning').removeClass('alert-success alert-danger').css('display', 'none');
                                 Swal.fire({
-                                    position: "middle",
+                                    position: "center",
                                     icon: "error",
                                     title: "😕 ¡Ops! algo ha salido mal. 😕",
                                     html: 'Vuelve a intentarlo y si el error persiste, no dudes en ponerte en contacto con nosotros a traves de nuestro correo o a traves de nuestras redes sociales:' + '<br><a href="mailto:ucreators.info@gmail.com" style="color: #31a0ff">ucreators.info@gmail.com</a>',
@@ -552,7 +552,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
                                 ok.src = "sound/tick.mp3";
                                 ok.play()
                                 Swal.fire({
-                                    position: "middle",
+                                    position: "center",
                                     icon: "success",
                                     title: "🥳 ¡Solicitud envidada! 🥳",
                                     html: 'Hemos recivido tu solicitud, en un periodo de 24h-48h recibiras un e-mail con nuestra respuesta.<br><br><i><b>**No olvides revisar tu bandeja de spam**</i></b> ',
@@ -568,7 +568,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
                             $('.form-result > .content', $this).html('Sorry, an error occurred.');
                             $('button[type="submit"]', $this).removeClass('clicked');
                             Swal.fire({
-                                position: "middle",
+                                position: "center",
                                 icon: "error",
                                 title: "😕 ¡Ops! algo ha salido mal. 😕",
                                 html: 'Vuelve a intentarlo y si el error persiste, no dudes en ponerte en contacto con nosotros a traves de nuestro correo o a traves de nuestras redes sociales:' + '<br><a href="mailto:ucreators.info@gmail.com" style="color: #31a0ff">ucreators.info@gmail.com</a>',
