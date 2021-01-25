@@ -538,14 +538,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
 
                             if (data.error == true) {
                                 $('.form-result', $this).addClass('alert-warning').removeClass('alert-success alert-danger').css('display', 'block');
-                                Swal.fire({
-                                    position: "center",
-                                    icon: "warning",
-                                    title: "😕 ¡Ops! algo ha salido mal. 😕",
-                                    html: 'Vuelve a intentarlo y si el error persiste, no dudes en ponerte en contacto con nosotros a traves de nuestro correo o a traves de nuestras redes sociales:' + '<br><a href="mailto:ucreators.info@gmail.com" style="color: #31a0ff">ucreators.info@gmail.com</a>',
-                                    showConfirmButton: true,
-                                    
-                                });
+
                             } else {
                                 $('.form-result', $this).addClass('alert-success').removeClass('alert-warning alert-danger').css('display', 'block');
                                 var ok = new Audio();

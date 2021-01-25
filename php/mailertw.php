@@ -29,7 +29,7 @@ $body       = '';
 // Check NameC
 if (empty($namec)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce el nombre de tu canal.';
+	$msg   .= '<strong>Importante:</strong> Por favor introduce el nombre de tu canal.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Nombre del canal (Twitch):</strong> ' . $namec;
@@ -38,7 +38,7 @@ if (empty($namec)) {
 // Check NameC
 if (empty($linkc)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce el enlace de tu canal.';
+	$msg   .= '<strong>Importante:</strong> Por favor introduce el enlace de tu canal.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Enlace del canal (Twitch):</strong> ' . $linkc;
@@ -47,7 +47,7 @@ if (empty($linkc)) {
 // Check NameC
 if (empty($linkrs)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce el nombre de tu otra red social';
+	$msg   .= '<strong>Importante:</strong> Por favor introduce el nombre de tu otra red social';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Enlace de otra red social</strong> ' . $linkrs;
@@ -65,7 +65,7 @@ if (empty($tag)) {
 // Check NameC
 if (empty($price) || !is_numeric($price)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce el precio en número';
+	$msg   .= '<strong>Importante:</strong> El precio tiene que estar expresado en número.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Precio de venta:</strong> ' . $price;
@@ -74,7 +74,7 @@ if (empty($price) || !is_numeric($price)) {
 // Cantidad
 if (empty($amount) || !is_numeric($amount)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce la cantidad en número';
+	$msg   .= '<strong>Importante:</strong> La cantidad tiene que estar expresada en número sin decimales.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Cantidad que ofrece:</strong> ' . $amount;
@@ -83,7 +83,7 @@ if (empty($amount) || !is_numeric($amount)) {
 // Check NameC
 if (empty($namer)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce tu nombre real';
+	$msg   .= '<strong>Importante:</strong> Por favor introduce tu nombre real';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Nombre:</strong> ' . $namer;
@@ -92,7 +92,7 @@ if (empty($namer)) {
 // Check NameC
 if (empty($surnamer)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce tu apellido real';
+	$msg   .= '<strong>Importante:</strong> Por favor introduce tu apellido real';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Apellido:</strong> ' . $surnamer;
@@ -110,7 +110,7 @@ if (empty($phone)) {
 // Check Email
 if (empty($email)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Please enter your valid email address.';
+	$msg   .= '<strong>Importante:</strong> Please enter your valid email address.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Email:</strong> ' . $email;
@@ -119,7 +119,7 @@ if (empty($email)) {
 // Check Content
 if (empty($content)) {
 	$error = true;
-	$msg   .= '<strong>Required: </strong> Please write something. Can\'t here you from our home';
+	$msg   .= '<strong>Importante: </strong> Please write something. Can\'t here you from our home';
 	$msg   .= '<br>';
 } else {
 	// Subject
@@ -132,7 +132,7 @@ if (empty($content)) {
 }
 if (empty($terminos)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
+	$msg   .= '<strong>Importante:</strong> Please enter your valid switch address.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Terminos y condiciones:</strong> ' . $terminos;
@@ -141,7 +141,7 @@ if (empty($terminos)) {
 
 if (empty($publicidad)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
+	$msg   .= '<strong>Importante:</strong> Please enter your valid switch address.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Desea recibir publicidad:</strong> ' . $publicidad;
@@ -153,11 +153,11 @@ if (empty($publicidad)) {
 	# Prepare send mail
 	---------------------------------------------*/
 if ($error == true) {
-	$msg    .= '<strong>Error:</strong> Please fill form with above info requirement.';
+	$msg    .= '<strong>Por favor corrige los campos para continuar</strong>.';
 } else {
 	$body   .= $_SERVER['HTTP_REFERER'] ? '<br><br><br>This form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
 	$error   = false;
-	$msg    .= '<strong>Success:</strong> Your message has been send.';
+	$msg    .= '<strong>MENSAJE ENVIADO:</strong> <a href="https://ucreators.es/indexdk.html"><i>¿Quieres volver a las página de inicio?</i><a>.';
 
 	// Mail Headers
 	$headers   = array();
