@@ -33,7 +33,7 @@ if (empty($namec)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Nombre del canal (Twitch):</strong> ' . $namec;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check NameC
 if (empty($linkc)) {
@@ -42,7 +42,7 @@ if (empty($linkc)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Enlace del canal (Twitch):</strong> ' . $linkc;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check NameC
 if (empty($linkrs)) {
@@ -51,7 +51,7 @@ if (empty($linkrs)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Enlace de otra red social</strong> ' . $linkrs;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check NameC
 if (empty($tag)) {
@@ -60,7 +60,7 @@ if (empty($tag)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Categoria del canal (Twitch):</strong> ' . $tag;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check NameC
 if (empty($price) || !is_numeric($price)) {
@@ -69,7 +69,7 @@ if (empty($price) || !is_numeric($price)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Precio de venta:</strong> ' . $price;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Cantidad
 if (empty($amount) || !is_numeric($amount)) {
@@ -78,7 +78,7 @@ if (empty($amount) || !is_numeric($amount)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Cantidad que ofrece:</strong> ' . $amount;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check NameC
 if (empty($namer)) {
@@ -87,7 +87,7 @@ if (empty($namer)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Nombre:</strong> ' . $namer;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check NameC
 if (empty($surnamer)) {
@@ -96,7 +96,7 @@ if (empty($surnamer)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Apellido:</strong> ' . $surnamer;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check NameC
 if (empty($phone)) {
@@ -105,7 +105,7 @@ if (empty($phone)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Apellido:</strong> ' . $phone;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check Email
 if (empty($email)) {
@@ -114,7 +114,7 @@ if (empty($email)) {
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Email:</strong> ' . $email;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 // Check Content
 if (empty($content)) {
@@ -124,19 +124,19 @@ if (empty($content)) {
 } else {
 	// Subject
 	$body  .= '<strong>Subject:</strong> ' . $subject;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 
 	// Body Content
 	$body  .= '<strong>Message:</strong> ' . $content;
-	$body  .= '<br><br>';
+	$body  .= '<br>';
 }
 if (empty($terminos)) {
 	$error = true;
 	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
 	$msg   .= '<br>';
 } else {
-	$body  .= '<strong>Email:</strong> ' . $terminos;
-	$body  .= '<br><br>';
+	$body  .= '<strong>Terminos y condiciones:</strong> ' . $terminos;
+	$body  .= '<br>';
 }
 
 if (empty($publicidad)) {
@@ -144,8 +144,8 @@ if (empty($publicidad)) {
 	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
 	$msg   .= '<br>';
 } else {
-	$body  .= '<strong>Email:</strong> ' . $publicidad;
-	$body  .= '<br><br>';
+	$body  .= '<strong>Desea recibir publicidad:</strong> ' . $publicidad;
+	$body  .= '<br>';
 }
 
 

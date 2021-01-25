@@ -540,7 +540,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
                                 $('.form-result', $this).addClass('alert-warning').removeClass('alert-success alert-danger').css('display', 'none');
                                 Swal.fire({
                                     position: "center",
-                                    icon: "error",
+                                    icon: "warning",
                                     title: "😕 ¡Ops! algo ha salido mal. 😕",
                                     html: 'Vuelve a intentarlo y si el error persiste, no dudes en ponerte en contacto con nosotros a traves de nuestro correo o a traves de nuestras redes sociales:' + '<br><a href="mailto:ucreators.info@gmail.com" style="color: #31a0ff">ucreators.info@gmail.com</a>',
                                     showConfirmButton: true,
