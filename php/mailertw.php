@@ -13,8 +13,8 @@ $namer      = $_POST['namer'];
 $surnamer   = $_POST['surnamer'];
 $email      = $_POST['email'];
 $phone      = $_POST['fphone'];
-$terms     = $_POST['terms'];
-$ads      = $_POST['ads'];
+$terminos     = $_POST['terminos'];
+$publicidad      = $_POST['publicidad'];
 $subject    = isset($_POST['subject']) && !empty($_POST['subject']) ? $_POST['subject'] : 'New message from your site contact form';
 $content    = $_POST['content'];
 $toMail     = 'Ucreators <formulario@ucreators.es>'; // Your name & mail address here example 'Your Name <contact@domain.com>'.
@@ -130,21 +130,21 @@ if (empty($content)) {
 	$body  .= '<strong>Message:</strong> ' . $content;
 	$body  .= '<br><br>';
 }
-if (empty($terms)) {
+if (empty($terminos)) {
 	$error = true;
-	$body  .= '<strong>Email:</strong> ' . $terms;
-	$body  .= '<br><br>';
+	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
+	$msg   .= '<br>';
 } else {
-	$body  .= '<strong>Email:</strong> ' . $terms;
+	$body  .= '<strong>Email:</strong> ' . $terminos;
 	$body  .= '<br><br>';
 }
 
-if (empty($ads)) {
+if (empty($publicidad)) {
 	$error = true;
-	$body  .= '<strong>Email:</strong> ' . $terms;
-	$body  .= '<br><br>';
+	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
+	$msg   .= '<br>';
 } else {
-	$body  .= '<strong>Email:</strong> ' . $ads;
+	$body  .= '<strong>Email:</strong> ' . $publicidad;
 	$body  .= '<br><br>';
 }
 
