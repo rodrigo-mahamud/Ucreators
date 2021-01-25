@@ -132,8 +132,8 @@ if (empty($content)) {
 }
 if (empty($terms)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
-	$msg   .= '<br>';
+	$body  .= '<strong>Email:</strong> ' . $terms;
+	$body  .= '<br><br>';
 } else {
 	$body  .= '<strong>Email:</strong> ' . $terms;
 	$body  .= '<br><br>';
@@ -141,8 +141,8 @@ if (empty($terms)) {
 
 if (empty($ads)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
-	$msg   .= '<br>';
+	$body  .= '<strong>Email:</strong> ' . $terms;
+	$body  .= '<br><br>';
 } else {
 	$body  .= '<strong>Email:</strong> ' . $ads;
 	$body  .= '<br><br>';
