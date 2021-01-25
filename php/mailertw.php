@@ -107,8 +107,6 @@ if (empty($phone)) {
 	$body  .= '<strong>Apellido:</strong> ' . $phone;
 	$body  .= '<br><br>';
 }
-
-
 // Check Email
 if (empty($email)) {
 	$error = true;
@@ -118,7 +116,6 @@ if (empty($email)) {
 	$body  .= '<strong>Email:</strong> ' . $email;
 	$body  .= '<br><br>';
 }
-
 // Check Content
 if (empty($content)) {
 	$error = true;
@@ -135,7 +132,7 @@ if (empty($content)) {
 }
 if (empty($terms)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Please enter your valid email address.';
+	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Email:</strong> ' . $terms;
@@ -144,7 +141,7 @@ if (empty($terms)) {
 
 if (empty($ads)) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Please enter your valid email address.';
+	$msg   .= '<strong>Required:</strong> Please enter your valid switch address.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Email:</strong> ' . $ads;
