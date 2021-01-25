@@ -15,7 +15,7 @@ $email      = $_POST['email'];
 $phone      = $_POST['fphone'];
 $subject    = isset($_POST['subject']) && !empty($_POST['subject']) ? $_POST['subject'] : 'New message from your site contact form';
 $content    = $_POST['content'];
-$toMail     = 'Ucreators <prueba@ucreators.es>'; // Your name & mail address here example 'Your Name <contact@domain.com>'.
+$toMail     = 'Ucreators <formulario@ucreators.es>'; // Your name & mail address here example 'Your Name <contact@domain.com>'.
 
 /*-----------------------------------------------
 	# Error Reporting need first
