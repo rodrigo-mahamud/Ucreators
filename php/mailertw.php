@@ -1,4 +1,51 @@
 <?php
+//conectamos Con el servidor
+$host ="localhost:3306";
+$user ="qlbmlpye";
+$pass ="The.LOFU-234!";
+$db="Formulario";
+
+//funcion llamada conexion con (dominio,usuarios,contraseña,base_de_datos)
+$con = mysqli_connect($host,$user,$pass,$db)or die("Problemas al Conectar");
+mysqli_select_db($con,$db)or die("problemas al conectar con la base de datos");
+
+//recuperar las variables
+$nombreCanal    = $_POST['namec'];
+$urlCanal    = $_POST['linkc'];
+$urlRs     = $_POST['linkrs'];
+$categoria       = $_POST['tag'];
+$precio     = $_POST['price'];
+$cantidad     = $_POST['amount'];
+$nombreReal      = $_POST['namer'];
+$apellidoReal  = $_POST['surnamer'];
+$email      = $_POST['email'];
+$telefono      = $_POST['fphone'];
+$descripcion   = $_POST['content'];
+
+//hacemos la sentencia de sql
+$sql="INSERT INTO datos VALUES(
+'$nombreCanal',
+'$urlCanal',
+'$urlRs',
+'$categoria',
+'$precio',
+'$cantidad',
+'$nombreReal',
+'$apellidoReal',
+'$email',
+'$telefono',
+'$descripcion')";
+//ejecutamos la sentencia de sql
+$ejecutar=mysqli_query($con,$sql);
+//verificamos la ejecucion
+if(!$ejecutar){
+ echo"Hubo Algun Error";
+}else{
+ echo"Datos Guardados Correctamente<br><a href='index.html'>Volver</a>";
+}
+
+
+
 /*-----------------------------------------------
 	# Variables
 	---------------------------------------------*/
@@ -19,11 +66,11 @@ $toMail     = 'Ucreators <formulario@ucreators.es>'; // Your name & mail address
 
 /*-----------------------------------------------
 	# Error Reporting need first
-	---------------------------------------------*/
+	---------------------------------------------
 $error      = false;
 $msg        = '';
 $body       = '';
-
+/*
 // Check NameC
 if (empty($namec)) {
 	$error = true;
@@ -134,7 +181,7 @@ if (empty($content)) {
 
 /*-----------------------------------------------
 	# Prepare send mail
-	---------------------------------------------*/
+	---------------------------------------------
 if ($error == true) {
 	$msg    .= '<strong>Error:</strong> Please fill form with above info requirement.';
 } else {
@@ -165,4 +212,4 @@ $dataReturn = array(
 	)
 );
 header('Content-type: application/json');
-echo json_encode($dataReturn);
+echo json_encode($dataReturn);*/
