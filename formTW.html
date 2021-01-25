@@ -2,24 +2,7 @@
 <html lang="en">
 	<head>
 		<base target="_top" />
-		<script>
-			function LoadFile(event) {
-				var file = event.target.files[0];
-				var reader = new FileReader();
-				reader.onload = function (e) {
-					console.log(e.target.result);
-					var fileData = e.target.result.substr(e.target.result.indexOf(",") + 1);
-					var mimeTypeStart = e.target.result.indexOf("data:") + 5;
-					var mimeTypeEnd = e.target.result.indexOf(";");
-					var mimeType = e.target.result.substr(mimeTypeStart, mimeTypeEnd - mimeTypeStart);
-					var fileName = file.name;
-					document.getElementById("fileData").value = fileData;
-					document.getElementById("mimeType").value = mimeType;
-					document.getElementById("fileName").value = fileName;
-				};
-				reader.readAsDataURL(file);
-			}
-		</script>
+
 		<!-- Meta Data -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -47,7 +30,7 @@
 		<link rel="stylesheet" href="assets/cssbk/styleSwitch.css" />
 		<link rel="stylesheet" href="assets/cssbk/styleoppi.css" />
 		<link rel="stylesheet" href="build/css/intlTelInput.css" />
-		<link rel="stylesheet" href="build/css/demo.css" />
+		
 
 		<!-- Site Stylesheet -->
 		<link rel="stylesheet" href="assets/cssbk/app.css" type="text/css" />
@@ -228,7 +211,7 @@
 								</li>
 							</ul>
 
-							<form action="php/contacto.php" class="contact-form" data-pixsaas="call-back-forms">
+							<form action="php/mailertw.php" class="contact-form" data-pixsaas="call-back-forms">
 								<label for="" style="color: white; margin-right: 40%; margin-left: 3px">Fuel Type</label>
 								<input type="text" name="namec" placeholder="Nombre del Canal" required />
 								<input type="text" name="linkc" placeholder="Enlace del canal" required />
@@ -309,7 +292,7 @@
 			</section>
 			<!-- /.contactus -->
 
-			<script>
+			<!--<script>
 				const file = document.querySelector("#file");
 				file.addEventListener("change", e => {
 					// Get the selected file
@@ -335,7 +318,7 @@
 
 					}
 				});
-			</script>
+			</script>-->
 			<!--=========================-->
 			<!--=        Footer         =-->
 			<!--=========================-->
