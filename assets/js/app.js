@@ -537,7 +537,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
                         success: function success(data) {
 
                             if (data.error == true) {
-                                $('.form-result', $this).addClass('alert-warning').removeClass('alert-success alert-danger').css('display', 'none');
+                                $('.form-result', $this).addClass('alert-warning').removeClass('alert-success alert-danger').css('display', 'block');
                                 Swal.fire({
                                     position: "center",
                                     icon: "warning",
@@ -547,7 +547,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
                                     
                                 });
                             } else {
-                                $('.form-result', $this).addClass('alert-success').removeClass('alert-warning alert-danger').css('display', 'none');
+                                $('.form-result', $this).addClass('alert-success').removeClass('alert-warning alert-danger').css('display', 'block');
                                 var ok = new Audio();
                                 ok.src = "sound/tick.mp3";
                                 ok.play()
@@ -564,7 +564,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
                             $('button[type="submit"]', $this).removeClass('clicked');
                         },
                         error: function error() {
-                            $('.form-result', $this).addClass('alert-danger').removeClass('alert-warning alert-success').css('display', 'none');
+                            $('.form-result', $this).addClass('alert-danger').removeClass('alert-warning alert-success').css('display', 'block');
                             $('.form-result > .content', $this).html('Sorry, an error occurred.');
                             $('button[type="submit"]', $this).removeClass('clicked');
                             Swal.fire({
