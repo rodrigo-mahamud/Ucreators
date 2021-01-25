@@ -229,71 +229,13 @@
 
 							<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetYQjQztKgyfF2upvCoOrMmyLdcHcoInjcfqSK2n2lsSkJsw/formResponse" method="POST" class="contact-form" data-pixsaas="call-back-forms">
 								<label for="" style="color: white; margin-right: 40%; margin-left: 3px">Fuel Type</label>
-								<input type="text" name="namec" placeholder="Nombre del Canal" required />
-								<input type="text" name="linkc" placeholder="Enlace del canal" required />
-								<input type="text" name="linkrs" placeholder="Otra red social" required />
-								<select name="tag" id="" class="pix-select">
-									<option value="" disabled selected hidden>Escoje la categoría de tu canal.</option>
-									<option class="menu" value="cat1">Twfghdfghitchdfghfh TV</option>
-									<option class="menu" value="cat2">YdfhouTuhfghdfghbe</option>
-									<option class="menu" value="cat3">Twfghdfghitchdfghfh TV</option>
-									<option class="menu" value="cat4">YdfhouTuhfghdfghbe</option>
-									<option class="menu" value="cat5">Twfghdfghitchdfghfh TV</option>
-									<option class="menu" value="cat6">YdfhouTuhfghdfghbe</option>
-								</select>
-								<input type="text" name="price" placeholder="Precio" required style="width: 48%" class="colormenu" />
-								<input type="text" name="amount" placeholder="Cantidad" required style="width: 48%; margin-left: 3.1499%" />
-
-								<label for="" style="color: white; margin-right: 40%; margin-left: 3px; margin-top: 50px; transform: unset; box-shadow: unset">Datos personales </label>
-								<input type="text" name="namer" placeholder="Nombre Real" required style="width: 48%" />
-								<input type="text" name="surnamer" placeholder="Apellidos" required style="width: 48%; margin-left: 3.1499%" />
-								<input type="email" name="email" placeholder="Correo electónico" required />
-								<input id="phone" name="phone" type="tel" placeholder="Teléfono de contacto (opcional)." style="transform: scale(1); padding-left: 100px" />
-								<textarea name="content" placeholder="Describe tu canal" required></textarea>
-								<div class="file-input" style="display: none">
-									<input type="file" id="file" class="file" name="file" onchange="LoadFile(event)" />
-									<label for="file" class="file-name">
-										<i class="bi bi-cloud-arrow-up"></i>
-										Subir imagen de cabecera
-									</label>
-
-									<input type="hidden" id="fileData" name="fileData" />
-									<input type="hidden" id="mimeType" name="mimeType" />
-									<input type="hidden" id="fileName" name="fileName" />
-								</div>
-								<div style="display: flex">
-									<div id="btn">
-										<div id="checkbox" class="h_cb">
-											<div class="tick">
-												<div id="rect1" class="h_rects"></div>
-												<div id="rect2" class="h_rects"></div>
-											</div>
-										</div>
-										<input id="terms" type="hidden" name="terminos" value="no" />
-									</div>
-									<h4 style="margin-left: 12px; margin-bottom: 20px; font-weight: 400; color: white; font-size: 18px; line-height: 1">He leido y acepto <a href="" style="color: #a060ff">términos y condiciones</a></h4>
-								</div>
-
-								<div style="display: flex">
-									<div id="btn2">
-										<div id="checkbox2" class="">
-											<div class="tick">
-												<div id="rect12"></div>
-												<div id="rect22"></div>
-											</div>
-										</div>
-										<input id="ads" type="hidden" name="publicidad" value="si" />
-									</div>
-									<h4 style="margin-left: 12px; font-weight: 400; color: white; font-size: 18px; line-height: 1">He leido y acepto <a href="" style="color: #a060ff">términos y condiciones</a></h4>
-								</div>
-								<button type="submit" id="submit" value="Load File" class="pix-btn submit-btn">
+								<input type="text" name="entry.103716016" placeholder="Nombre del Canal" required />
+								
+								<button type="submit" id="submit" class="pix-btn submit-btn">
 									<span class="btn-text">Enviar Solicitud</span>
 									<i class="fas fa-spinner fa-spin"></i>
 								</button>
-								<td colspan="2">
-									<span><?= message ?></span>
-								</td>
-
+								
 								<div class="form-result alert">
 									<div class="content">Tu solicitud ha sido enviada correctamente</div>
 								</div>
@@ -447,7 +389,7 @@
 		<script src="assets/js/header.js"></script>
 		<script src="assets/js/app.js"></script>
 		<script src="build/js/intlTelInput.js"></script>
-		<script>
+		<!--<script>
 			var input = document.querySelector("#phone");
 			window.intlTelInput(input, {
 				geoIpLookup: function (callback) {
@@ -458,6 +400,6 @@
 				},
 				utilsScript: "build/js/utils.js",
 			});
-		</script>
+		</script>-->
 	</body>
 </html>
