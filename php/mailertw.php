@@ -55,9 +55,9 @@ if (empty($linkrs)) {
 }
 // Check NameC
 if (empty($tag)) {
-	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce la categoría de tu canal';
-	$msg   .= '<br>';
+	$error = false;
+	$body  .= '<strong>Categoria del canal (Twitch): No selecionada</strong> ';
+	$body  .= '<br>';
 } else {
 	$body  .= '<strong>Categoria del canal (Twitch):</strong> ' . $tag;
 	$body  .= '<br>';
@@ -99,9 +99,9 @@ if (empty($surnamer)) {
 	$body  .= '<br>';
 }
 // Check NameC
-if (empty($phone)) {
+if (!is_numeric($phone) ) {
 	$error = true;
-	$msg   .= '<strong>Required:</strong> Por favor introduce tu t';
+	$msg   .= '<strong>Required:</strong> Por favor introduce tu telefono';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Apellido:</strong> ' . $phone;
