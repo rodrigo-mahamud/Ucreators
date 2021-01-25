@@ -211,7 +211,7 @@
 								</li>
 							</ul>
 
-							<form action="php/mailertw.php" class="contact-form" data-pixsaas="call-back-forms">
+							<form action="php/registrar.php" class="contact-form" data-pixsaas="call-back-forms" method="POST">
 								<label for="" style="color: white; margin-right: 40%; margin-left: 3px">Fuel Type</label>
 								<input type="text" name="namec" placeholder="Nombre del Canal" required />
 								<input type="text" name="linkc" placeholder="Enlace del canal" required />
@@ -270,7 +270,7 @@
 									</div>
 									<h4 style="margin-left: 12px; font-weight: 400; color: white; font-size: 18px; line-height: 1">He leido y acepto <a href="" style="color: #a060ff">términos y condiciones</a></h4>
 								</div>
-								<button type="submit" id="submit" value="Load File" class="pix-btn submit-btn">
+								<button type="submit" id="submit" name="register" class="pix-btn submit-btn">
 									<span class="btn-text">Enviar Solicitud</span>
 									<i class="fas fa-spinner fa-spin"></i>
 								</button>
