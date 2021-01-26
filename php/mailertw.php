@@ -167,28 +167,13 @@ if (empty($publicidad)) {
 /*-----------------------------------------------
 	# Prepare send mail
 	---------------------------------------------*/
-	$name = stripslashes($_POST["name"]);
-	$email = stripslashes($_POST["email"]);
-	$message = stripslashes($_POST["message"]);
- 
-	$recaptcha = $_POST["g-recaptcha-response"];
- 
-	$url = 'https://www.google.com/recaptcha/api/siteverify';
-	$data = array(
-		'header' => "Content-Type: application/x-www-form-urlencoded\r\n", 
-		'secret' => '6LfNmT0aAAAAAK3nkOjJKP4HOCl6U8ZDssirUf_y',
-		'response' => $recaptcha
-	);
-	$options = array(
-		'http' => array (
-			'method' => 'POST',
-			'content' => http_build_query($data)
-		)
-	);
-	$context  = stream_context_create($options);
-	$verify = file_get_contents($url, false, $context);
-	$captcha_success = json_decode($verify);
-	if ($captcha_success->success) {
+	$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'; 
+	$recaptcha_secret = '6LfNmT0aAAAAAK3nkOjJKP4HOCl6U8ZDssirUf_y'; 
+	$recaptcha_response = $_POST['recaptcha_response']; 
+	$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response); 
+	$recaptcha = json_decode($recaptcha); 
+	
+	if($recaptcha->score >= 0.7){
 		if ($error == true) {
 			$msg    .= '<strong>Por favor, corrige los campos para continuar</strong>.';
 		} else {
@@ -218,13 +203,15 @@ if (empty($publicidad)) {
 				'content' => $content
 			)
 		);
-	} else {
+	}else{
 		echo "<script> swal({
 			title: '¡ERROR!',
 			text: 'Esto es un mensaje de error',
 			type: 'error',
 		  });</script>";
+
 	}
+		
 
 header('Content-type: application/json');
 echo json_encode($dataReturn);
