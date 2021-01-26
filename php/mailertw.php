@@ -167,34 +167,60 @@ if (empty($publicidad)) {
 /*-----------------------------------------------
 	# Prepare send mail
 	---------------------------------------------*/
-if ($error == true) {
-	$msg    .= '<strong>Por favor, corrige los campos para continuar</strong>.';
-} else {
-	$body   .= $_SERVER['HTTP_REFERER'] ? '<br><br><br>This form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
-	$error   = false;
-	$msg    .= '<strong>MENSAJE ENVIADO: </strong> <a href="https://ucreators.es/indexdk.html" style="color: #232126; font-weight: 500; text-decoration: underline;">Volver a las página de inicio<a>.';
+	$name = stripslashes($_POST["name"]);
+	$email = stripslashes($_POST["email"]);
+	$message = stripslashes($_POST["message"]);
+ 
+	$recaptcha = $_POST["g-recaptcha-response"];
+ 
+	$url = 'https://www.google.com/recaptcha/api/siteverify';
+	$data = array(
+		'header' => "Content-Type: application/x-www-form-urlencoded\r\n", 
+		'secret' => '6LfAST0aAAAAACKI7iZe77st3_GKdnswHWTMj_H6',
+		'response' => $recaptcha
+	);
+	$options = array(
+		'http' => array (
+			'method' => 'POST',
+			'content' => http_build_query($data)
+		)
+	);
+	$context  = stream_context_create($options);
+	$verify = file_get_contents($url, false, $context);
+	$captcha_success = json_decode($verify);
+	if ($captcha_success->success) {
+		if ($error == true) {
+			$msg    .= '<strong>Por favor, corrige los campos para continuar</strong>.';
+		} else {
+			$body   .= $_SERVER['HTTP_REFERER'] ? '<br><br><br>This form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
+			$error   = false;
+			$msg    .= '<strong>MENSAJE ENVIADO: </strong> <a href="https://ucreators.es/indexdk.html" style="color: #232126; font-weight: 500; text-decoration: underline;">Volver a las página de inicio<a>.';
+		
+			// Mail Headers
+			$headers   = array();
+			$headers[] = "MIME-Version: 1.0";
+			$headers[] = "Content-type: text/html; charset=iso-8859-1";
+			$headers[] = "From: {$namer} <{$email}>";
+			$headers[] = "Reply-To: {$namer} <{$email}>";
+			$headers[] = "Subject: {$subject}";
+			$headers[] = "X-Mailer: PHP/".phpversion();
+		
+			mail($toMail, $subject, $body, implode("\r\n", $headers));
+		}
+		// Make as json obj
+		$dataReturn = array(
+			'error'   => $error,
+			'message'   => $msg,
+			'data'  => array(
+				'name' => $name,
+				'email' => $email,
+				'subject' => $subject,
+				'content' => $content
+			)
+		);
+	} else {
+		// Eres un robot!
+	}
 
-	// Mail Headers
-	$headers   = array();
-	$headers[] = "MIME-Version: 1.0";
-	$headers[] = "Content-type: text/html; charset=iso-8859-1";
-	$headers[] = "From: {$namer} <{$email}>";
-	$headers[] = "Reply-To: {$namer} <{$email}>";
-	$headers[] = "Subject: {$subject}";
-	$headers[] = "X-Mailer: PHP/".phpversion();
-
-	mail($toMail, $subject, $body, implode("\r\n", $headers));
-}
-// Make as json obj
-$dataReturn = array(
-	'error'   => $error,
-	'message'   => $msg,
-	'data'  => array(
-		'name' => $name,
-		'email' => $email,
-		'subject' => $subject,
-		'content' => $content
-	)
-);
 header('Content-type: application/json');
 echo json_encode($dataReturn);
