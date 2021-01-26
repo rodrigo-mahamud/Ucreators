@@ -91,10 +91,13 @@ function animeUp3() {
 	rect23.classList.toggle("h_rects");
 }
 var show = document.getElementById("show");
+var priceRemove = document.getElementById("priceRemove")
 btn3.addEventListener("click", function () {
 	if (checkbox3.classList.contains("h_cb")) {
 		premium.setAttribute("value", "no");
+		priceRemove.setAttribute("value", "no")
 		show.style.display = "none";
+
 	} else {
 		premium.setAttribute("value", "si");
 		show.style.display = "unset";

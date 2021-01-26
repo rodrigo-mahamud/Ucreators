@@ -83,7 +83,7 @@ if (!is_numeric($priceP)) {
 	$body  .= '<strong>PREMIUM NO SELECIONADO</strong> ' . $priceP ;
 	$body  .= '<br>';
 }else{
-	$body  .= '<strong>Precio de venta Premium:</strong> ' . $priceP. $monedaB;
+	$body  .= '<strong>Precio de venta Premium:</strong> ' . $priceP. $monedaP;
 	$body  .= '<br>';
 }
 // Cantidad
