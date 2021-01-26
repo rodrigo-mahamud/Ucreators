@@ -176,7 +176,7 @@ if (empty($publicidad)) {
 	$url = 'https://www.google.com/recaptcha/api/siteverify';
 	$data = array(
 		'header' => "Content-Type: application/x-www-form-urlencoded\r\n", 
-		'secret' => '6LfAST0aAAAAACKI7iZe77st3_GKdnswHWTMj_H6',
+		'secret' => '6LfNmT0aAAAAAK3nkOjJKP4HOCl6U8ZDssirUf_y',
 		'response' => $recaptcha
 	);
 	$options = array(
