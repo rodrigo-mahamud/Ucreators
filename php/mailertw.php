@@ -219,7 +219,11 @@ if (empty($publicidad)) {
 			)
 		);
 	} else {
-		// Eres un robot!
+		echo "<script> swal({
+			title: '¡ERROR!',
+			text: 'Esto es un mensaje de error',
+			type: 'error',
+		  });</script>";
 	}
 
 header('Content-type: application/json');
