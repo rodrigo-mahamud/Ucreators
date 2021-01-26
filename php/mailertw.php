@@ -71,7 +71,7 @@ if (empty($priceB) || !is_numeric($priceB)) {
 	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> El precio tiene que estar expresado en número.';
 	$msg   .= '<br>';
 } else {
-	$body  .= '<strong>Precio de venta Basic:</strong> ' . $priceB .$monedaB;
+	$body  .= '<strong>Precio de venta Basic:</strong> ' . $priceB. ''.$monedaB;
 	$body  .= '<br>';
 }
 // Check NameC
@@ -83,7 +83,7 @@ if (!is_numeric($priceP)) {
 	$body  .= '<strong>PREMIUM NO SELECIONADO</strong> ' . $priceP ;
 	$body  .= '<br>';
 }else{
-	$body  .= '<strong>Precio de venta Premium:</strong> ' . $priceP. $monedaP;
+	$body  .= '<strong>Precio de venta Premium:</strong> ' . $priceP. ''. $monedaP;
 	$body  .= '<br>';
 }
 // Cantidad
