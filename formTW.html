@@ -30,7 +30,6 @@
 		<link rel="stylesheet" href="assets/cssbk/styleSwitch.css" />
 		<link rel="stylesheet" href="assets/cssbk/styleoppi.css" />
 		<link rel="stylesheet" href="build/css/intlTelInput.css" />
-		
 
 		<!-- Site Stylesheet -->
 		<link rel="stylesheet" href="assets/cssbk/app.css" type="text/css" />
@@ -204,10 +203,10 @@
 							<h2 class="title">Request A Call Back</h2>
 							<ul class="nav faq-tabs" style="margin-bottom: 0%">
 								<li class="nav-item">
-									<a href="formYT.html" class="nav-link" style="padding: 10px 35px">YouTube</a>
+									<a href="formYT.html" class="nav-link" style="padding: 10px 35px; border-radius: 30px">YouTube</a>
 								</li>
 								<li class="nav-item">
-									<a href="formTW.html" class="nav-link active" style="padding: 10px 35px">Twitch TV</a>
+									<a href="formTW.html" class="nav-link active" style="padding: 10px 139px; border-radius: 30px">Twitch TV</a>
 								</li>
 							</ul>
 
@@ -216,8 +215,9 @@
 								<input type="text" name="namec" placeholder="Nombre del Canal" required />
 								<input type="text" name="linkc" placeholder="Enlace del canal" required />
 								<input type="text" name="linkrs" placeholder="Otra red social" required />
-								<select name="tag" id="" class="pix-select" required> 
-									<option value="" disabled selected hidden>Escoje la categoría de tu canal.</option>
+								<label for="" style="color: white; margin-right: 40%; margin-left: 3px; margin-top: 50px; transform: unset; box-shadow: unset">Categorias de tu canal</label>
+								<select name="tag" id="" class="pix-select" required>
+									<option value="" disabled selected hidden>Categoria 1.</option>
 									<option class="menu" value="cat1">Twfghdfghitchdfghfh TV</option>
 									<option class="menu" value="cat2">YdfhouTuhfghdfghbe</option>
 									<option class="menu" value="cat3">Twfghdfghitchdfghfh TV</option>
@@ -225,8 +225,43 @@
 									<option class="menu" value="cat5">Twfghdfghitchdfghfh TV</option>
 									<option class="menu" value="cat6">YdfhouTuhfghdfghbe</option>
 								</select>
-								<input type="text" name="price" placeholder="Precio (XX.YY)" required style="width: 48%" class="colormenu" />
-								<input type="text" name="amount" placeholder="Cantidad (XX)" required style="width: 48%; margin-left: 3.1499%" />
+								<select name="tag" id="" class="pix-select" required>
+									<option value="" disabled selected hidden>Categoria 2.</option>
+									<option class="menu" value="cat1">Twfghdfghitchdfghfh TV</option>
+									<option class="menu" value="cat2">YdfhouTuhfghdfghbe</option>
+									<option class="menu" value="cat3">Twfghdfghitchdfghfh TV</option>
+									<option class="menu" value="cat4">YdfhouTuhfghdfghbe</option>
+									<option class="menu" value="cat5">Twfghdfghitchdfghfh TV</option>
+									<option class="menu" value="cat6">YdfhouTuhfghdfghbe</option>
+								</select>
+								<label for="" style="color: white; margin-right: 38%; margin-left: 3px; margin-top: 50px; transform: unset; box-shadow: unset">Precio y cantidad de tu promociónes</label>
+
+								<input type="text" placeholder="0.00" name='priceB' style="width: 48%; height: 56px; display: inline" />
+								<select name='monedaB' style="border-radius: 8px; position: relative; width: 14%; margin-left: -76px; padding: 12.5px 15px; border: unset; box-shadow: unset; transform: unset; height: 52px">
+									<option data-symbol="$" value="$" data-placeholder="0.00">USD$</option>
+									<option data-symbol="€" value="€" data-placeholder="0.00" selected>EUR€</option>
+								</select>
+
+								<input type="text" name="price" placeholder="Cantidad" required style="width: 48%; margin-left: 3.49%" class="colormenu" />
+								<div style="display: flex">
+									<div id="btn3">
+										<div id="checkbox3" class="h_cb">
+											<div class="tick">
+												<div id="rect13" class="h_rects"></div>
+												<div id="rect23" class="h_rects"></div>
+											</div>
+										</div>
+										<input id="premium" type="hidden" name="premium" value="no" />
+									</div>
+									<h4 style="margin-left: 12px; margin-bottom: 20px; font-weight: 400; color: white; font-size: 18px; line-height: 1.2">Ofrecer plan premium con ventajas adicionales</h4>
+								</div>
+								<div id="show" style="display: none">
+									<input name='priceP' type="text" placeholder="Precio Premium 0.00" style="width: 495px; height: 54px; display: inline; box-shadow: 4px 0px 0 -1px #46395d; border: unset" />
+									<select name='monedaP' style="border-radius: 8px; position: relative; width: 14%; margin-left: -70px; padding: 13.5px 15px; border: unset; box-shadow: unset; transform: unset; height: 53px; background: #a060ff">
+										<option data-symbol="$" value="$" data-placeholder="Precio Premium 0.00">USD$</option>
+										<option data-symbol="€" value="€" data-placeholder="Precio Premium 0.00" selected>EUR€</option>
+									</select>
+								</div>
 
 								<label for="" style="color: white; margin-right: 40%; margin-left: 3px; margin-top: 50px; transform: unset; box-shadow: unset">Datos personales </label>
 								<input type="text" name="namer" placeholder="Nombre Real" required style="width: 48%" />
@@ -274,7 +309,6 @@
 									<span class="btn-text">Enviar Solicitud</span>
 									<i class="fas fa-spinner fa-spin"></i>
 								</button>
-								
 
 								<div class="form-result alert">
 									<div class="content">Tu solicitud ha sido enviada correctamente</div>
@@ -424,6 +458,7 @@
 		<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
 		<script src="dependencies/gmap3/js/gmap3.min.js"></script>
 		<script src="assets/js/scriptSwitch.js"></script>
+
 		<!-- Site Scripts -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="assets/js/header.js"></script>

@@ -547,8 +547,8 @@ var PIXELSIGNS = PIXELSIGNS || {};
                                 Swal.fire({
                                     position: "center",
                                     icon: "success",
-                                    title: "🥳 ¡Solicitud envidada! 🥳",
-                                    html: 'Hemos recivido tu solicitud, en un periodo de 24h-48h recibiras un e-mail con nuestra respuesta.<br><br><i><b>**No olvides revisar tu bandeja de spam**</i></b> ',
+                                    title: "🥳 ¡Solicitud enviada! 🥳",
+                                    html: 'Hemos recibido tu solicitud, en un periodo de 24h-48h recibirás un e-mail con nuestra respuesta, ¡muchas gracias! <br><br><i><b>**No olvides revisar tu bandeja de spam**</i></b> ',
                                     showConfirmButton: true,
                                     
                                 });
@@ -563,8 +563,8 @@ var PIXELSIGNS = PIXELSIGNS || {};
                             Swal.fire({
                                 position: "center",
                                 icon: "error",
-                                title: "😕 ¡Ops! algo ha salido mal. 😕",
-                                html: 'Vuelve a intentarlo y si el error persiste, no dudes en ponerte en contacto con nosotros a traves de nuestro correo o a traves de nuestras redes sociales:' + '<br><a href="mailto:ucreators.info@gmail.com" style="color: #31a0ff">ucreators.info@gmail.com</a>',
+                                title: "😕 ¡Ups! Algo ha salido mal. 😕",
+                                html: 'Vuelve a intentarlo y si el error persiste, no dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o de nuestro correo electrónico:' + '<br><a href="mailto:ucreators.info@gmail.com" style="color: #31a0ff">ucreators.info@gmail.com</a>',
                                 showConfirmButton: true,
                                 
                             });

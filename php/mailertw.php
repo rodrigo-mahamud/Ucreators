@@ -7,7 +7,10 @@ $namec      = $_POST['namec'];
 $linkc      = $_POST['linkc'];
 $linkrs     = $_POST['linkrs'];
 $tag        = $_POST['tag'];
-$price      = $_POST['price'];
+$priceP      = $_POST['priceP'];
+$priceB      = $_POST['priceB'];
+$monedaP      = $_POST['monedaP'];
+$monedaB      = $_POST['monedaB'];
 $amount     = $_POST['amount'];
 $namer      = $_POST['namer'];
 $surnamer   = $_POST['surnamer'];
@@ -29,7 +32,7 @@ $body       = '';
 // Check NameC
 if (empty($namec)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> Por favor introduce el nombre de tu canal.';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> Por favor introduce el nombre de tu canal.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Nombre del canal (Twitch):</strong> ' . $namec;
@@ -38,7 +41,7 @@ if (empty($namec)) {
 // Check NameC
 if (empty($linkc)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> Por favor introduce el enlace de tu canal.';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> Por favor introduce el enlace de tu canal.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Enlace del canal (Twitch):</strong> ' . $linkc;
@@ -47,7 +50,7 @@ if (empty($linkc)) {
 // Check NameC
 if (empty($linkrs)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> Por favor introduce el nombre de tu otra red social';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> Por favor introduce el nombre de tu otra red social';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Enlace de otra red social</strong> ' . $linkrs;
@@ -63,18 +66,30 @@ if (empty($tag)) {
 	$body  .= '<br>';
 }
 // Check NameC
-if (empty($price) || !is_numeric($price)) {
+if (empty($priceB) || !is_numeric($priceB)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> El precio tiene que estar expresado en número.';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> El precio tiene que estar expresado en número.';
 	$msg   .= '<br>';
 } else {
-	$body  .= '<strong>Precio de venta:</strong> ' . $price;
+	$body  .= '<strong>Precio de venta Basic:</strong> ' . $priceB .$monedaB;
+	$body  .= '<br>';
+}
+// Check NameC
+if (!is_numeric($priceP)) {
+	$error = false;
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> El precio tiene que estar expresado en número.';
+	$msg   .= '<br>';
+} else if(empty($priceP)) {
+	$body  .= '<strong>PREMIUM NO SELECIONADO</strong> ' . $priceP ;
+	$body  .= '<br>';
+}else{
+	$body  .= '<strong>Precio de venta Premium:</strong> ' . $priceP. $monedaB;
 	$body  .= '<br>';
 }
 // Cantidad
 if (empty($amount) || !is_numeric($amount)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> La cantidad tiene que estar expresada en número sin decimales.';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> La cantidad tiene que estar expresada en número sin decimales.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Cantidad que ofrece:</strong> ' . $amount;
@@ -83,7 +98,7 @@ if (empty($amount) || !is_numeric($amount)) {
 // Check NameC
 if (empty($namer)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> Por favor introduce tu nombre real';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> Por favor introduce tu nombre real';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Nombre:</strong> ' . $namer;
@@ -92,7 +107,7 @@ if (empty($namer)) {
 // Check NameC
 if (empty($surnamer)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> Por favor introduce tu apellido real';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> Por favor introduce tu apellido real';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Apellido:</strong> ' . $surnamer;
@@ -110,7 +125,7 @@ if (empty($phone)) {
 // Check Email
 if (empty($email)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> Please enter your valid email address.';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> Please enter your valid email address.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Email:</strong> ' . $email;
@@ -119,7 +134,7 @@ if (empty($email)) {
 // Check Content
 if (empty($content)) {
 	$error = true;
-	$msg   .= '<strong>Importante: </strong> Please write something. Can\'t here you from our home';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i> </strong> Please write something. Can\'t here you from our home';
 	$msg   .= '<br>';
 } else {
 	// Subject
@@ -132,7 +147,7 @@ if (empty($content)) {
 }
 if (empty($terminos)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> Please enter your valid switch address.';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> Please enter your valid switch address.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Terminos y condiciones:</strong> ' . $terminos;
@@ -141,7 +156,7 @@ if (empty($terminos)) {
 
 if (empty($publicidad)) {
 	$error = true;
-	$msg   .= '<strong>Importante:</strong> Please enter your valid switch address.';
+	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> Please enter your valid switch address.';
 	$msg   .= '<br>';
 } else {
 	$body  .= '<strong>Desea recibir publicidad:</strong> ' . $publicidad;
@@ -153,11 +168,11 @@ if (empty($publicidad)) {
 	# Prepare send mail
 	---------------------------------------------*/
 if ($error == true) {
-	$msg    .= '<strong>Por favor corrige los campos para continuar</strong>.';
+	$msg    .= '<strong>Por favor, corrige los campos para continuar</strong>.';
 } else {
 	$body   .= $_SERVER['HTTP_REFERER'] ? '<br><br><br>This form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
 	$error   = false;
-	$msg    .= '<strong>MENSAJE ENVIADO:</strong> <a href="https://ucreators.es/indexdk.html"><i>¿Quieres volver a las página de inicio?</i><a>.';
+	$msg    .= '<strong>MENSAJE ENVIADO: </strong> <a href="https://ucreators.es/indexdk.html" style="color: #232126; font-weight: 500; text-decoration: underline;">Volver a las página de inicio<a>.';
 
 	// Mail Headers
 	$headers   = array();
