@@ -75,13 +75,13 @@ if (empty($priceB) || !is_numeric($priceB)) {
 	$body  .= '<br>';
 }
 // Check NameC
-if (!is_numeric($priceP)) {
+if(empty($priceP)) {
+	$body  .= '<strong>PREMIUM NO SELECCIONADO</strong> ' ;
+	$body  .= '<br>';
+} else if (!is_numeric($priceP)) {
 	$error = true;
 	$msg   .= '<strong><i class="bi-exclamation-circle-fill"></i></strong> El precio tiene que estar expresado en número.';
-	$msg   .= '<br>';
-} else if(empty($priceP)) {
-	$body  .= '<strong>PREMIUM NO SELECCIONADO</strong> ' . $priceP ;
-	$body  .= '<br>';
+	$msg   .= '<br>'; 
 }else{
 	$body  .= '<strong>Precio de venta Premium:</strong> ' . $priceP. ' '. $monedaP;
 	$body  .= '<br>';
