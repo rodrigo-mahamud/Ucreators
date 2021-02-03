@@ -395,7 +395,7 @@ url("./fonts/bootstrap-icons.woff2?5813790c1ebd573b51a03ec84367082a") format("wo
 .bi-circle-square::before { content: "\f277"; }
 .bi-circle::before { content: "\f278"; }
 .bi-clipboard-check::before { content: "\f279"; }
-.bi-clipboard-data::before { content: "\f27a"; }
+.bi-clipboard-data::before { content: "\f27a"; line-height: 2.3; font-size: 24px; vertical-align: unset; }
 .bi-clipboard-minus::before { content: "\f27b"; }
 .bi-clipboard-plus::before { content: "\f27c"; }
 .bi-clipboard-x::before { content: "\f27d"; }
@@ -668,7 +668,7 @@ url("./fonts/bootstrap-icons.woff2?5813790c1ebd573b51a03ec84367082a") format("wo
 .bi-file-zip::before { content: "\f388"; }
 .bi-file::before { content: "\f389"; }
 .bi-files-alt::before { content: "\f38a"; }
-.bi-files::before { content: "\f38b"; }
+.bi-files::before { content: "\f38b"; line-height: 2.3; font-size: 24px; vertical-align: unset; }
 .bi-film::before { content: "\f38c"; }
 .bi-filter-circle-fill::before { content: "\f38d"; }
 .bi-filter-circle::before { content: "\f38e"; }
@@ -919,7 +919,7 @@ url("./fonts/bootstrap-icons.woff2?5813790c1ebd573b51a03ec84367082a") format("wo
 .bi-person-bounding-box::before { content: "\f483"; }
 .bi-person-check-fill::before { content: "\f484"; }
 .bi-person-check::before { content: "\f485"; }
-.bi-person-circle::before { content: "\f486"; }
+.bi-person-circle::before { content: "\f486"; line-height: 2.4; font-size: 24px; vertical-align: unset; }
 .bi-person-dash-fill::before { content: "\f487"; }
 .bi-person-dash::before { content: "\f488"; }
 .bi-person-fill::before { content: "\f489"; }

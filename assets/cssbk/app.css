@@ -12233,13 +12233,7 @@ input:focus + label {
 	z-index: 2;
 }
 
-.animate-element-contact {
-	position: relative;
-	z-index: 222;
-	height: 465px;
-	width: 408px;
-	bottom: -135px;
-}
+
 
 .animate-element-contact img {
 	position: absolute;
@@ -12473,8 +12467,10 @@ input:focus + label {
 }
 
 .page-banner-contact .page-title-wrapper {
-	padding: 315px 0 245px;
-	position: relative;
+    padding: 316px 0px 245px;
+    position: relative;
+    margin-left: -150px;
+    padding-right: 265px;
 }
 
 .page-banner-contact .page-title-wrapper .page-title {
@@ -12504,11 +12500,12 @@ input:focus + label {
 }
 
 .animate-element-contact {
-	position: relative;
-	z-index: 222;
-	height: 465px;
-	width: 408px;
-	bottom: -135px;
+    position: relative;
+    z-index: 222;
+    height: 511px;
+    width: 639px;
+    bottom: -142px;
+    left: -64%;
 }
 
 .animate-element-contact img {
@@ -12943,7 +12940,7 @@ input:focus + label {
 	## Contact Us
 	--------------------------------------------------------------*/
 .contactus {
-	padding: 120px 0;
+	padding: 80px 0;
 }
 
 .gmap3-area {
