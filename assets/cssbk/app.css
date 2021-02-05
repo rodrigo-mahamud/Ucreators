@@ -14292,12 +14292,12 @@ Download Two
 @media (min-width: 2550px) {
 	.border-wrap {
 		position: absolute;
-		left: 52.9%;
-		top: 47%;
-		max-width: 753px;
+		left: 1343px;
+		top: 870px;
+		max-width: 764px;
 		-webkit-transform: translate(-17%, -54%);
 		-ms-transform: translate(-17%, -54%);
-		transform: translate(-17%, -54%) rotate(1deg);
+		transform: translate(-17%, -54%) rotate(0deg);
 		width: 100%;
 		z-index: -1;
 	}
