@@ -11278,9 +11278,8 @@ Logo List
 input:hover + label,
 input:focus + label {
 	transform: perspective(10px) scale(1.01);
-    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 0.17), 0px 0px 0px 2px rgb(255 255 255);
+	box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 0.17), 0px 0px 0px 2px rgb(255 255 255);
 }
-
 
 /* Adding an outline to the label on focus */
 input:focus + label {
@@ -12233,8 +12232,6 @@ input:focus + label {
 	z-index: 2;
 }
 
-
-
 .animate-element-contact img {
 	position: absolute;
 	bottom: 0;
@@ -12467,10 +12464,10 @@ input:focus + label {
 }
 
 .page-banner-contact .page-title-wrapper {
-    padding: 316px 0px 245px;
-    position: relative;
-    margin-left: -150px;
-    padding-right: 265px;
+	padding: 316px 0px 245px;
+	position: relative;
+	margin-left: -150px;
+	padding-right: 265px;
 }
 
 .page-banner-contact .page-title-wrapper .page-title {
@@ -12500,12 +12497,12 @@ input:focus + label {
 }
 
 .animate-element-contact {
-    position: relative;
-    z-index: 222;
-    height: 511px;
-    width: 639px;
-    bottom: -142px;
-    left: -64%;
+	position: relative;
+	z-index: 222;
+	height: 511px;
+	width: 639px;
+	bottom: -142px;
+	left: -64%;
 }
 
 .animate-element-contact img {
@@ -14292,7 +14289,19 @@ Download Two
 	width: 100%;
 	z-index: -1;
 }
-
+@media (min-width: 2560px) {
+	.border-wrap {
+		position: absolute;
+		left: 53.5%;
+		top: 47.5%;
+		max-width: 758px;
+		-webkit-transform: translate(-17%, -54%);
+		-ms-transform: translate(-17%, -54%);
+		transform: translate(-17%, -54%) rotate(2deg);
+		width: 100%;
+		z-index: -1;
+	}
+}
 .border-wrap .ball {
 	position: absolute;
 	height: 40px;
@@ -14414,18 +14423,6 @@ Download Two
 	position: relative;
 	padding-bottom: 28px;
 }
-/*
-.callback:after {
-	content: "";
-	position: absolute;
-	bottom: -150px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-top: 115px solid #9d5efa00;
-	border-left: 1950px solid #a060ff;
-	border-bottom: 150px solid #9f60fe;
-}*/
 
 .callback .particale-element {
 	margin: 0;
@@ -14569,13 +14566,13 @@ Download Two
 
 .call-back-forms input,
 .call-back-forms select {
-    background: #a060ff33;
-    border: 2px solid #303034;
-    padding: 12px 25px;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 18px;
-    color: #ffffff;
+	background: #a060ff33;
+	border: 2px solid #303034;
+	padding: 12px 25px;
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 18px;
+	color: #ffffff;
 }
 
 .call-back-forms input:focus,
@@ -14587,19 +14584,15 @@ Download Two
 	border-radius: 10px;
 	box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 30%);
 }
-::-webkit-input-placeholder {
-    color: #a060ff;
-}
 :focus::-webkit-input-placeholder {
-    color: white;
+	color: white;
 }
 
 .call-back-forms input:focus,
 .call-back-forms select:focus {
 	color: white;
-    border-color: white;
-    border: 2px solid #ffffff;
-	
+	border-color: white;
+	border: 2px solid #ffffff;
 }
 .menu {
 	background-color: #a060ff;
@@ -16719,9 +16712,8 @@ Download Two
 	-webkit-box-shadow: 0px 20px 40px 0px rgba(79, 35, 35, 0.1);
 	box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 47%);
 	transform: scale(1.02);
-	
 }
-:focus{
+:focus {
 	outline: none;
 }
 
