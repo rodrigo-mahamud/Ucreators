@@ -168,7 +168,7 @@ if (empty($publicidad)) {
 	# Prepare send mail
 	---------------------------------------------*/
 	$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'; 
-	$recaptcha_secret = '6LfNmT0aAAAAAK3nkOjJKP4HOCl6U8ZDssirUf_y'; 
+	
 	$recaptcha_response = $_POST['recaptcha_response']; 
 	$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response); 
 	$recaptcha = json_decode($recaptcha); 

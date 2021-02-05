@@ -37,14 +37,7 @@
 		<!-- Google Web Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet" />
 		<script src="https://www.google.com/recaptcha/api.js?render=6LfNmT0aAAAAABY0nU3vMTqFj4iMXqkNFSH1o48x"></script>
-		<script>
-			grecaptcha.ready(function () {
-				grecaptcha.execute("6LfNmT0aAAAAABY0nU3vMTqFj4iMXqkNFSH1o48x", { action: "formulario" }).then(function (token) {
-					var recaptchaResponse = document.getElementById("recaptchaResponse");
-					recaptchaResponse.value = token;
-				});
-			});
-		</script>
+
 	</head>
 
 	<body id="home-version-1" class="home-version-1" data-style="default" style="background-color: #1e1e1e">
@@ -314,7 +307,7 @@
 									</div>
 									<h4 style="margin-left: 12px; margin-top: 3px; margin-bottom: 20px; font-weight: 400; color: white; font-size: 18px; line-height: 1">Quiero estar al tanto de las últimas novedades.</h4>
 								</div>
-								<input type="hidden" name="recaptcha_response" id="recaptchaResponse" />
+								
 								<button type="submit" id="submit" class="pix-btn submit-btn">
 									<span class="btn-text">Enviar Solicitud</span>
 									<i class="fas fa-spinner fa-spin"></i>
