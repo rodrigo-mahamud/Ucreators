@@ -14279,15 +14279,15 @@ Download Two
 }
 
 .border-wrap {
-	position: absolute;
-	left: 55%;
-	top: 48.5%;
-	max-width: 775px;
-	-webkit-transform: translate(-17%, -54%);
-	-ms-transform: translate(-17%, -54%);
-	transform: translate(-17%, -54%) rotate(4deg);
-	width: 100%;
-	z-index: -1;
+    position: absolute;
+    left: 948px;
+    top: 47.5%;
+    max-width: 764px;
+    -webkit-transform: translate(-17%, -54%);
+    -ms-transform: translate(-17%, -54%);
+    transform: translate(-17%, -54%) rotate(2deg);
+    width: 100%;
+    z-index: -1;
 }
 @media (min-width: 2550px) {
 	.border-wrap {
