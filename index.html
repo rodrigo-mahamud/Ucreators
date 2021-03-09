@@ -8,19 +8,18 @@
 		<title>Home Four - Software, App, SaaS landing HTML Template</title>
 
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32t.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png" />
 		<link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#fa7070" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700" />
-		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/cssbk/style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
-		<link rel="stylesheet" href="assets/destacados/dstyleyt.css" />
 		<meta name="msapplication-TileColor" content="#fa7070" />
 		<meta name="theme-color" content="#fa7070" />
 
 		<!-- Dependency Styles -->
+		<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
@@ -29,19 +28,16 @@
 		<link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css" />
 		<link rel="stylesheet" href="assetsopii/css/style.css" />
-		<link rel="stylesheet" href="assets/css/stylewave.css" />
+		<link rel="stylesheet" href="assets/cssbk/stylewave.css" />
 
 		<!-- Site Stylesheet -->
-		<link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+		<link rel="stylesheet" href="assets/cssbk/app.css" type="text/css" />
 
 		<!-- Google Web Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet" />
 	</head>
 
-	<body id="home-version-1" class="home-color-two" data-style="default">
-		<a href="#main_content" data-type="section-switch" class="return-to-top">
-			<i class="fa fa-chevron-up"></i>
-		</a>
+	<body id="home-version-1" class="home-color-two" data-style="default" style="background: #16131b">
 
 		<div class="page-loader">
 			<div class="loader">
@@ -70,26 +66,26 @@
 
 		<div id="main_content">
 			<!--=========================-->
-			<!--=        Navbar         =-->
+			<!--=        Navbar 2       =-->
 			<!--=========================-->
-			<header class="site-header header-two toggle-light header_trans-fixed" data-top="992">
+			<header class="site-header header-eight header_trans-fixed" data-top="992">
 				<div class="container">
 					<div class="header-inner">
-						<div class="site-mobile-logo">
-							<a href="index.html" class="logo">
-								<img src="assets/img/main-logo.png" alt="site logo" class="main-logo" />
-								<img src="assets/img/logo-two.png" alt="site logo" class="sticky-logo" />
-							</a>
-						</div>
-						<!-- /.site-mobile-logo -->
-
 						<div class="toggle-menu">
 							<span class="bar"></span>
 							<span class="bar"></span>
 							<span class="bar"></span>
 						</div>
 						<!-- /.toggle-menu -->
-						<nav class="site-nav nav-two">
+
+						<div class="site-mobile-logo">
+							<a href="index.html" class="logo">
+								<img src="assets/img/main-logo.png" alt="site logo" class="main-logo" />
+								<img src="assets/img/logo-two.png" alt="site logo" class="sticky-logo" />
+							</a>
+						</div>
+
+						<nav class="site-nav">
 							<div class="close-menu">
 								<span>Close</span>
 								<i class="ei ei-icon_close"></i>
@@ -101,39 +97,52 @@
 									<img src="assets/img/logo-two.png" alt="site logo" class="sticky-logo" />
 								</a>
 							</div>
-
 							<script>
 								var beep = new Audio();
 								beep.src = "sound/click.mp3";
 
 								var hov = new Audio();
 								hov.src = "sound/hover.mp3";
-								
-								function delay(index) {
+
+								function delay(index, o) {
 									setTimeout(function () {
 										window.location = index;
 									}, 350);
 								}
 								function mDown(obj) {
-								  obj.style.transform = "scale(0.95)";
-								  
-                                }
+									obj.style.transform = "scale(0.95)";
+								}
 							</script>
-
 							<div class="menu-wrapper" data-top="992">
 								<ul class="site-main-menu">
-									<li onmousedown="mDown(this)" ><a href="javascript:delay('index.html')" onmousedown="beep.play()" onmouseover="hov.play()" >Home</a></li>
-									<li onmousedown="mDown(this)" ><a href="javascript:delay('about.html')" onmousedown="beep.play()" onmouseover="hov.play()">About</a></li>
-									<li onmousedown="mDown(this)" ><a href="javascript:delay('blog.html')blog.html" onmousedown="beep.play()" onmouseover="hov.play()">Blog</a></li>
-									<li onmousedown="mDown(this)" ><a href="javascript:delay('#')" onmousedown="beep.play()" onmouseover="hov.play()">Pages</a></li>
-									<li onmousedown="mDown(this)" ><a href="javascript:delay('contact.html')contact.html" onmousedown="beep.play()" onmouseover="hov.play()">Contact</a></li>
+									<li onmousedown="mDown(this)"><a href="javascript:delay('index.html')" onmousedown="beep.play()" onmouseover="hov.play()">Inicio</a></li>
+									<li onmousedown="mDown(this)"><a href="javascript:delay('about.html')" onmousedown="beep.play()" onmouseover="hov.play()">Como funciona</a></li>
+									<li onmousedown="mDown(this)"><a href="javascript:delay('contact.html')" onmousedown="beep.play()" onmouseover="hov.play()">Contacto</a></li>
 								</ul>
-
-								<div class="nav-right">
-									<a href="signup.html" class="nav-btn style-two">Try For Free</a>
-								</div>
 							</div>
 							<!-- /.menu-wrapper -->
+
+							<div class="nav-right" style="display: -webkit-inline-box; margin-left: 23px">
+								<a href="https://ucreators.es/tienda/shop/" class="nav-btn-scroll-false" id="shop_btn">
+									<p style="margin: 0%; font-size: 16px; line-height: 31px; font-weight: 600; color: unset">TIENDA</p>
+								</a>
+							</div>
+
+							<script>
+								window.onscroll = function () {
+									myFunction();
+								};
+								var btn = document.getElementById("shop_btn");
+								function myFunction() {
+									if (window.pageYOffset > 48) {
+										btn.classList.remove("nav-btn-scroll-false");
+										btn.classList.add("nav-btn");
+									} else {
+										btn.classList.remove("nav-btn");
+										btn.classList.add("nav-btn-scroll-false");
+									}
+								}
+							</script>
 						</nav>
 						<!-- /.site-nav -->
 					</div>
@@ -208,85 +217,40 @@
 							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
 						</defs>
 						<g class="parallax">
-							<use xlink:href="#gentle-wave" x="48" y="0" fill="#f92c2c66" />
-							<use xlink:href="#gentle-wave" x="48" y="3" fill="#f92c2c66" />
-							<use xlink:href="#gentle-wave" x="48" y="5" fill="#f92c2c66" />
-							<use xlink:href="#gentle-wave" x="48" y="7" fill="#F92C2C" />
+							<use xlink:href="#gentle-wave" x="48" y="0" fill="rgb(255 97 96 / 35%)" />
+							<use xlink:href="#gentle-wave" x="48" y="3" fill="rgb(255 97 96 / 35%)" />
+							<use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(255 97 96 / 35%)" />
+							<use xlink:href="#gentle-wave" x="48" y="7" fill="#FF6160" />
 						</g>
 					</svg>
 				</div>
 			</section>
 			<!-- /.banner banner-four -->
-
-			<!--==========================-->
-			<!--=         BOTONES        =-->
-			<!--==========================-->
-
-			<!-- partial:index.partial.html -->
-			<section class="featured-eight" style="padding: unset; position: unset">
-				<div class="container" style="background-color: #f92c2c; max-width: unset; padding-top: 4%">
-					<div class="section-title style-three text-center" style="margin-bottom: 0%; background-color: #f92c2c">
-						<h2 style="color: white" class="title wow pixFadeUp" data-wow-delay="0.2s">Seleciona una plataforma</h2>
-						<div id="app" class="container-btnyt">
-							<a href="index.html">
-								<card data-image="media/yt.jpg">
-									<h1 slot="content" style="font-family: roboto; color: #ffffff">YT</h1>
-								</card>
-							</a>
-							<a href="indexdk.html">
-								<card data-image="media/tw.jpg">
-									<h1 slot="content" style="font-family: roboto; color: #ffffff">TW</h1>
-								</card>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+			<div style="padding: 30px; background-color: #ff6160; margin-bottom: -5px"></div>
 
 			<!--===========================-->
 			<!--=         Feature         =-->
 			<!--===========================-->
-			<section class="featured-eight" style="padding: 10px 0 90px">
+			<section class="featured-eight" style="padding: 75px 0 90px">
 				<div class="top-bg">
-					<img src="media/feature/section_bgyt.svg" alt="saaspik" />
+					<img src="media/feature/section_bg.svg" alt="saaspik" />
 				</div>
-
-				<ul class="particale-top">
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-
 				<div class="container">
 					<div class="section-title style-two title-light text-center">
-						<h3 class="sub-title wow pixFadeUp">Features</h3>
-						<h2 class="title wow pixFadeUp" data-wow-delay="0.2s">Fuel tax recovery process</h2>
-
-						<p class="wow pixFadeUp" data-wow-delay="0.4s">
-							Show off show off pick your nose and blow off smashing ruddy my good sir cack only a quid tinkety<br />
-							tonk old fruit blower boot gosh, at public school squiffy.!
-						</p>
+						<h3 class="sub-title wow pixFadeUp">Nuestros valores</h3>
+						<h2 class="title wow pixFadeUp" data-wow-delay="0.2s">¿Por qué Ucreators?</h2>
 					</div>
 					<!-- /.section-title -->
 
 					<div class="row">
 						<div class="col-lg-4 col-md-6">
-							<div class="saaspik-icon-box-wrapper style-eight" style="padding: 36px 35px;" >
+							<div class="saaspik-icon-box-wrapper style-eight" style="padding: 36px 35px">
 								<div class="saaspik-icon-box-icon">
-									<img src="media/feature/52.png" alt="" />
+									<img src="media/feature/52TW.png" alt="" style="max-width: 58.5%" />
 								</div>
 								<div class="pixsass-icon-box-content">
-									<h3 class="pixsass-icon-box-title"><a href="#">Assess Opportunity</a></h3>
-									<p>
-										Cack old hotpot crikey easy peasy<br />
-										cuppa my lady bum bag he lost his<br />
-										bottle, knackered.!
-									</p>
-
-									<a href="#" class="pix-btn btn-two btn-outline">Learn More</a>
+									<h3 class="pixsass-icon-box-title">AL ALCANCE DE TODOS</h3>
+									<p style="color: #ffffff">Desde Ucreators queremos poner a tu disposición nuestors servicios a un precio adecuado para todos los bolsillos.</p>
 								</div>
 							</div>
 							<!-- /.pixsass-box style-eight -->
@@ -296,18 +260,15 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="saaspik-icon-box-wrapper style-eight">
 								<div class="saaspik-icon-box-icon">
-									<img src="media/feature/53.png" alt="" />
+									<img src="media/feature/53TW.png" alt="" style="max-width: 55%" />
 								</div>
 								<div class="pixsass-icon-box-content">
-									<h3 class="pixsass-icon-box-title"><a href="#">Customization</a></h3>
+									<h3 class="pixsass-icon-box-title">DAMOS VOZ A TU PROYECTO</h3>
 
-									<p>
-										Cack old hotpot crikey easy peasy<br />
-										cuppa my lady bum bag he lost his<br />
-										bottle, knackered.!
+									<p style="color: #ffffff">
+										Sabemos lo difícil que es empezar un proyecto o darte a conocer. <br />
+										Por medio de nuestros creadores, te ayudaremos a llegar al gran público.
 									</p>
-
-									<a href="#" class="pix-btn btn-two btn-outline">Learn More</a>
 								</div>
 							</div>
 							<!-- /.pixsass-box style-eight -->
@@ -315,19 +276,13 @@
 						<!-- /.col-lg-4 col-md-6 -->
 
 						<div class="col-lg-4 col-md-6">
-							<div class="saaspik-icon-box-wrapper style-eight" style="padding: 42px 35px;" >
+							<div class="saaspik-icon-box-wrapper style-eight" style="padding: 42px 35px">
 								<div class="saaspik-icon-box-icon">
-									<img src="media/feature/54.png" alt="" />
+									<img src="media/feature/54TW.png" alt="" style="max-width: 53.2%" />
 								</div>
 								<div class="pixsass-icon-box-content">
-									<h3 class="pixsass-icon-box-title"><a href="#">Multiple Managers</a></h3>
-									<p>
-										Cack old hotpot crikey easy peasy<br />
-										cuppa my lady bum bag he lost his<br />
-										bottle, knackered.!
-									</p>
-
-									<a href="#" class="pix-btn btn-two btn-outline">Learn More</a>
+									<h3 class="pixsass-icon-box-title">CON LA MISMA DEDICACIÓN</h3>
+									<p style="color: #ffffff">Entendemos la ilusión que pones en tus proyectos y por tanto, queremos acompañarte para que todo salga como tengas planeado.</p>
 								</div>
 							</div>
 							<!-- /.pixsass-box style-eight -->
@@ -340,17 +295,17 @@
 			</section>
 			<!-- /.featured -->
 
-
 			<!--========================-->
 			<!--=         Team         =-->
 			<!--========================-->
-			<section class="teams-six">
+			<section class="teams-six" style="padding: 90px 0 180px">
 				<div class="container">
 					<div class="section-title style-six text-center">
-						<h2 class="title wow fadeInUp" data-wow-delay="0.2s">The Team Behind</h2>
-						<p class="wow fadeInUp" data-wow-delay="0.4s" style="color: black;" >
-							Tomfoolery pukka chap I'm telling wellies James Bond william<br />
-							chinwag Charles.
+						<h2 class="title wow fadeInUp" data-wow-delay="0.2s">Creadores destacados</h2>
+
+						<p class="wow fadeInUp" data-wow-delay="0.4s" style="color: white">
+							¡Aquí puedes encontrar una selección de creadores <br />
+							recomendados por Ucreators!
 						</p>
 					</div>
 
@@ -446,19 +401,19 @@
 			<!--=================================-->
 			<section class="signup-section">
 				<div class="bg-shape">
-					<img src="media/background/left-shaper.png" data-parallax='{"x": -130}' alt="shape" class="shape-left" />
-					<img src="media/background/right_shaper.png" data-parallax='{"x": 130}' alt="shape" class="shape-right" />
+					<img src="media/background/left-shape.png" data-parallax='{"x": -130}' alt="shape" class="shape-left" />
+					<img src="media/background/right_shape.png" data-parallax='{"x": 130}' alt="shape" class="shape-right" />
 				</div>
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-md-8">
 							<div class="signup-heading wow pixFadeUp">
 								<h2 class="title">
-									Start managing your<br />
-									SaaSpik. bettet
+									Accede a una gran <br />
+									variedad de creadores.
 								</h2>
 
-								<p>try any products free for 30 days</p>
+								<p>¡Promociónate en los canales de tus creadores favoritos!</p>
 							</div>
 							<!-- /.signup-heading -->
 						</div>
@@ -466,7 +421,7 @@
 
 						<div class="col-md-4">
 							<div class="button-container text-right wow pixFadeUp">
-								<a href="signup.html" class="pix-btn btn-large btn-light color-two">Signup for free</a>
+								<a href="signup.html" class="pix-btn btn-large btn-light color-two">Ir a la Tienda</a>
 							</div>
 							<!-- /.button-container -->
 						</div>
@@ -488,26 +443,27 @@
 							<div class="col-lg-7 pix-order-one">
 								<div class="interface-content pt-7">
 									<div class="interface-title pixFadeUp">
-										<h2 style="font-weight: 700;" >
-											IMPULSAMOS TU PROYECTO
+										<h2 style="font-weight: 700">
+											IMPULSAMOS TU ESPACIO <br />
+											EN TWITCH.
 										</h2>
 
-										<p class="wow pixFadeUp" data-wow-delay="0.3s" style="color: black;" >
-											En Ucreators queremos dar visibilidad a todos tus proyectos, <br>
-											desde tu nueva idea de negocio hasta todas tus redes sociales. <br>
-											Para ello, ponemos a tu disposición a una gran cantidad de creadores<br>
-											que te ayudarán a alcanzar tus objetivos. <b>¿A qué esperas?</b><br/>
+										<p class="wow pixFadeUp" data-wow-delay="0.3s" style="color: #ffffff">
+											En Ucreators sabemos lo difícil que es empezar, <br />
+											por eso queremos dar visibilidad a los pequeños streamers. <br />
+											Para ello, ponemos a tu disposición a una gran cantidad de <br />
+											streamers que te ayudarán a crecer en Twitch. <b>¿A qué esperas?</b>
 										</p>
 									</div>
 									<!-- /.section-title style-two -->
 
 									<ul class="list-items list-with-icon wow pixFadeUp" data-wow-delay="0.4s">
-										<li><i class="ei ei-icon_wallet"></i> Asequible</li>
-										<li><i class="ei ei-icon_like"></i> Aumenta tu alcance</li>
-										<li><i class="ei ei-icon_star_alt"></i> Promociones personalizadas</li>
+										<li><i class="ei ei-icon_wallet"></i>Asequible.</li>
+										<li><i class="ei ei-icon_like"></i>Aumenta tu alcance.</li>
+										<li><i class="ei ei-icon_star_alt"></i>Promociones personalizadas.</li>
 									</ul>
 
-									<a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">View More</a>
+									<a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Empezar</a>
 								</div>
 								<!-- /.interface-content -->
 							</div>
@@ -515,16 +471,43 @@
 
 							<div class="col-lg-5">
 								<div class="interface-image-wrapper style-one">
-									<div class="image-one wow pixFadeUp">
-										<img src="media/feature/27.png" data-parallax='{"y" : 50}' alt="interface" />
-									</div>
+									<li class="animation-cohete">
+										<img src="media/indexAnimation/cohete.png" alt="download_device" class="img-cohete" data-parallax='{"x": -160, "y": -150, "from-scroll": 2400}' />
+									</li>
+									<li class="animation-llama">
+										<img src="media/indexAnimation/llama.png" alt="download_device" class="img-llama" data-parallax='{"x": -150, "y": -150, "from-scroll": 2400}' />
+									</li>
+									<li class="animation-luz-bellNozzle">
+										<img src="media/indexAnimation/luz.png" alt="download_device" class="img-luz-bellNozzle" data-parallax='{"x": -150, "y": -160, "from-scroll": 2400}' />
+									</li>
+									<li class="animation-stars1">
+										<img src="media/indexAnimation/Estrellas1.png" alt="download_device" class="img-stars1" data-parallax='{"x": -40, "y": -30, "from-scroll": 2400}' />
+									</li>
+									<li class="animation-stars2">
+										<img src="media/indexAnimation/Estrellas2.png" alt="download_device" class="img-stars2" data-parallax='{"x": -40, "y": -30, "from-scroll": 2400}' />
+									</li>
+									<li class="animation-nubesA">
+										<img src="media/indexAnimation/NubesAtras.png" alt="download_device" class="img-nubesA" data-parallax='{"x": -40, "y": -30, "from-scroll": 2400}' />
+									</li>
+									<li class="animation-nubesB">
+										<img src="media/indexAnimation/NubesDelante.png" alt="download_device" class="img-nubesB" data-parallax='{"x": -40, "y": -30, "from-scroll": 2400}' />
+									</li>
+									<li class="animation-3tw">
+										<img src="media/indexAnimation/3TW.png" alt="download_device" class="img-3tw" data-parallax='{"x": -50, "y": -120, "from-scroll": 2400}' />
+									</li>
 
-									<div class="image-two wow pixFadeDown">
-										<img src="media/feature/26.png" data-parallax='{"y" : -50}' alt="interface" />
-									</div>
+									<li class="animation-2tw">
+										<img src="media/indexAnimation/1YT.png" alt="download_device" class="img-2tw" data-parallax='{"x":120, "y": -10}' />
+									</li>
+
+									<li class="animation-1tw">
+										<img src="media/indexAnimation/1TW.png" alt="download_device" class="img-1tw" data-parallax='{"x":120, "y": 20}' />
+									</li>
+
+									<img src="media/discord/4E.png" alt="download_device" class="img-5" data-parallax='{"x":0, "y": 50}' />
 
 									<svg xmlns="http://www.w3.org/2000/svg" class="svgbg-one" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
-										<path fill-rule="evenodd" opacity="0.15" fill="rgb(255 0 0)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
+										<path fill-rule="evenodd" opacity="0.15" fill="rgb(160 96 255)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
 									</svg>
 								</div>
 								<!-- /.interface-image-wrapper -->
@@ -539,32 +522,40 @@
 						<div class="col-lg-7">
 							<div class="interface-image-wrapper style-two">
 								<div class="image-one wow pixFadeRight">
-									<img src="media/feature/28.png" data-parallax='{"x" : 30}' alt="interface" />
-								</div>
+									<li class="animation-video">
+										<img src="media/indexAnimation/videoYT.png" alt="download_device" class="img-video" />
+									</li>
+									<li class="animation-robin">
+										<img src="media/indexAnimation/robin.png" alt="download_device" class="img-robin" data-parallax='{"x": 180, "y":-58, "from-scroll": 3100, "distance": 700}' data-parallax2='{"rotateZ": -17,  "from-scroll": 3600, "distance": 120}' />
+									</li>
+									<li class="animation-botonvid">
+										<img src="media/indexAnimation/bolitaYT.png" alt="download_device" class="img-botonvid" data-parallax='{"x": 100, "y":-5, "from-scroll": 3100, "distance": 800}' data-parallax2='{"rotateZ": -17,  "from-scroll": 3500, "distance": 120}' />
+									</li>
+									<li class="animation-formas">
+										<img src="media/indexAnimation/formas.png" alt="download_device" class="img-formas" />
+									</li>
+									<img src="media/discord/4E.png" alt="download_device" class="img-5" data-parallax='{"x":0, "y": 50}' />
 
-								<div class="image-two wow pixFadeLeft">
-									<img src="media/feature/29.png" data-parallax='{"x" : -30}' alt="interface" />
+									<svg xmlns="http://www.w3.org/2000/svg" class="svgbg-two" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
+										<path fill-rule="evenodd" opacity="0.15" fill="rgb(160 96 255)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
+									</svg>
 								</div>
-
-								<svg xmlns="http://www.w3.org/2000/svg" class="svgbg-two" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
-									<path fill-rule="evenodd" opacity="0.15" fill="rgb(255 0 0)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
-								</svg>
+								<!-- /.interface-image-wrapper -->
 							</div>
-							<!-- /.interface-image-wrapper -->
+							<!-- /.col-lg-6 -->
 						</div>
-						<!-- /.col-lg-6 -->
 
 						<div class="col-lg-5 pix-order-one">
 							<div class="interface-content">
 								<div class="interface-title pixFadeUp">
-									<h2 style="font-weight: 700" >
-										¿ERES CREADOR? <br>
-										IMPULSA TU CARRERA
+									<h2 style="font-weight: 700">
+										¿ERES STREAMER? <br />
+										IMPULSA TU CARRERA.
 									</h2>
 
-									<p class="wow pixFadeUp md-brn" data-wow-delay="0.3s" style="color: black;" >
-										Ofrece un pequeño espacio de tu canal para dar a conocer proyectos increíbles y obtener de esta forma,<br>
-										 una vía alternativa de monetización. Tú decides qué tipo de proyectos quieres promocionar. <b>Sin ataduras.</b>
+									<p class="wow pixFadeUp md-brn" data-wow-delay="0.3s" style="color: #ffffff">
+										Hostea pequeños streamers para ayudarles <br />
+										a crecer en la plataforma y a su vez, obtén una vía alternativa de monetización. Tú decides qué streamers promocionar.<b> Sin ataduras.</b><br />
 									</p>
 								</div>
 								<!-- /.section-title style-two -->
@@ -575,143 +566,62 @@
 									<li><i class="ei ei-icon_chat"></i> Soporte personalizado</li>
 								</ul>
 
-								<a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Discover More</a>
+								<a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Soy creador</a>
 							</div>
 							<!-- /.interface-content -->
 						</div>
 						<!-- /.col-lg-6 -->
 					</div>
-					<!-- /.row -->
-
-					<div class="border-wrap">
-						<span class="ball" data-parallax='{"x" : -100}'></span>
-						<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-						<svg version="1.1" id="animate-border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 908.5 976.2" style="enable-background: new 0 0 908.5 976.2" xml:space="preserve">
-							<style type="text/css">
-								.st0 {
-									fill: #ffffff;
-								}
-
-								.st1 {
-									opacity: 5e-2;
-								}
-
-								.st2 {
-									fill: #1a4a88;
-								}
-
-								.st3 {
-									opacity: 0.8;
-									fill: #ff0000;
-								}
-
-								.st4 {
-									fill: #ff0000;
-								}
-
-								.st5 {
-									fill: #ff0000;
-								}
-
-								.st6 {
-									fill: #ff0000;
-								}
-
-								.st7 {
-									fill: #fdfefe;
-								}
-
-								.st8 {
-									opacity: 0.5;
-									fill: #ff0000;
-								}
-
-								.st9 {
-									opacity: 0.75;
-									fill: #ff0000;
-								}
-
-								.st10 {
-									fill: none;
-									stroke: #1a4a88;
-									stroke-width: 1.5;
-									stroke-miterlimit: 10;
-								}
-
-								.st11 {
-									opacity: 0.1;
-								}
-
-								.st12 {
-									opacity: 0.85;
-									fill: #ea7225;
-								}
-
-								.st13 {
-									opacity: 0.81;
-									fill: #ea7225;
-								}
-
-								.st14 {
-									opacity: 0.4;
-									fill: #ea7225;
-								}
-
-								.st15 {
-									opacity: 0.7;
-									fill: #ea7225;
-								}
-
-								.st16 {
-									fill: none;
-									stroke: #ff0000;
-									stroke-width: 2;
-									stroke-miterlimit: 10;
-								}
-
-								.st17 {
-									fill: none;
-									stroke: #ff0000;
-									stroke-width: 3;
-									stroke-miterlimit: 10;
-									stroke-dasharray: 5.9904, 5.9856;
-								}
-							</style>
-							<g>
-								<g>
-									<g>
-										<path class="st16" d="M8.4,908.7c0,0,0.6,0.4,1.7,1.1" />
-										<path
-											class="st17 path"
-											d="M15.2,912.9c36.7,22,207.6,117.4,147.2-44.2c-67.5-180.6-137.7-410.5,320-358
-							c457.7,52.5,448.6-207.4,383-331C808.1,71.8,725.1,26.6,704.9,16.8"
-										/>
-										<path class="st16" d="M702.2,15.5c-1.2-0.5-1.8-0.8-1.8-0.8" />
-									</g>
-								</g>
-							</g>
-						</svg>
-					</div>
 				</div>
+				<!-- /.row -->
+
+				<div id="res" class="border-wrap">
+					<img src="media/indexAnimation/trazoTW.png" alt="download_device" class="img-trayectoria" />
+				</div>
+				<script>
+					var res = document.getElementById("res");
+					var width = screen.width / (screen.width * 0.00001 + 2) + 90;
+					res.style.left = width + "px";
+				</script>
+
 				<!-- /.container -->
 			</section>
 			<!-- /.interface -->
 
-			<section class="oppi_download_app_three_wrap">
+			<!--=========================-->
+			<!--=        DDISCORD       =-->
+			<!--=========================-->
+			<section class="oppi_download_app_three_wrap" style="background: #ff6160">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-12">
 							<div class="oppi_download_app_content">
-								<h2 class="text-center sec_title wow fadeInUp" data-wow-delay="0.2s">
-									Available for <br/>
-									all of your devices.
-								</h2>
-								<p class="download_para text-center wow fadeInUp" data-wow-delay="0.3s">All the power of niche in your pocket. Schedule, publish and monitir your accounts with ease.</p>
-								<div class="button-container text-center wow pixFadeUp">
-									<a href="signup.html" class="pix-btn btn-large btn-light color-two" style=" margin-bottom: 4%;" >Signup for free</a>
+								<div class="download_mockup_device wow fadeInUp d-img-container" data-wow-delay="0.4s">
+									<li class="zoom-main"><img src="media/discord/mainImg.png" alt="download_device" class="img-main" data-parallax='{"x": 0, "y": 150}' /></li>
+									<li class="animation-TXT"><img src="media/discord/TXT.png" alt="download_device" class="img-TXT" data-parallax='{"x": 0, "y": 140}' /></li>
+									<li class="animation-logo"><img src="media/discord/logoTXT.png" alt="download_device" class="img-logo" data-parallax='{"x": 0, "y": 80}' /></li>
+									<li class="cloud"><img src="media/discord/Nubes.png" alt="download_device" class="img-nube" data-parallax='{"x":80, "y": 80}' /></li>
+									<li class="cloud-back"><img src="media/discord/NubesDetras.png" alt="download_device" class="img-nube-detras" data-parallax='{"x":160, "y": 80}' /></li>
+									<li class="animation-luz"><img src="media/discord/LUZ.png" alt="download_device" class="img-luz" data-parallax='{"x":0, "y": 150}' /></li>
+									<li class="animation-1"><img src="media/discord/1E.png" alt="download_device" class="img-1" data-parallax='{"x":0, "y": 100}' /></li>
+									<li class="animation-2"><img src="media/discord/2E.png" alt="download_device" class="img-2" data-parallax='{"x":0, "y": 120}' /></li>
+									<li class="animation-3"><img src="media/discord/3E.png" alt="download_device" class="img-3" data-parallax='{"x":0, "y": 100}' /></li>
+									<li class="animation-4"><img src="media/discord/4E.png" alt="download_device" class="img-4" data-parallax='{"x":0, "y": 120}' /></li>
+
+									<img src="media/discord/4E.png" alt="download_device" class="img-5" data-parallax='{"x":0, "y": 50}' />
 								</div>
-								<div class="download_mockup_device wow fadeInUp" data-wow-delay="0.4s">
-									<img src="media/images/home_education/download_device.png" alt="download_device" class="img-fluid" data-parallax='{"x": 0, "y": 100}' />
+								<div style="margin-top: 45%">
+									<h2 class="text-center sec_title wow fadeInUp" data-wow-delay="0.2s">
+										¡No te vayas sin unirte<br />
+										a nuestro Discord!
+									</h2>
+									<p class="download_para text-center wow fadeInUp" data-wow-delay="0.3s">
+										¿Toxicidad, mala vibra? Fuera. <br />
+										En nuestro servidor te damos la mano y cocinamos salmón. 🐟
+									</p>
+									<div class="button-container text-center wow pixFadeUp">
+										<a href="signup.html" class="pix-btn btn-large btn-light color-two" style="margin-bottom: 4%">Unirme al servidor</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -719,11 +629,11 @@
 				</div>
 			</section>
 			<!-- oppi_download_app_three_wrap -->
-			
+
 			<!--=========================-->
 			<!--=        Footer         =-->
 			<!--=========================-->
-			<footer id="footer" class="footer-app" style="background: #f00">
+			<footer id="footer" class="footer-app" style="background: #ff6160">
 				<div class="container-wrap bg-footer-color" style="box-shadow: 0px 0px 20px 10px #0000003d">
 					<div class="container">
 						<div class="footer-inner">
@@ -769,7 +679,7 @@
 									<div class="widget footer-widget">
 										<h3 class="widget-title">Company</h3>
 										<ul class="footer-menu">
-											<li><a href="#">About Us</a></li>
+											<li><a href="#">Sobre nosotros</a></li>
 											<li><a href="#">Careers</a></li>
 											<li><a href="#">Contact Us</a></li>
 											<li><a href="#">Terms of Service</a></li>
@@ -802,7 +712,7 @@
 
 						<div class="site-info">
 							<div class="copyright text-center">
-								<p> Design by <a href="http://www.pixelsigns.art" target="_blank">Rodrigo Mahamud</a></p>
+								<p>Design by <a href="http://www.pixelsigns.art" target="_blank">Rodrigo Mahamud y Javier Del Rey</a></p>
 							</div>
 						</div>
 					</div>
@@ -815,7 +725,10 @@
 		<!-- /#site -->
 
 		<!-- Dependency Scripts -->
-		<script src="dependencies/jquery/jquery.min.js"></script>
+
+		<!--<script src="dependencies/jquery/jquery.min.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+
 		<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
 		<script src="dependencies/swiper/js/swiper.min.js"></script>
 		<script src="dependencies/jquery.appear/jquery.appear.js"></script>
@@ -826,17 +739,13 @@
 		<script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
 		<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
 		<script src="dependencies/gmap3/js/gmap3.min.js"></script>
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6"></script>
 
 		<!-- Site Scripts -->
 		<script src="assets/js/header.js"></script>
 		<script src="assets/js/app.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
 		<script src="assets/js/script.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-		<script src="assets/destacados/dscript.js"></script>
-		<script src="assets/js/scriptbtn.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	</body>
 </html>

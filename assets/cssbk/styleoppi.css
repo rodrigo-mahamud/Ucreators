@@ -110,7 +110,7 @@ a.link:hover {
   font-size: 30px;
   line-height: 44px;
   font-weight: 600;
-  color: #a060ff;
+  color: #ff6160;
   font-family: "Poppins", sans-serif;
 }
 
@@ -7658,7 +7658,7 @@ a.link:hover {
   content: "";
   width: 150%;
   height: 485px;
-  background: #a060ff;
+  background: #ff6160;
   position: absolute;
   z-index: 3;
   -webkit-transform: rotate(-9.9deg);
