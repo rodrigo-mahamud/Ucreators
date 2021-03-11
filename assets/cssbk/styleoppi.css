@@ -7656,8 +7656,8 @@ a.link:hover {
 }
 .oppi_finance_action_area:before {
   content: "";
-  width: 150%;
-  height: 485px;
+  width: 110%;
+  height: 540px;
   background: #ff6160;
   position: absolute;
   z-index: 3;
@@ -7667,7 +7667,6 @@ a.link:hover {
   bottom: -193px;
   right: -171px;
 }
-
 .finance_action_inner {
   border-radius: 10px;
   background-color: #303034;
