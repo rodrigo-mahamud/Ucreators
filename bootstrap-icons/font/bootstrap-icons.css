@@ -521,7 +521,7 @@ url("./fonts/bootstrap-icons.woff2?5813790c1ebd573b51a03ec84367082a") format("wo
 .bi-emoji-sunglasses::before { content: "\f2f5"; }
 .bi-emoji-wink-fill::before { content: "\f2f6"; }
 .bi-emoji-wink::before { content: "\f2f7"; }
-.bi-envelope-fill::before { content: "\f2f8"; }
+.bi-envelope-fill::before { content: "\f2f8"; line-height: 1.4; }
 .bi-envelope-open-fill::before { content: "\f2f9"; }
 .bi-envelope-open::before { content: "\f2fa"; }
 .bi-envelope::before { content: "\f2fb"; }

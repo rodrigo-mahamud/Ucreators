@@ -64,6 +64,41 @@
 	}
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff6160;
+  border: 0px none #ffffff;
+  border-radius: 47px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6160;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ff6160;
+}
+::-webkit-scrollbar-track {
+  background: #16131b;
+  border: unset;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #16131b;
+}
+::-webkit-scrollbar-track:active {
+  background: #16131b;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 .element {
 	width: 100px;
 	height: 100px;
@@ -2184,6 +2219,22 @@ section {
 	box-shadow: 0px 10px 30px 0px rgb(176 70 70 / 30%);
 }
 
+.pix-btn.btn-outline-twotw {
+	border: 2px solid #a644ff;
+	background: transparent;
+	color: #a644ff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.pix-btn.btn-outline-twotw:hover {
+	background: #a644ff;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 20px 6px rgb(255 97 96 / 20%);
+    box-shadow: 0px 0px 20px 6px rgb(166 68 255 / 20%);
+    transform: perspective(10px) scale(1.1);
+    border-radius: 10px;
+}
 .pix-btn.btn-outline-two {
 	border: 2px solid #ff6160;
 	background: transparent;
@@ -2201,6 +2252,7 @@ section {
 	border-radius: 10px;
 }
 
+
 .pix-btn.btn-light {
 	background: #fff;
 	color: #fa7070;
@@ -2209,7 +2261,19 @@ section {
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 0px 30px 0px rgb(255 97 96 / 30%);
 }
+.pix-btn.btn-lightdis {
+	background: #fff;
+	color: #7e93dd;
+	border: 2px solid #fff;
+	padding: 14px 40px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 15%);
+}
+
 
 .pix-btn.btn-light:focus {
 	-webkit-box-shadow: none;
@@ -2217,16 +2281,26 @@ section {
 	outline: 0;
 }
 
+.pix-btn.btn-light.color-twodis {
+	color: #7e93dd;
+}
 .pix-btn.btn-light.color-two {
 	color: #ff6160;
 }
-
 .pix-btn.btn-light:hover {
 	background: transparent;
 	color: #fff;
 	border-color: #fff;
 	transform: scale(1.05);
 	border-radius: 10px;
+}
+.pix-btn.btn-lightdis:hover {
+	background: transparent;
+	color: #fff;
+	border-color: #fff;
+	transform: scale(1.05);
+	border-radius: 10px;
+	box-shadow: unset!important;
 }
 
 .pix-btn.btn-light.btn-outline {
@@ -5162,7 +5236,7 @@ select {
 .banner.banner-four {
 	background-image: -o-linear-gradient(-60deg, #1f1f23 0%, #1f1f23 100%);
 	background-image: linear-gradient(-60deg, #19161f 0%, #19161f 100%);
-	height: 1060px;
+	height: 942px;
 	padding-top: 290px;
 }
 
@@ -7134,7 +7208,7 @@ select {
 }
 
 .featured-eight {
-	padding: 117px 0 90px;
+	padding: 10px 0 90px;
 }
 
 .featured-eight .top-bg {
@@ -7143,6 +7217,15 @@ select {
 	left: 0;
 	z-index: -1;
 	width: 100%;
+}
+@media (min-width: 2000px) {
+	.featured-eight .top-bg {
+		position: absolute;
+		top: -195px;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+	}
 }
 
 .featured-eight .top-bg img {
@@ -11540,7 +11623,7 @@ select {
 
 .team-member-four .member-avater .member-social {
 	margin-bottom: 0;
-	padding: 0;
+	padding: 10px;
 	padding-bottom: 10px;
 	list-style: none;
 	position: absolute;
@@ -11605,7 +11688,7 @@ select {
 	color: #ff6160;
 	border-color: #fff;
 	border-radius: 12px;
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .team-member-four .member-avater:hover {
@@ -18356,7 +18439,7 @@ Download Two
 }
 
 #footer .footer-inner {
-	padding: 116px 0 62px;
+	padding: 116px 0 20px;
 }
 
 #footer .widget.footer-widget .widget-title {
@@ -18395,8 +18478,10 @@ Download Two
 
 #footer .footer-logo {
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	margin-left: -15%;
 }
+
 
 #footer .email-info {
 	display: block;
