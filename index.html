@@ -28,7 +28,6 @@
 		<link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css" />
 		<link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css" />
-		<link rel="stylesheet" href="assetsopii/css/style.css" />
 		<link rel="stylesheet" href="assets/cssbk/stylewave.css" />
 		<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css" />
 
@@ -186,7 +185,7 @@
 
 							<div class="col-lg-4 col-md-5">
 								<div class="promo-mockup wow pixFadeUp text-center">
-									<img src="media/banner/mobile.png" class="wow pixZoomIn" alt="ucreators" style="max-width: 130%; margin-left: -25px" />
+									<img src="media/banner/mobile.png" class="wow pixZoomIn" alt="ucreators" style="max-width: 100%; margin-left: 6px" />
 								</div>
 								<!-- /.promo-mockup -->
 							</div>
@@ -285,7 +284,7 @@
 			<!--========================-->
 			<!--=         Team         =-->
 			<!--========================-->
-			<section class="teams-six" style="padding: 90px 0 180px">
+			<section class="teams-six">
 				<div class="container">
 					<div class="section-title style-six text-center">
 						<h2 class="title wow fadeInUp" data-wow-delay="0.2s">Creadores destacados</h2>
@@ -488,7 +487,7 @@
 							<!-- /.col-lg-6 -->
 
 							<div class="col-lg-5">
-								<div class="interface-image-wrapper style-one">
+								<div id="cohetePC" class="interface-image-wrapper style-one">
 									<li class="animation-cohete">
 										<img src="media/indexAnimation/cohete.png" alt="ucreators youtube" class="img-cohete" data-parallax='{"x": -160, "y": -150, "from-scroll": 2400}' />
 									</li>
@@ -528,6 +527,26 @@
 										<path fill-rule="evenodd" opacity="0.15" fill="rgb(160 96 255)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
 									</svg>
 								</div>
+
+
+								<div id="coheteM" class="interface-image-wrapper style-one">
+									<li class="animation-coheteM">
+										<img src="media/indexAnimation/coheteM.png" alt="ucreators youtube" class="img-coheteM"/>
+									</li>
+								</div>
+								<script>
+									var movil = document.getElementById("coheteM");
+									var PC = document.getElementById("cohetePC");
+									var width = screen.width;
+									if(width<992){
+										movil.style.display = "block"
+										PC.style.display = "none"
+									}else{
+										movil.style.display = "none"
+										PC.style.display = "block"
+									}
+									
+								</script>
 								<!-- /.interface-image-wrapper -->
 							</div>
 							<!-- /.col-lg-6 -->
@@ -538,7 +557,7 @@
 
 					<div class="row">
 						<div class="col-lg-7">
-							<div class="interface-image-wrapper style-two">
+							<div id="videoPC" class="interface-image-wrapper style-two">
 								<div class="image-one wow pixFadeRight">
 									<li class="animation-video">
 										<img src="media/indexAnimation/videoTW.png" alt="ucreators twitch" class="img-video" />
@@ -560,6 +579,26 @@
 								</div>
 								<!-- /.interface-image-wrapper -->
 							</div>
+							<div id="videoM" class="interface-image-wrapper style-two">
+								<div class="image-one wow pixFadeRight">
+									<li class="animation-videoM">
+										<img src="media/indexAnimation/videoM.png" alt="ucreators twitch" class="img-videoM" />
+									</li>
+								</div>
+								<!-- /.interface-image-wrapper -->
+							</div>
+							<script>
+								var movilv = document.getElementById("videoM");
+								var PCv = document.getElementById("videoPC");
+								var width = screen.width;
+								if(width<992){
+									movilv.style.display = "block"
+									PCv.style.display = "none"
+								}else{
+									movilv.style.display = "none"
+									PCv.style.display = "block"
+								}	
+							</script>
 							<!-- /.col-lg-6 -->
 						</div>
 
@@ -611,7 +650,7 @@
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-12">
 							<div class="oppi_download_app_content">
-								<div class="download_mockup_device wow fadeInUp d-img-container" data-wow-delay="0.4s">
+								<div id="disPC" class="download_mockup_device wow fadeInUp d-img-container" data-wow-delay="0.4s">
 									<li class="zoom-main"><img src="media/discord/mainImg.png" alt="discord ucreators" class="img-main" data-parallax='{"x": 0, "y": 150}' /></li>
 									<li class="animation-TXT"><img src="media/discord/TXT.png" alt="discord ucreators" class="img-TXT" data-parallax='{"x": 0, "y": 140}' /></li>
 									<li class="animation-logo"><img src="media/discord/logoTXT.png" alt="discord ucreators" class="img-logo" data-parallax='{"x": 0, "y": 80}' /></li>
@@ -625,6 +664,24 @@
 
 									<img src="media/discord/4E.png" alt="ucreators discord" class="img-5" data-parallax='{"x":0, "y": 50}' />
 								</div>
+								<div id="disM" class="download_mockup_device wow fadeInUp d-img-container" data-wow-delay="0.4s">
+									<li class="animation-disM">
+										<img src="media/discord/discordM.png" alt="discord ucreators" class="img-disM"  />
+									</li>
+									
+								</div>
+								<script>
+									var movild = document.getElementById("disM");
+									var PCd = document.getElementById("disPC");
+									var width = screen.width;
+									if(width<992){
+										movild.style.display = "block"
+										PCd.style.display = "none"
+									}else{
+										movild.style.display = "none"
+										PCd.style.display = "block"
+									}	
+								</script>
 								<div style="margin-top: 45%">
 									<h2 class="text-center sec_title wow fadeInUp" data-wow-delay="0.2s">
 										¡No te vayas sin unirte<br />
