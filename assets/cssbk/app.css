@@ -13673,6 +13673,12 @@ input:focus + label {
 		bottom: -70px;
 	}
 }
+@media (max-width: 480px) {
+	.animate-element-contact img:nth-child(1) {
+		left: 5px;
+		bottom: 80px;
+	}
+}
 
 .animate-element-contact img:nth-child(2) {
 	bottom: 41px;
