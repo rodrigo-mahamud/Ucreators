@@ -2249,6 +2249,36 @@ section {
 		margin-top: 2%;
 		max-width: 100%;
 	}
+}
+.finance_action_inner {
+	border-radius: 20px;
+    background-color: #242331;
+    -webkit-box-shadow: 0px 50px 100px 0px rgb(0 0 0 / 20%);
+    box-shadow: 0px 10px 40px 5px rgb(0 0 0 / 20%);
+    padding: 55px 15px;
+    position: relative;
+    z-index: 4;
+
+}
+@media (max-width: 992px) {
+	.f_title{
+		font-size: 25px;
+	}
+}
+
+.oppi_finance_action_area:before {
+	content: "";
+    width: 100%;
+    height: 401px;
+    background: #ff6160;
+    position: absolute;
+    z-index: 0;
+    -webkit-transform: rotate(-9.9deg);
+    -ms-transform: rotate(-9.9deg);
+    transform: rotate(-8.9deg);
+    bottom: -223px;
+    box-shadow: 80px 0px 0px 0px #fd605f;
+    right: 33px;
 } 
 /*--------------------------------------------------------------
 	##  Buttons
@@ -4972,7 +5002,7 @@ select {
 	.site-header .site-nav {
 		position: fixed;
 		width: 320px !important;
-		height: 100vh;
+		height: 101vh;
 		background: #fff;
 		top: 0;
 		left: -100%;
@@ -4980,7 +5010,7 @@ select {
 		-webkit-transition: all 0.5s ease-in-out;
 		-o-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
-		overflow: scroll;
+		overflow: unset;
 		-webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 		box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 	}
@@ -8215,7 +8245,7 @@ select {
 	}
 	.featured-eight .top-bg {
     background: #16131b;
-    top: 92%;
+    top: 90%;
 	}
 }
 @media (max-width: 600px) {
@@ -11312,7 +11342,7 @@ select {
 }
 
 .faq-tabs li:not(:last-child) {
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .faq-tabs li a {
@@ -11973,7 +12003,7 @@ select {
 
 @media (max-width: 991px) {
 	.teams-six {
-		padding: 145px 0 135px;
+		padding: 240px 0 135px;
 	}
 }
 @media (max-width: 480px) {
@@ -12050,7 +12080,8 @@ select {
 }
 
 .faq-section-two {
-	padding-top: 75px;
+	padding-top: 85px;
+	margin-bottom: 6%;
 }
 
 .faqs {
@@ -12169,7 +12200,7 @@ select {
 		padding: 80px 0 50px;
 	}
 	.faq-two {
-		margin-bottom: 30px;
+		margin-bottom: 120px;
 	}
 	.faq-section-two {
 		padding-top: 65px;
@@ -13590,8 +13621,6 @@ input:focus + label {
 .page-banner-contact .page-title-wrapper {
 	padding: 316px 0px 245px;
 	position: relative;
-	margin-left: -150px;
-	padding-right: 265px;
 }
 
 .page-banner-contact .page-title-wrapper .page-title {
@@ -13637,6 +13666,12 @@ input:focus + label {
 .animate-element-contact img:nth-child(1) {
 	left: 5px;
 	bottom: 55px;
+}
+@media (max-width: 992px) {
+	.animate-element-contact img:nth-child(1) {
+		left: 5px;
+		bottom: -70px;
+	}
 }
 
 .animate-element-contact img:nth-child(2) {
@@ -13725,6 +13760,7 @@ input:focus + label {
 		padding: 130px 0 0;
 	}
 	.animate-element-contact {
+		display: table-row;
 		height: 365px;
 		margin: 0 auto;
 	}
@@ -13915,6 +13951,9 @@ input:focus + label {
 @media (max-width: 991px) {
 	.marketing-about-content {
 		padding: 50px 0 80px;
+	}
+	.animate-ball {
+		display: none;
 	}
 }
 
