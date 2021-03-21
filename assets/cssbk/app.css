@@ -476,18 +476,18 @@ section {
 	position: absolute;
 }
 .animation-videoM {
-  max-width: 90%;
-  left: -10%;
-  bottom: 165px;
-  list-style-type: none;
-  position: relative;
-  z-index: 3;
+	max-width: 50%;
+    left: 11%;
+    bottom: 55px;
+    list-style-type: none;
+    position: relative;
+    z-index: 3;
 }
 @media (max-width: 767px) {
   .animation-videoM {
-    max-width: 100%;
-    left: 0%;
-    bottom: 125px;
+    max-width: 58%;
+    left: 23%;
+    bottom: 60px;
     list-style-type: none;
     position: relative;
     z-index: 3;
@@ -500,15 +500,15 @@ section {
 @media (max-width: 400px) {
   .animation-videoM {
     max-width: 100%;
-    left: -7%;
-    bottom: 135px;
+    left: 19%;
+    bottom: 60px;
     list-style-type: none;
     position: relative;
     z-index: 3;
   }
   .img-videoM {
     height: auto;
-    max-width: 155%;
+    max-width: 95%;
     position: absolute;
   }
 }
