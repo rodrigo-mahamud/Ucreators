@@ -7686,6 +7686,82 @@ select {
 	margin-bottom: 0;
 }
 
+.saaspik-icon-box-wrapper {
+	margin-bottom: 30px;
+}
+.saaspik-icon-box-wrapper .saaspik-icon-box-icon {
+	margin-bottom: 32px;
+}
+.saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+	margin-bottom: 20px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title a {
+	color: #2b2350;
+}
+.saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title a:hover {
+	color: #fa7070;
+}
+.saaspik-icon-box-wrapper .pixsass-icon-box-content p {
+	margin: 0;
+}
+.saaspik-icon-box-wrapper.style-twelve {
+	padding: 40px 35px;
+	border-radius: 12px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 20px;
+}
+.saaspik-icon-box-wrapper.style-twelve .saaspik-icon-box-icon {
+	height: 70px;
+	width: 70px;
+	border-radius: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background:#66353f;
+}
+
+.saaspik-icon-box-wrapper.style-twelve .pixsass-icon-box-content .pixsass-icon-box-title {
+	font-size: 20px;
+	font-weight: 500;
+	color: #2c234d;
+}
+.saaspik-icon-box-wrapper.style-twelve .pixsass-icon-box-content .pixsass-icon-box-title:hover {
+	color: #14aeee;
+}
+.saaspik-icon-box-wrapper.style-twelve .pixsass-icon-box-content .pixsass-icon-box-title a {
+	color: #ff6160;
+}
+.saaspik-icon-box-wrapper:hover .pixsass-icon-box-title a {
+	color: #ffffff!important;
+}
+.saaspik-icon-box-wrapper.style-twelve .pixsass-icon-box-content .pixsass-icon-box-title a:hover {
+	color: #14aeee;
+}
+.saaspik-icon-box-wrapper.style-twelve:hover {
+	background: #ff6160;
+	-webkit-box-shadow: 0 30px 70px 0 rgba(5, 34, 85, 0.06);
+	box-shadow: 0 30px 70px 0 rgba(5, 34, 85, 0.06);
+	transform: scale(1.025);
+}
+.feature-twelve {
+	background: transparent;
+	padding: 0px 0 225px;
+}
+
 .saaspik-icon-box-wrapper.style-one .pixsass-icon-box-content .pixsass-icon-box-title a {
 	color: #2b2350;
 }
@@ -8184,6 +8260,9 @@ select {
 
 .featured-six {
 	padding: 110px 0 104px;
+	background-color: #242331;
+	margin-bottom: 12%;
+
 }
 
 .featured-five {
@@ -11656,6 +11735,94 @@ select {
 
 @media (max-width: 768px) {
 	.faq-tabs li {
+		margin-bottom: 10px;
+	}
+}
+/*----------------------------*/
+.faq-tabs2 {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 22;
+}
+
+.faq-tabs2 li {
+	margin-bottom: 20px;
+}
+
+.faq-tabs2 li:not(:last-child) {
+	margin-right: 15px;
+}
+
+.faq-tabs2 li a {
+    font-size: 21px;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #ff1f1e;
+    background: rgb(255 2 0 / 15%);
+    padding: 15px 35px;
+    border-radius: 12px;
+    display: inline-block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.faq-tabs2 li a:hover,
+.faq-tabs2 li a.active {
+	background: #ff0200;
+	color: #fff;
+}
+
+.faq-tabs2 li:nth-child(2) a {
+	background: rgb(166 68 255 / 12%);
+	color: #a644ff;
+}
+.faq-tabs2 li:nth-child(2) a:hover,
+.faq-tabs2 li:nth-child(2) a.active {
+	background: #a644ff;
+	color: #ffff;
+}
+
+.faq-tabs2 li:nth-child(3) a {
+	background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 55%) 0%, rgb(253 89 73 / 55%) 42%,rgb(214 36 159 / 55%) 64%,rgb(40 90 235 / 55%) 108%);
+	color: #ffff;
+	opacity: 0.5;
+}
+
+.faq-tabs2 li:nth-child(3) a:hover,
+.faq-tabs2 li:nth-child(3) a.active {
+	background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 85%) 0%, rgb(253 89 73 / 85%) 42%,rgb(214 36 159 / 85%) 64%,rgb(40 90 235 / 85%) 108%);
+	color: #ffff;
+	opacity: 1;
+	
+}
+
+.faq-tabs2 li:nth-child(4) a {
+	background: rgba(105, 208, 201, 0.122);
+	color: #cf54ffb8;
+}
+
+.faq-tabs2 li:nth-child(4) a:hover,
+.faq-tabs2 li:nth-child(4) a.active {
+	background: #69c9d0;
+	color: #cf54ff;
+}
+
+
+
+@media (max-width: 991px) {
+
+	.faq-tabs2 {
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.faq-tabs2 li {
 		margin-bottom: 10px;
 	}
 }
