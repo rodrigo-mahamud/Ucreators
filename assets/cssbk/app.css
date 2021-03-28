@@ -19669,6 +19669,12 @@ Download Two
 /*----------GOOGLE FONT------------*/
 /* devanagari */
 @font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Product Sans'), url('https://fonts.cdnfonts.com/s/13998/ProductSans-Regular.woff') format('woff');
+}
+@font-face {
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 300;
