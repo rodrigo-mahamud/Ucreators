@@ -11840,14 +11840,15 @@ select {
 }
 
 .faq-tabs2 li:nth-child(4) a {
-	background: rgba(105, 208, 201, 0.122);
-	color: #cf54ffb8;
+    background: rgb(255 255 255 / 24%);
+    color: #16131b;
+
 }
 
 .faq-tabs2 li:nth-child(4) a:hover,
 .faq-tabs2 li:nth-child(4) a.active {
-	background: #69c9d0;
-	color: #cf54ff;
+	background: #ffffff;
+	color: #000000;
 }
 
 
