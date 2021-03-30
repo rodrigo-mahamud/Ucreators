@@ -559,6 +559,11 @@
 }
 .bi-box-seam::before {
 	content: "\f1b5";
+	font-size: 25px;
+    vertical-align: unset;
+    color: white;
+    margin-left: -3px;
+	line-height: 0.9;
 }
 .bi-box::before {
 	content: "\f1b6";
@@ -838,6 +843,11 @@
 }
 .bi-card-checklist::before {
 	content: "\f212";
+	font-size: 26px;
+    vertical-align: unset;
+    color: white;
+    margin-left: -3px;
+	line-height: 0.8;
 }
 .bi-card-heading::before {
 	content: "\f213";
@@ -850,6 +860,11 @@
 }
 .bi-card-text::before {
 	content: "\f216";
+	font-size: 26px;
+    vertical-align: unset;
+    color: white;
+    margin-left: -3px;
+	line-height: 0.8;
 }
 .bi-caret-down-fill::before {
 	content: "\f217";
@@ -943,6 +958,11 @@
 }
 .bi-cash::before {
 	content: "\f235";
+    font-size: 26px;
+    vertical-align: unset;
+    color: white;
+    margin-left: -3px;
+	line-height: 0.9;
 }
 .bi-cast::before {
 	content: "\f236";
@@ -1069,6 +1089,11 @@
 }
 .bi-check2-square::before {
 	content: "\f25f";
+	font-size: 26px;
+    vertical-align: unset;
+    color: white;
+    margin-left: -3px;
+	line-height: 0.9;
 }
 .bi-check2::before {
 	content: "\f260";
@@ -2717,6 +2742,11 @@
 }
 .bi-percent::before {
 	content: "\f480";
+	font-size: 26px;
+    vertical-align: unset;
+    color: white;
+    margin-left: -3px;
+	line-height: 0.9;
 }
 .bi-person-badge-fill::before {
 	content: "\f481";
@@ -3586,6 +3616,11 @@
 }
 .bi-wallet2::before {
 	content: "\f59f";
+	font-size: 26px;
+    vertical-align: unset;
+    color: white;
+    margin-left: -3px;
+	line-height: 0.8;
 }
 .bi-watch::before {
 	content: "\f5a0";
