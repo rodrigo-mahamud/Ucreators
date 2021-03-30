@@ -2321,33 +2321,33 @@ section {
 	transform: translate(-50%, -50%);
 }
 /*------TW--------*/
-.dot {
+.dot2 {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #ff0200;
+	background: #a86dfe;
 	position: absolute;
 }
-.dot:before,
-.dot:after {
+.dot2:before,
+.dot2:after {
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	border-radius: 50%;
-	background: #ff0200;
+	background: #a86dfe;
 	top: 0;
 	left: 0;
 }
-.dot:before {
+.dot2:before {
 	transform: scale(2.5);
 	opacity: 0.3;
 }
-.dot:after {
+.dot2:after {
 	transform: scale(4);
 	opacity: 0.1;
 }
-.dot .round {
+.dot2 .round {
 	position: absolute;
 	left: 50%;
 	top: 50%;
