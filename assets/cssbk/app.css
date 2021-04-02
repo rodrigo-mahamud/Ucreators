@@ -7988,7 +7988,34 @@ select {
 	transition: all 0.3s ease-in-out;
 	margin-bottom: 42px;
 }
-
+.saaspik-icon-box-wrapper.style-five .saaspik-icon-box-iconig {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	border: 2px solid #a644ff;
+	color: #a644ff;
+	font-size: 22px;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 42px;
+}
+.saaspik-icon-box-wrapper.style-five .saaspik-icon-box-icontk {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	border: 2px solid #a644ff;
+	color: #a644ff;
+	font-size: 22px;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 42px;
+}
 .saaspik-icon-box-wrapper.style-five .pixsass-icon-box-content .pixsass-icon-box-title {
 	margin-bottom: 15px;
 }
@@ -11798,11 +11825,11 @@ select {
 .faq-tabs2 li a {
     font-size: 21px;
     font-weight: 600;
-    margin-left: 20px;
+    margin-left: 15px;
     color: #ff1f1e;
     background: rgb(255 2 0 / 15%);
     padding: 15px 35px;
-    border-radius: 12px;
+    border-radius: 10px;
     display: inline-block;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -11866,6 +11893,97 @@ select {
 		margin-bottom: 10px;
 	}
 }
+/*------------------------------------------*/
+
+.faq-tabs3 {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 22;
+}
+
+.faq-tabs3 li {
+	margin-bottom: 20px;
+}
+
+.faq-tabs3 li:not(:last-child) {
+	margin-right: 15px;
+}
+
+.faq-tabs3 li a {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 5px;
+    color: #ff1f1e;
+    background: rgb(255 2 0 / 15%);
+    padding: 11px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-tabs3 li a:hover,
+.faq-tabs3 li a.active {
+	background: #ff0200;
+	color: #fff;
+}
+
+.faq-tabs3 li:nth-child(2) a {
+	background: rgb(166 68 255 / 12%);
+	color: #a644ff;
+}
+.faq-tabs3 li:nth-child(2) a:hover,
+.faq-tabs3 li:nth-child(2) a.active {
+	background: #a644ff;
+	color: #ffff;
+}
+
+.faq-tabs3 li:nth-child(3) a {
+	background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 55%) 0%, rgb(253 89 73 / 55%) 42%,rgb(214 36 159 / 55%) 64%,rgb(40 90 235 / 55%) 108%);
+	color: #ffff;
+	opacity: 0.5;
+}
+
+.faq-tabs3 li:nth-child(3) a:hover,
+.faq-tabs3 li:nth-child(3) a.active {
+	background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 85%) 0%, rgb(253 89 73 / 85%) 42%,rgb(214 36 159 / 85%) 64%,rgb(40 90 235 / 85%) 108%);
+	color: #ffff;
+	opacity: 1;
+	
+}
+
+.faq-tabs3 li:nth-child(4) a {
+    background: rgb(255 255 255 / 24%);
+    color: #16131b;
+
+}
+
+.faq-tabs3 li:nth-child(4) a:hover,
+.faq-tabs3 li:nth-child(4) a.active {
+	background: #ffffff;
+	color: #000000;
+}
+
+
+
+@media (max-width: 991px) {
+
+	.faq-tabs3 {
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.faq-tabs3 li {
+		margin-bottom: 10px;
+	}
+}
+
 
 /*--------------------------------------------------------------
 	##  Team
