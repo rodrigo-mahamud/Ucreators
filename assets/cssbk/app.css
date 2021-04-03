@@ -7732,10 +7732,43 @@ select {
 	margin-bottom: 32px;
 }
 .saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title {
-	font-size: 20px;
-	font-weight: 600;
+	font-size: 1.5rem;
+	font-weight: 700;
 	line-height: 30px;
 	margin-bottom: 20px;
+	color: #ff2928;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-titletw {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 20px;
+	color: #a644ff;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-titleig {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 20px;
+	background: radial-gradient(circle at 0% 51%, #fdf4975c -6%, rgb(253 244 151 / 85%) -14%, rgb(253 89 73 / 85%) 27%,rgb(214 36 159 / 85%) 48%,rgb(39 90 235 / 85%) 108%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-titletk {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 20px;
+	color: #69C9D0;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
@@ -7811,16 +7844,6 @@ select {
 
 .saaspik-icon-box-wrapper .saaspik-icon-box-icon {
 	margin-bottom: 0px;
-}
-
-.saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title {
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 30px;
-	margin-top: 20px;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
 }
 
 .saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title a {
@@ -7965,9 +7988,10 @@ select {
 	width: 60px;
 	line-height: 60px;
 	text-align: center;
-	border: 2px solid #ff6160;
-	color: #ff6160;
+	border: 2px solid #ff2928;
+	color: #ff2928;
 	font-size: 22px;
+	line-height: 3;
 	border-radius: 50%;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -7982,6 +8006,7 @@ select {
 	border: 2px solid #a644ff;
 	color: #a644ff;
 	font-size: 22px;
+	line-height: 3;
 	border-radius: 50%;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -7990,34 +8015,35 @@ select {
 }
 .saaspik-icon-box-wrapper.style-five .saaspik-icon-box-iconig {
 	height: 60px;
-	width: 60px;
-	line-height: 60px;
-	text-align: center;
-	border: 2px solid #a644ff;
-	color: #a644ff;
-	font-size: 22px;
-	border-radius: 50%;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	margin-bottom: 42px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: linear-gradient(#242331,#242331) padding-box, radial-gradient(circle at 0% 86%, #fdf4975c 9%, rgb(253 244 151 / 85%) 0%, rgb(253 89 73 / 85%) 60%,rgb(214 36 159 / 85%) 75%,rgb(40 90 235 / 85%) 108%) border-box;
+    border: 3px solid transparent;
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+	line-height: 3;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 42px;
 }
 .saaspik-icon-box-wrapper.style-five .saaspik-icon-box-icontk {
 	height: 60px;
-	width: 60px;
-	line-height: 60px;
-	text-align: center;
-	border: 2px solid #a644ff;
-	color: #a644ff;
-	font-size: 22px;
-	border-radius: 50%;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	margin-bottom: 42px;
-}
-.saaspik-icon-box-wrapper.style-five .pixsass-icon-box-content .pixsass-icon-box-title {
-	margin-bottom: 15px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 2px solid #ee1d52;
+    color: #69C9D0;
+    font-size: 22px;
+	line-height: 3;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 42px;
 }
 
 .saaspik-icon-box-wrapper.style-five .pixsass-icon-box-content .pixsass-icon-box-title a:hover {
@@ -8051,10 +8077,11 @@ select {
 }
 
 .saaspik-icon-box-wrapper.style-five:hover .saaspik-icon-box-icon {
-	-webkit-box-shadow: 0px 15px 30px 0px rgb(255 97 96 / 25%);
-	box-shadow: 0px 15px 30px 0px rgb(255 97 96 / 25%);
-	background: #ff6160;
+	-webkit-box-shadow: 0px 15px 30px 0px rgb(255 2 0 / 25%);
+	box-shadow: 0px 15px 30px 0px rgb(255 2 0 / 25%);
+	background: #ff2928;
 	color: #fff;
+	transform: scale(1.1);
 }
 
 .saaspik-icon-box-wrapper.style-five:hover .saaspik-icon-box-icontw {
@@ -8062,7 +8089,24 @@ select {
 	box-shadow: 0px 15px 30px 0px rgb(166 68 255 / 20%);
 	background: #a644ff;
 	color: #fff;
+	transform: scale(1.1);
 }
+.saaspik-icon-box-wrapper.style-five:hover .saaspik-icon-box-iconig {
+	-webkit-box-shadow: -8px 8px 30px 0px rgb(255 222 0 / 12%), 8px -8px 30px 0px rgb(244 0 255 / 12%), -8px -8px 30px 0px rgb(255 28 0 / 12%), 8px 8px 30px 0px rgb(255 0 70 / 12%);
+	box-shadow: -8px 8px 30px 0px rgb(255 222 0 / 12%), 8px -8px 30px 0px rgb(244 0 255 / 12%), -8px -8px 30px 0px rgb(255 28 0 / 12%), 8px 8px 30px 0px rgb(255 0 70 / 12%);
+	background: radial-gradient(circle at 0% 86%, #fdf4975c 9%, rgb(253 244 151 / 85%) 0%, rgb(253 89 73 / 85%) 60%,rgb(214 36 159 / 85%) 75%,rgb(40 90 235 / 85%) 108%) BORDER-BOX;
+    color: #fff!important;
+    border-radius: 50%;
+	transform: scale(1.1);
+}
+.saaspik-icon-box-wrapper.style-five:hover .saaspik-icon-box-icontk {
+	-webkit-box-shadow: 0px 15px 30px 0px rgb(238 29 82 / 25%);
+    box-shadow: 0px 15px 30px 0px rgb(238 29 82 / 25%);
+    background: #ee1d52;
+    color: #fff;
+    transform: scale(1.1);
+}
+
 .saaspik-icon-box-wrapper.style-six {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -11917,7 +11961,7 @@ select {
     font-weight: 400;
     margin-left: 5px;
     color: #ff1f1e;
-    background: rgb(255 2 0 / 15%);
+    background: rgb(255 32 30 / 15%);
     padding: 11px 30px;
     border-radius: 8px;
     display: inline-block;
@@ -11925,11 +11969,10 @@ select {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
 .faq-tabs3 li a:hover,
 .faq-tabs3 li a.active {
-	background: #ff0200;
-	color: #fff;
+	background: #ff2928;
+    color: #fff;
 }
 
 .faq-tabs3 li:nth-child(2) a {
