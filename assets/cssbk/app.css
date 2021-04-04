@@ -7808,20 +7808,19 @@ select {
 	margin-bottom: 32px;
 }
 .saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title {
-	font-size: 1.5rem;
-	font-weight: 700;
-	line-height: 30px;
-	margin-bottom: 20px;
-	color: #ff2928;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-titletw {
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 	color: #a644ff;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -7831,7 +7830,7 @@ select {
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 	background: radial-gradient(circle at 0% 51%, #fdf4975c -6%, rgb(253 244 151 / 85%) -14%, rgb(253 89 73 / 85%) 27%,rgb(214 36 159 / 85%) 48%,rgb(39 90 235 / 85%) 108%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -7843,7 +7842,7 @@ select {
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 	color: #69C9D0;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -7918,10 +7917,6 @@ select {
 
 .saaspik-icon-box-wrapper.style-one .pixsass-icon-box-content .pixsass-icon-box-title a:hover {
 	color: #fa7070;
-}
-
-.saaspik-icon-box-wrapper .saaspik-icon-box-icon {
-	margin-bottom: 0px;
 }
 
 .saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title a {
@@ -8074,7 +8069,7 @@ select {
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	margin-bottom: 42px;
+	margin-bottom: 30px;
 }
 .saaspik-icon-box-wrapper.style-five .saaspik-icon-box-icontw {
 	height: 60px;
@@ -8315,7 +8310,7 @@ select {
 }
 
 .saaspik-icon-box-wrapper.style-eight .pixsass-icon-box-content .pixsass-icon-box-title {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .saaspik-icon-box-wrapper.style-eight .pixsass-icon-box-content .pixsass-icon-box-title a:hover {
