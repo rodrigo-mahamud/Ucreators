@@ -258,7 +258,15 @@ img {
 
 .pt-7 {
 	padding-top: 70px;
+	padding-right: 100px;
 }
+@media (max-width: 991px) {
+	.pt-7 {
+		padding-top: 70px;
+		padding-right: 0px;
+	}
+}
+
 
 .container-wrap {
 	max-width: 95%;
@@ -2477,8 +2485,10 @@ section {
 .oppi_about_content_item_1 {
 	margin-bottom: 140px;
 }
+
 .oppi_about_content_item_1 .oppi_abs_num {
 	right: 0;
+	top: 45px;
 }
 .oppi_about_content_item_1 .oppi_abs_num .dot {
 	top: 0;
@@ -2489,7 +2499,7 @@ section {
 }
 .oppi_about_content_item_2 .oppi_abs_num {
 	left: -15px;
-	top: 13px;
+	top: 60px;
 }
 .oppi_about_content_item_2 .oppi_abs_num .dot {
 	top: 25px;
@@ -2497,11 +2507,14 @@ section {
 }
 .oppi_about_content_item_3 .oppi_abs_num {
 	right: -30px;
-	top: 18px;
+	top: 210px;
 }
 .oppi_about_content_item_3 .oppi_abs_num .dot {
 	top: 0;
 	left: 50px;
+}
+.oppi_about_content_item_3 .oppi_about_content {
+	padding-top: 10px;
 }
 .oppi_about_content_item_3 .oppi_about_content {
 	padding-top: 10px;
@@ -12085,6 +12098,126 @@ select {
 		margin-bottom: 10px;
 	}
 }
+/*----------------------------*/
+.faq-tabs4 {
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 22;
+}
+
+.faq-tabs4 li {
+	margin-bottom: 20px;
+}
+
+.faq-tabs4 li:not(:last-child) {
+	margin-right: 15px;
+}
+
+.faq-tabs4 li a {
+	color: #ff1f1e;
+	background: rgb(255 2 0 / 15%);
+	padding: 14px 30px;
+	border-radius: 10px;
+	display: inline-block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.faq-tabs4 li a:hover,
+.faq-tabs4 li a.active {
+	background: #ff0200;
+	color: #fff;
+}
+
+.faq-tabs4 li:nth-child(2) a {
+	background: rgb(166 68 255 / 12%);
+	color: #a644ff;
+}
+.faq-tabs4 li:nth-child(2) a:hover,
+.faq-tabs4 li:nth-child(2) a.active {
+	background: #a644ff;
+	color: #ffff;
+}
+
+.faq-tabs4 li:nth-child(3) a {
+	background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 55%) 0%, rgb(253 89 73 / 55%) 42%, rgb(214 36 159 / 55%) 64%, rgb(40 90 235 / 55%) 108%);
+	color: #ffff;
+	opacity: 0.5;
+}
+
+.faq-tabs4 li:nth-child(3) a:hover,
+.faq-tabs4 li:nth-child(3) a.active {
+	background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 85%) 0%, rgb(253 89 73 / 85%) 42%, rgb(214 36 159 / 85%) 64%, rgb(40 90 235 / 85%) 108%);
+	color: #ffff;
+	opacity: 1;
+}
+
+.faq-tabs4 li:nth-child(4) a {
+	background: rgb(255 255 255 / 24%);
+	color: #16131b;
+}
+
+.faq-tabs4 li:nth-child(4) a:hover,
+.faq-tabs4 li:nth-child(4) a.active {
+	background: #ffffff;
+	color: #000000;
+	line-height: 0;
+	padding: 15px 32.13px;
+}
+
+@media (max-width: 991px) {
+	.faq-tabs4 {
+		margin-bottom: 30px;
+	}
+	.faq-tabs4 li:nth-child(4) a:hover,
+	.faq-tabs4 li:nth-child(4) a.active {
+		background: #ffffff;
+		color: #000000;
+		line-height: 0;
+		padding: 12px 27.13px
+	}
+	.faq-tabs4 li a {
+		color: #ff1f1e;
+		background: rgb(255 2 0 / 15%);
+		padding: 11px 25px;
+		border-radius: 10px;
+		display: inline-block;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
+@media (max-width: 390px) {
+	.faq-tabs4 {
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+	.faq-tabs4 li:nth-child(4) a:hover,
+	.faq-tabs4 li:nth-child(4) a.active {
+		background: #ffffff;
+		color: #000000;
+		line-height: 0;
+		padding: 11px 25.13px
+	}
+	.faq-tabs4 li a {
+		color: #ff1f1e;
+		background: rgb(255 2 0 / 15%);
+		padding: 10px 23px;
+		border-radius: 10px;
+		display: inline-block;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+@media (max-width: 768px) {
+	.faq-tabs4 li {
+		margin-bottom: 10px;
+	}
+}
+/*------------------------------------------*/
 
 /*--------------------------------------------------------------
 	##  Team
@@ -16084,6 +16217,7 @@ Download Two
 
 .interface-content .interface-title p {
 	margin-bottom: 30px;
+
 }
 
 .interface-content .list-items {

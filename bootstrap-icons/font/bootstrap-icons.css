@@ -2344,6 +2344,11 @@
 	font-size: 26px;
 	margin-right: 6px;
 }
+.bi-instagram2::before {
+	content: "\f3fb";
+	font-size: 27px;
+	line-height: 0.8;
+}
 .bi-intersect::before {
 	content: "\f3fc";
 }
@@ -3506,6 +3511,11 @@
 	font-size: 26px;
 	margin-right: 6px;
 }
+.bi-twitch2::before {
+	content: "\f57a";
+	font-size: 27px;
+	line-height: 0.8;
+}
 .bi-twitter::before {
 	content: "\f57b";
 }
@@ -3674,6 +3684,11 @@
 	content: "\f5b0";
 	font-size: 26px;
 	margin-right: 6px;
+}
+.bi-youtube2::before {
+	content: "\f5b0";
+	font-size: 27px;
+	line-height: 0.8;
 }
 .bi-zoom-in::before {
 	content: "\f5b1";
