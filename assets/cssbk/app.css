@@ -2264,8 +2264,8 @@ section {
 .finance_action_inner {
 	border-radius: 20px;
 	background-color: #242331;
-	-webkit-box-shadow: 0px 50px 100px 0px rgb(0 0 0 / 20%);
-	box-shadow: 0px 10px 40px 5px rgb(0 0 0 / 20%);
+	-webkit-box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 60%);
+	box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 60%);
 	padding: 55px 15px;
 	position: relative;
 	z-index: 4;
@@ -2633,6 +2633,20 @@ section {
 	-webkit-transform: rotate(-9.9deg);
 	-ms-transform: rotate(-9.9deg);
 	transform: rotate(-8.9deg);
+	bottom: -223px;
+	box-shadow: 80px 0px 0px 0px #fd605f;
+	right: 33px;
+}
+.oppi_finance_action_area2:before {
+	content: "";
+	width: 100%;
+	height: 600px;
+	background: #ff6160;
+	position: absolute;
+	z-index: 0;
+	-webkit-transform: rotate(-9.9deg);
+	-ms-transform: rotate(-9.9deg);
+	transform: rotate(355deg);
 	bottom: -223px;
 	box-shadow: 80px 0px 0px 0px #fd605f;
 	right: 33px;
@@ -4759,7 +4773,7 @@ select {
 .site-header .site-main-menu li:hover {
 	transform: scale(1.15);
 }
-@media (max-width:992px){
+@media (max-width: 992px) {
 	.site-header .site-main-menu li:hover {
 		transform: scale(1.05);
 	}
@@ -7989,11 +8003,11 @@ select {
 	background: transparent;
 	padding: 0px 0 225px;
 }
-.oppi_about_img_wrap{
+.oppi_about_img_wrap {
 	text-align: right !important;
-    max-width: 80%;
-    margin-left: 65px;
-    margin-top: -95px;
+	max-width: 80%;
+	margin-left: 65px;
+	margin-top: -95px;
 }
 
 .saaspik-icon-box-wrapper .pixsass-icon-box-content .pixsass-icon-box-title a {
@@ -8324,8 +8338,6 @@ select {
 	transform: scale(1.1);
 }
 
-
-
 .saaspik-icon-box-wrapper.style-six .pixsass-icon-box-content {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
@@ -8560,7 +8572,7 @@ select {
 }
 
 .featured-six {
-	padding: 110px 0 200px;
+	padding: 110px 0 165px;
 	background-color: #242331;
 	margin-bottom: 0%;
 }
@@ -8729,7 +8741,7 @@ select {
 		max-width: 129%;
 		margin-left: -40px;
 	}
-	
+
 	.bi-cash::before {
 		font-size: 20px;
 		vertical-align: unset;
@@ -8765,7 +8777,7 @@ select {
 		margin-left: unset;
 		line-height: 1.1;
 	}
-	.bi-percent::before{
+	.bi-percent::before {
 		font-size: 20px;
 		vertical-align: unset;
 		color: white;
@@ -8845,7 +8857,6 @@ select {
 		justify-content: center;
 		background: #66353f;
 	}
-	
 }
 
 .featured-two-same .section-title {
@@ -12258,13 +12269,13 @@ select {
 	.faq-tabs2 li:not(:last-child) {
 		margin-right: 20px;
 	}
-	.oppi_about_img_wrap{
+	.oppi_about_img_wrap {
 		text-align: right !important;
 		max-width: 100%;
-		margin-left:unset;
+		margin-left: unset;
 		margin-top: unset;
 	}
-	.oppi_about_content .oppi_soci_para{
+	.oppi_about_content .oppi_soci_para {
 		font-size: 15px;
 	}
 	.faq-tabs2 {
@@ -12294,43 +12305,43 @@ select {
 		background: #a644ff;
 		color: #ffff;
 	}
-	
+
 	.faq-tabs2 li:nth-child(3) a {
 		background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 55%) 0%, rgb(253 89 73 / 55%) 42%, rgb(214 36 159 / 55%) 64%, rgb(40 90 235 / 55%) 108%);
 		color: #ffff;
 		opacity: 0.5;
 		padding: 6px 22.5px;
 	}
-	
+
 	.faq-tabs2 li:nth-child(3) a:hover,
 	.faq-tabs2 li:nth-child(3) a.active {
 		background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 85%) 0%, rgb(253 89 73 / 85%) 42%, rgb(214 36 159 / 85%) 64%, rgb(40 90 235 / 85%) 108%);
 		color: #ffff;
 		opacity: 1;
 	}
-	
+
 	.faq-tabs2 li:nth-child(4) a {
 		background: rgb(255 255 255 / 24%);
 		color: #16131b;
 		margin-left: -11px;
 		padding: 4.5px 38.5px;
 	}
-	
+
 	.faq-tabs2 li:nth-child(4) a:hover,
 	.faq-tabs2 li:nth-child(4) a.active {
 		background: #ffffff;
 		color: #000000;
 	}
-	.bi-youtube::before{
+	.bi-youtube::before {
 		font-size: 19px;
 	}
-	.bi-twitch::before{
+	.bi-twitch::before {
 		font-size: 19px;
 	}
-	.bi-instagram::before{
+	.bi-instagram::before {
 		font-size: 19px;
 	}
-	.fa-tiktok:before{
+	.fa-tiktok:before {
 		font-size: 19px;
 	}
 }
@@ -12339,13 +12350,13 @@ select {
 	.faq-tabs2 li:not(:last-child) {
 		margin-right: 5px;
 	}
-	.oppi_about_img_wrap{
+	.oppi_about_img_wrap {
 		text-align: right !important;
 		max-width: 85%;
-		margin-left:unset;
+		margin-left: unset;
 		margin-top: unset;
 	}
-	.oppi_about_content .oppi_soci_para{
+	.oppi_about_content .oppi_soci_para {
 		font-size: 14px;
 	}
 	.faq-tabs2 li {
@@ -12378,7 +12389,7 @@ select {
 		background: #a644ff;
 		color: #ffff;
 	}
-	
+
 	.faq-tabs2 li:nth-child(3) a {
 		background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 55%) 0%, rgb(253 89 73 / 55%) 42%, rgb(214 36 159 / 55%) 64%, rgb(40 90 235 / 55%) 108%);
 		color: #ffff;
@@ -12386,21 +12397,21 @@ select {
 		padding: 6px 22.5px;
 		margin-left: 9px;
 	}
-	
+
 	.faq-tabs2 li:nth-child(3) a:hover,
 	.faq-tabs2 li:nth-child(3) a.active {
 		background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 85%) 0%, rgb(253 89 73 / 85%) 42%, rgb(214 36 159 / 85%) 64%, rgb(40 90 235 / 85%) 108%);
 		color: #ffff;
 		opacity: 1;
 	}
-	
+
 	.faq-tabs2 li:nth-child(4) a {
 		background: rgb(255 255 255 / 24%);
 		color: #16131b;
 		margin-left: 16px;
 		padding: 4.5px 38.5px;
 	}
-	
+
 	.faq-tabs2 li:nth-child(4) a:hover,
 	.faq-tabs2 li:nth-child(4) a.active {
 		background: #ffffff;
@@ -12439,7 +12450,7 @@ select {
 		background: #a644ff;
 		color: #ffff;
 	}
-	
+
 	.faq-tabs2 li:nth-child(3) a {
 		background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 55%) 0%, rgb(253 89 73 / 55%) 42%, rgb(214 36 159 / 55%) 64%, rgb(40 90 235 / 55%) 108%);
 		color: #ffff;
@@ -12447,27 +12458,27 @@ select {
 		margin-left: 14px;
 		padding: 6px 25.5px;
 	}
-	
+
 	.faq-tabs2 li:nth-child(3) a:hover,
 	.faq-tabs2 li:nth-child(3) a.active {
 		background: radial-gradient(circle at 0% 77%, #fdf4975c -24%, rgb(253 244 151 / 85%) 0%, rgb(253 89 73 / 85%) 42%, rgb(214 36 159 / 85%) 64%, rgb(40 90 235 / 85%) 108%);
 		color: #ffff;
 		opacity: 1;
 	}
-	
+
 	.faq-tabs2 li:nth-child(4) a {
 		background: rgb(255 255 255 / 24%);
 		color: #16131b;
 		margin-left: 8px;
 		padding: 4.5px 41.5px;
 	}
-	
+
 	.faq-tabs2 li:nth-child(4) a:hover,
 	.faq-tabs2 li:nth-child(4) a.active {
 		background: #ffffff;
 		color: #000000;
 	}
-}	
+}
 /*------------------------------------------*/
 
 .faq-tabs3 {
@@ -15298,8 +15309,8 @@ input:focus + label {
 .popup-videos {
 	position: relative;
 	max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .popup-videos .play-btn {
