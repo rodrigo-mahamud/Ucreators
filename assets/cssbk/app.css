@@ -7683,7 +7683,7 @@ select {
 	##  Section Title
 	--------------------------------------------------------------*/
 .section-title {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .section-title .sub-title {
@@ -7972,6 +7972,7 @@ select {
 .tablet {
 	max-width: 115%;
 	margin-left: -40px;
+	margin-bottom: -10px;
 }
 .saaspik-icon-box-wrapper.style-six .saaspik-icon-box-icon {
 	height: 50px;
@@ -8970,7 +8971,7 @@ select {
 	.featured-six {
 		padding-top: 55px;
 		padding-bottom: 45px;
-		margin-bottom: 0%;
+		margin-bottom: 10%;
 	}
 	.featured-seven {
 		padding: 75px 0 30px;
