@@ -2581,7 +2581,7 @@ section {
 }
 @media (max-width: 480px) {
 	.oppi_about_three.oppi_social_about_wrap {
-		padding-top: 70px;
+		padding-top: 0px;
 		margin-bottom: 0px;
 	}
 	.oppi_about_content .about_title {
