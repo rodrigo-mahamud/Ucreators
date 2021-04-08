@@ -12671,12 +12671,12 @@ select {
 		background: #ffffff;
 		color: #000000;
 		line-height: 0;
-		padding: 11px 25.13px;
+		padding: 11px 22.13px;
 	}
 	.faq-tabs4 li a {
 		color: #ff1f1e;
 		background: rgb(255 2 0 / 15%);
-		padding: 10px 23px;
+		padding: 10px 20px;
 		border-radius: 10px;
 		display: inline-block;
 		-webkit-transition: all 0.3s ease-in-out;
