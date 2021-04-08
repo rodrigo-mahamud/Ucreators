@@ -5937,7 +5937,7 @@ select {
 .banner.banner-four .promo-mockup {
 	position: relative;
 	z-index: 2;
-	margin-top: -80px;
+	margin-top: -25px;
 	-webkit-animation: jump 2s infinite;
 	animation: jump 2s infinite;
 }
