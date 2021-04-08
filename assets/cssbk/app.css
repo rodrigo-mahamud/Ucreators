@@ -12345,6 +12345,10 @@ select {
 	.fa-tiktok:before {
 		font-size: 19px;
 	}
+	.fa-tiktok2:before {
+		font-size: 26px;
+		content: "\e07b";
+	}
 }
 
 @media (max-width: 767px) {
@@ -12676,7 +12680,32 @@ select {
 		transition: all 0.3s ease-in-out;
 	}
 }
-
+@media (max-width: 350px) {
+	.faq-tabs4 li:not(:last-child) {
+		margin-right: 12px;
+	}
+	.faq-tabs4 {
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+	.faq-tabs4 li:nth-child(4) a:hover,
+	.faq-tabs4 li:nth-child(4) a.active {
+		background: #ffffff;
+		color: #000000;
+		line-height: 0;
+		padding: 9px 20.13px;;
+	}
+	.faq-tabs4 li a {
+		color: #ff1f1e;
+		background: rgb(255 2 0 / 15%);
+		padding: 8px 18px;
+		border-radius: 10px;
+		display: inline-block;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
 @media (max-width: 768px) {
 	.faq-tabs4 li {
 		margin-bottom: 10px;
